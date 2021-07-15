@@ -656,7 +656,7 @@ module.exports = function(module) {
 /*! exports provided: name, version, description, main, keywords, scripts, repository, author, license, standard, dependencies, devDependencies, files, yarn-upgrade-all, sideEffects, husky, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"name\":\"mermaid\",\"version\":\"8.9.2\",\"description\":\"Markdownish syntax for generating flowcharts, sequence diagrams, class diagrams, gantt charts and git graphs.\",\"main\":\"dist/mermaid.core.js\",\"keywords\":[\"diagram\",\"markdown\",\"flowchart\",\"sequence diagram\",\"gantt\",\"class diagram\",\"git graph\"],\"scripts\":{\"build:development\":\"webpack --progress --colors\",\"build:production\":\"yarn build:development -p --config webpack.config.prod.babel.js\",\"build\":\"yarn build:development && yarn build:production\",\"postbuild\":\"documentation build src/mermaidAPI.js src/config.js src/defaultConfig.js --shallow -f md --markdown-toc false > docs/Setup.md\",\"build:watch\":\"yarn build --watch\",\"minify\":\"minify ./dist/mermaid.js > ./dist/mermaid.min.js\",\"release\":\"yarn build\",\"lint\":\"eslint src\",\"e2e:depr\":\"yarn lint && jest e2e --config e2e/jest.config.js\",\"cypress\":\"percy exec -- cypress run\",\"e2e\":\"start-server-and-test dev http://localhost:9000/ cypress\",\"e2e-upd\":\"yarn lint && jest e2e -u --config e2e/jest.config.js\",\"dev\":\"webpack-dev-server --config webpack.config.e2e.js\",\"test\":\"yarn lint && jest src/.*\",\"test:watch\":\"jest --watch src\",\"prepublishOnly\":\"yarn build && yarn test\",\"prepare\":\"yarn build\"},\"repository\":{\"type\":\"git\",\"url\":\"https://github.com/knsv/mermaid\"},\"author\":\"Knut Sveidqvist\",\"license\":\"MIT\",\"standard\":{\"ignore\":[\"**/parser/*.js\",\"dist/**/*.js\",\"cypress/**/*.js\"],\"globals\":[\"page\"]},\"dependencies\":{\"@braintree/sanitize-url\":\"^3.1.0\",\"d3\":\"^5.7.0\",\"dagre\":\"^0.8.4\",\"dagre-d3\":\"^0.6.4\",\"entity-decode\":\"^2.0.2\",\"graphlib\":\"^2.1.7\",\"he\":\"^1.2.0\",\"khroma\":\"^1.1.0\",\"minify\":\"^4.1.1\",\"moment-mini\":\"^2.22.1\",\"stylis\":\"^3.5.2\"},\"devDependencies\":{\"@babel/core\":\"^7.2.2\",\"@babel/preset-env\":\"^7.8.4\",\"@babel/register\":\"^7.0.0\",\"@percy/cypress\":\"*\",\"babel-core\":\"7.0.0-bridge.0\",\"babel-eslint\":\"^10.1.0\",\"babel-jest\":\"^24.9.0\",\"babel-loader\":\"^8.0.4\",\"coveralls\":\"^3.0.2\",\"css-loader\":\"^2.0.1\",\"css-to-string-loader\":\"^0.1.3\",\"cypress\":\"4.0.1\",\"documentation\":\"^12.0.1\",\"eslint\":\"^6.3.0\",\"eslint-config-prettier\":\"^6.3.0\",\"eslint-plugin-prettier\":\"^3.1.0\",\"husky\":\"^1.2.1\",\"identity-obj-proxy\":\"^3.0.0\",\"jest\":\"^24.9.0\",\"jison\":\"^0.4.18\",\"moment\":\"^2.23.0\",\"node-sass\":\"^5.0.0\",\"prettier\":\"^1.18.2\",\"puppeteer\":\"^1.17.0\",\"sass-loader\":\"^7.1.0\",\"start-server-and-test\":\"^1.10.6\",\"terser-webpack-plugin\":\"^2.2.2\",\"webpack\":\"^4.41.2\",\"webpack-bundle-analyzer\":\"^3.7.0\",\"webpack-cli\":\"^3.1.2\",\"webpack-dev-server\":\"^3.4.1\",\"webpack-node-externals\":\"^1.7.2\",\"yarn-upgrade-all\":\"^0.5.0\"},\"files\":[\"dist\"],\"yarn-upgrade-all\":{\"ignore\":[\"babel-core\"]},\"sideEffects\":[\"**/*.css\",\"**/*.scss\"],\"husky\":{\"hooks\":{\"pre-push\":\"yarn test\"}}}");
+module.exports = JSON.parse("{\"name\":\"mermaid\",\"version\":\"8.11.0\",\"description\":\"Markdownish syntax for generating flowcharts, sequence diagrams, class diagrams, gantt charts and git graphs.\",\"main\":\"dist/mermaid.core.js\",\"keywords\":[\"diagram\",\"markdown\",\"flowchart\",\"sequence diagram\",\"gantt\",\"class diagram\",\"git graph\"],\"scripts\":{\"build:development\":\"webpack --progress --colors\",\"build:production\":\"yarn build:development -p --config webpack.config.prod.babel.js\",\"build\":\"yarn build:development && yarn build:production\",\"postbuild\":\"documentation build src/mermaidAPI.js src/config.js src/defaultConfig.js --shallow -f md --markdown-toc false > docs/Setup.md\",\"build:watch\":\"yarn build --watch\",\"release\":\"yarn build\",\"lint\":\"eslint src\",\"e2e:depr\":\"yarn lint && jest e2e --config e2e/jest.config.js\",\"cypress\":\"percy exec -- cypress run\",\"e2e\":\"start-server-and-test dev http://localhost:9000/ cypress\",\"e2e-upd\":\"yarn lint && jest e2e -u --config e2e/jest.config.js\",\"dev\":\"webpack-dev-server --config webpack.config.e2e.js\",\"test\":\"yarn lint && jest src/.*\",\"test:watch\":\"jest --watch src\",\"prepublishOnly\":\"yarn build && yarn test\",\"prepare\":\"yarn build\"},\"repository\":{\"type\":\"git\",\"url\":\"https://github.com/knsv/mermaid\"},\"author\":\"Knut Sveidqvist\",\"license\":\"MIT\",\"standard\":{\"ignore\":[\"**/parser/*.js\",\"dist/**/*.js\",\"cypress/**/*.js\"],\"globals\":[\"page\"]},\"dependencies\":{\"@braintree/sanitize-url\":\"^3.1.0\",\"@percy/migrate\":\"^0.10.0\",\"d3\":\"^5.7.0\",\"dagre\":\"^0.8.5\",\"dagre-d3\":\"^0.6.4\",\"graphlib\":\"^2.1.8\",\"khroma\":\"^1.4.1\",\"moment-mini\":\"^2.24.0\",\"stylis\":\"^4.0.10\"},\"devDependencies\":{\"@babel/core\":\"^7.14.6\",\"@babel/preset-env\":\"^7.14.7\",\"@babel/register\":\"^7.14.5\",\"@percy/cli\":\"^1.0.0-beta.58\",\"@percy/cypress\":\"^3.1.0\",\"babel-core\":\"7.0.0-bridge.0\",\"babel-eslint\":\"^10.1.0\",\"babel-jest\":\"^27.0.6\",\"babel-loader\":\"^8.2.2\",\"coveralls\":\"^3.0.2\",\"css-to-string-loader\":\"^0.1.3\",\"cypress\":\"7.6.0\",\"documentation\":\"13.2.0\",\"dompurify\":\"2.3.0\",\"eslint\":\"^7.30.0\",\"eslint-config-prettier\":\"^8.3.0\",\"eslint-plugin-prettier\":\"^3.4.0\",\"husky\":\"^7.0.1\",\"identity-obj-proxy\":\"^3.0.0\",\"jest\":\"^27.0.6\",\"jison\":\"^0.4.18\",\"js-base64\":\"3.6.1\",\"moment\":\"^2.23.0\",\"prettier\":\"^2.3.2\",\"start-server-and-test\":\"^1.12.6\",\"terser-webpack-plugin\":\"^2.2.2\",\"webpack\":\"^4.41.2\",\"webpack-bundle-analyzer\":\"^4.4.2\",\"webpack-cli\":\"^3.1.2\",\"webpack-dev-server\":\"^3.4.1\",\"webpack-node-externals\":\"^1.7.2\"},\"files\":[\"dist\"],\"yarn-upgrade-all\":{\"ignore\":[\"babel-core\"]},\"sideEffects\":[\"**/*.css\",\"**/*.scss\"],\"husky\":{\"hooks\":{\"pre-push\":\"yarn test\"}}}");
 
 /***/ }),
 
@@ -903,6 +903,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var d3__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! d3 */ "d3");
 /* harmony import */ var d3__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(d3__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../config */ "./src/config.js");
+/* harmony import */ var _diagrams_common_common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../diagrams/common/common */ "./src/diagrams/common/common.js");
+
 
 
 
@@ -921,7 +923,7 @@ var rect = function rect(parent, node) {
 
   var bbox = text.getBBox();
 
-  if (Object(_config__WEBPACK_IMPORTED_MODULE_4__["getConfig"])().flowchart.htmlLabels) {
+  if (Object(_diagrams_common_common__WEBPACK_IMPORTED_MODULE_5__["evaluate"])(Object(_config__WEBPACK_IMPORTED_MODULE_4__["getConfig"])().flowchart.htmlLabels)) {
     var div = text.children[0];
     var dv = Object(d3__WEBPACK_IMPORTED_MODULE_3__["select"])(text);
     bbox = div.getBoundingClientRect();
@@ -931,9 +933,17 @@ var rect = function rect(parent, node) {
 
   var padding = 0 * node.padding;
   var halfPadding = padding / 2;
+  var width = node.width <= bbox.width + padding ? bbox.width + padding : node.width;
+
+  if (node.width <= bbox.width + padding) {
+    node.diff = (bbox.width - node.width) / 2;
+  } else {
+    node.diff = -node.padding / 2;
+  }
+
   _logger__WEBPACK_IMPORTED_MODULE_1__["log"].trace('Data ', node, JSON.stringify(node)); // center the rect around its coordinate
 
-  rect.attr('style', node.style).attr('rx', node.rx).attr('ry', node.ry).attr('x', node.x - node.width / 2 - halfPadding).attr('y', node.y - node.height / 2 - halfPadding).attr('width', node.width + padding).attr('height', node.height + padding); // Center the label
+  rect.attr('style', node.style).attr('rx', node.rx).attr('ry', node.ry).attr('x', node.x - width / 2).attr('y', node.y - node.height / 2 - halfPadding).attr('width', width).attr('height', node.height + padding); // Center the label
 
   label.attr('transform', 'translate(' + (node.x - bbox.width / 2) + ', ' + (node.y - node.height / 2 + node.padding / 3) + ')');
   var rectBox = rect.node().getBBox();
@@ -983,7 +993,7 @@ var roundedWithTitle = function roundedWithTitle(parent, node) {
 
   var bbox = text.getBBox();
 
-  if (Object(_config__WEBPACK_IMPORTED_MODULE_4__["getConfig"])().flowchart.htmlLabels) {
+  if (Object(_diagrams_common_common__WEBPACK_IMPORTED_MODULE_5__["evaluate"])(Object(_config__WEBPACK_IMPORTED_MODULE_4__["getConfig"])().flowchart.htmlLabels)) {
     var div = text.children[0];
     var dv = Object(d3__WEBPACK_IMPORTED_MODULE_3__["select"])(text);
     bbox = div.getBoundingClientRect();
@@ -993,14 +1003,21 @@ var roundedWithTitle = function roundedWithTitle(parent, node) {
 
   bbox = text.getBBox();
   var padding = 0 * node.padding;
-  var halfPadding = padding / 2; // center the rect around its coordinate
+  var halfPadding = padding / 2;
+  var width = node.width <= bbox.width + node.padding ? bbox.width + node.padding : node.width;
 
-  rect.attr('class', 'outer').attr('x', node.x - node.width / 2 - halfPadding).attr('y', node.y - node.height / 2 - halfPadding).attr('width', node.width + padding).attr('height', node.height + padding);
-  innerRect.attr('class', 'inner').attr('x', node.x - node.width / 2 - halfPadding).attr('y', node.y - node.height / 2 - halfPadding + bbox.height - 1).attr('width', node.width + padding).attr('height', node.height + padding - bbox.height - 3); // Center the label
+  if (node.width <= bbox.width + node.padding) {
+    node.diff = (bbox.width + node.padding * 0 - node.width) / 2;
+  } else {
+    node.diff = -node.padding / 2;
+  } // center the rect around its coordinate
 
-  label.attr('transform', 'translate(' + (node.x - bbox.width / 2) + ', ' + (node.y - node.height / 2 - node.padding / 3 + (Object(_config__WEBPACK_IMPORTED_MODULE_4__["getConfig"])().flowchart.htmlLabels ? 5 : 3)) + ')');
+
+  rect.attr('class', 'outer').attr('x', node.x - width / 2 - halfPadding).attr('y', node.y - node.height / 2 - halfPadding).attr('width', width + padding).attr('height', node.height + padding);
+  innerRect.attr('class', 'inner').attr('x', node.x - width / 2 - halfPadding).attr('y', node.y - node.height / 2 - halfPadding + bbox.height - 1).attr('width', width + padding).attr('height', node.height + padding - bbox.height - 3); // Center the label
+
+  label.attr('transform', 'translate(' + (node.x - bbox.width / 2) + ', ' + (node.y - node.height / 2 - node.padding / 3 + (Object(_diagrams_common_common__WEBPACK_IMPORTED_MODULE_5__["evaluate"])(Object(_config__WEBPACK_IMPORTED_MODULE_4__["getConfig"])().flowchart.htmlLabels) ? 5 : 3)) + ')');
   var rectBox = rect.node().getBBox();
-  node.width = rectBox.width;
   node.height = rectBox.height;
 
   node.intersect = function (point) {
@@ -1022,6 +1039,7 @@ var divider = function divider(parent, node) {
   var rectBox = rect.node().getBBox();
   node.width = rectBox.width;
   node.height = rectBox.height;
+  node.diff = -node.padding / 2;
 
   node.intersect = function (point) {
     return Object(_intersect_intersect_rect__WEBPACK_IMPORTED_MODULE_0__["default"])(node, point);
@@ -1053,7 +1071,7 @@ var clear = function clear() {
   clusterElems = {};
 };
 var positionCluster = function positionCluster(node) {
-  _logger__WEBPACK_IMPORTED_MODULE_1__["log"].info('Position cluster');
+  _logger__WEBPACK_IMPORTED_MODULE_1__["log"].info('Position cluster (' + node.id + ', ' + node.x + ', ' + node.y + ')');
   var el = clusterElems[node.id];
   el.attr('transform', 'translate(' + node.x + ', ' + node.y + ')');
 };
@@ -1072,13 +1090,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var d3__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! d3 */ "d3");
 /* harmony import */ var d3__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(d3__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _logger__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../logger */ "./src/logger.js");
-/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../config */ "./src/config.js");
+/* harmony import */ var _diagrams_common_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../diagrams/common/common */ "./src/diagrams/common/common.js");
+/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../config */ "./src/config.js");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 
  // eslint-disable-line
-// let vertexNode;
-// if (getConfig().flowchart.htmlLabels) {
+
+ // let vertexNode;
+// if (evaluate(getConfig().flowchart.htmlLabels)) {
 //   // TODO: addHtmlLabel accepts a labelStyle. Do we possibly have that?
 //   const node = {
 //     label: vertexText.replace(/fa[lrsb]?:fa-[\w-]+/g, s => `<i class='${s.replace(':', ' ')}'></i>`)
@@ -1149,7 +1169,7 @@ var createLabel = function createLabel(_vertexText, style, isTitle, isNode) {
   var vertexText = _vertexText || '';
   if (_typeof(vertexText) === 'object') vertexText = vertexText[0];
 
-  if (Object(_config__WEBPACK_IMPORTED_MODULE_2__["getConfig"])().flowchart.htmlLabels) {
+  if (Object(_diagrams_common_common__WEBPACK_IMPORTED_MODULE_2__["evaluate"])(Object(_config__WEBPACK_IMPORTED_MODULE_3__["getConfig"])().flowchart.htmlLabels)) {
     // TODO: addHtmlLabel accepts a labelStyle. Do we possibly have that?
     vertexText = vertexText.replace(/\\n|\n/g, '<br />');
     _logger__WEBPACK_IMPORTED_MODULE_1__["log"].info('vertexText' + vertexText);
@@ -1220,13 +1240,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var d3__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(d3__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../config */ "./src/config.js");
 /* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../utils */ "./src/utils.js");
+/* harmony import */ var _diagrams_common_common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../diagrams/common/common */ "./src/diagrams/common/common.js");
  // eslint-disable-line
 
  // import { line, curveBasis, curveLinear, select } from 'd3';
 
 
 
- // import { calcLabelPosition } from '../utils';
+
 
 var edgeLabels = {};
 var terminalLabels = {};
@@ -1245,7 +1266,7 @@ var insertEdgeLabel = function insertEdgeLabel(elem, edge) {
 
   var bbox = labelElement.getBBox();
 
-  if (Object(_config__WEBPACK_IMPORTED_MODULE_3__["getConfig"])().flowchart.htmlLabels) {
+  if (Object(_diagrams_common_common__WEBPACK_IMPORTED_MODULE_5__["evaluate"])(Object(_config__WEBPACK_IMPORTED_MODULE_3__["getConfig"])().flowchart.htmlLabels)) {
     var div = labelElement.children[0];
     var dv = Object(d3__WEBPACK_IMPORTED_MODULE_2__["select"])(labelElement);
     bbox = div.getBoundingClientRect();
@@ -1928,11 +1949,14 @@ var recursiveRender = function recursiveRender(_elem, graph, diagramtype, parent
 
     if (node && node.clusterNode) {
       // const children = graph.children(v);
-      _logger__WEBPACK_IMPORTED_MODULE_8__["log"].info('Cluster identified', v, node, graph.node(v));
-      var newEl = recursiveRender(nodes, node.graph, diagramtype, graph.node(v));
+      _logger__WEBPACK_IMPORTED_MODULE_8__["log"].info('Cluster identified', v, node.width, graph.node(v));
+      var o = recursiveRender(nodes, node.graph, diagramtype, graph.node(v));
+      var newEl = o.elem;
       Object(_shapes_util__WEBPACK_IMPORTED_MODULE_3__["updateNodeBounds"])(node, newEl);
+      node.diff = o.diff || 0;
+      _logger__WEBPACK_IMPORTED_MODULE_8__["log"].info('Node bounds (abc123)', v, node, node.width, node.x, node.y);
       Object(_nodes__WEBPACK_IMPORTED_MODULE_5__["setNodeElem"])(newEl, node);
-      _logger__WEBPACK_IMPORTED_MODULE_8__["log"].warn('Recursive render complete', newEl, node);
+      _logger__WEBPACK_IMPORTED_MODULE_8__["log"].warn('Recursive render complete ', newEl, node);
     } else {
       if (graph.children(v).length > 0) {
         // This is a cluster but not to be rendered recusively
@@ -1971,6 +1995,7 @@ var recursiveRender = function recursiveRender(_elem, graph, diagramtype, parent
   dagre__WEBPACK_IMPORTED_MODULE_0___default.a.layout(graph);
   _logger__WEBPACK_IMPORTED_MODULE_8__["log"].info('Graph after layout:', graphlib__WEBPACK_IMPORTED_MODULE_1___default.a.json.write(graph)); // Move the nodes to the correct place
 
+  var diff = 0;
   Object(_mermaid_graphlib__WEBPACK_IMPORTED_MODULE_4__["sortNodesByHierarchy"])(graph).forEach(function (v) {
     var node = graph.node(v);
     _logger__WEBPACK_IMPORTED_MODULE_8__["log"].info('Position ' + v + ': ' + JSON.stringify(graph.node(v)));
@@ -1998,7 +2023,18 @@ var recursiveRender = function recursiveRender(_elem, graph, diagramtype, parent
     var paths = Object(_edges__WEBPACK_IMPORTED_MODULE_7__["insertEdge"])(edgePaths, e, edge, _mermaid_graphlib__WEBPACK_IMPORTED_MODULE_4__["clusterDb"], diagramtype, graph);
     Object(_edges__WEBPACK_IMPORTED_MODULE_7__["positionEdgeLabel"])(edge, paths);
   });
-  return elem;
+  graph.nodes().forEach(function (v) {
+    var n = graph.node(v);
+    _logger__WEBPACK_IMPORTED_MODULE_8__["log"].info(v, n.type, n.diff);
+
+    if (n.type === 'group') {
+      diff = n.diff;
+    }
+  });
+  return {
+    elem: elem,
+    diff: diff
+  };
 };
 
 var render = function render(elem, graph, markers, diagramtype, id) {
@@ -2825,10 +2861,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _createLabel__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./createLabel */ "./src/dagre-wrapper/createLabel.js");
 /* harmony import */ var _shapes_note__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./shapes/note */ "./src/dagre-wrapper/shapes/note.js");
 /* harmony import */ var _diagrams_class_svgDraw__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../diagrams/class/svgDraw */ "./src/diagrams/class/svgDraw.js");
+/* harmony import */ var _diagrams_common_common__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../diagrams/common/common */ "./src/diagrams/common/common.js");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 
  // eslint-disable-line
+
 
 
 
@@ -3217,7 +3255,7 @@ var rectWithTitle = function rectWithTitle(parent, node) {
   var text = label.node().appendChild(Object(_createLabel__WEBPACK_IMPORTED_MODULE_5__["default"])(title, node.labelStyle, true, true));
   var bbox;
 
-  if (Object(_config__WEBPACK_IMPORTED_MODULE_3__["getConfig"])().flowchart.htmlLabels) {
+  if (Object(_diagrams_common_common__WEBPACK_IMPORTED_MODULE_8__["evaluate"])(Object(_config__WEBPACK_IMPORTED_MODULE_3__["getConfig"])().flowchart.htmlLabels)) {
     var div = text.children[0];
     var dv = Object(d3__WEBPACK_IMPORTED_MODULE_0__["select"])(text);
     bbox = div.getBoundingClientRect();
@@ -3230,7 +3268,7 @@ var rectWithTitle = function rectWithTitle(parent, node) {
   var titleBox = text.getBBox();
   var descr = label.node().appendChild(Object(_createLabel__WEBPACK_IMPORTED_MODULE_5__["default"])(textRows.join ? textRows.join('<br/>') : textRows, node.labelStyle, true, true));
 
-  if (Object(_config__WEBPACK_IMPORTED_MODULE_3__["getConfig"])().flowchart.htmlLabels) {
+  if (Object(_diagrams_common_common__WEBPACK_IMPORTED_MODULE_8__["evaluate"])(Object(_config__WEBPACK_IMPORTED_MODULE_3__["getConfig"])().flowchart.htmlLabels)) {
     var _div = descr.children[0];
 
     var _dv = Object(d3__WEBPACK_IMPORTED_MODULE_0__["select"])(descr);
@@ -3376,7 +3414,7 @@ var forkJoin = function forkJoin(parent, node, dir) {
     height = 70;
   }
 
-  var shape = shapeSvg.append('rect').style('stroke', 'black').style('fill', 'black').attr('x', -1 * width / 2).attr('y', -1 * height / 2).attr('width', width).attr('height', height).attr('class', 'fork-join');
+  var shape = shapeSvg.append('rect').attr('x', -1 * width / 2).attr('y', -1 * height / 2).attr('width', width).attr('height', height).attr('class', 'fork-join');
   Object(_shapes_util__WEBPACK_IMPORTED_MODULE_2__["updateNodeBounds"])(node, shape);
   node.height = node.height + node.padding / 2;
   node.width = node.width + node.padding / 2;
@@ -3431,7 +3469,7 @@ var class_box = function class_box(parent, node) {
   var interfaceLabel = labelContainer.node().appendChild(Object(_createLabel__WEBPACK_IMPORTED_MODULE_5__["default"])(interfaceLabelText, node.labelStyle, true, true));
   var interfaceBBox = interfaceLabel.getBBox();
 
-  if (Object(_config__WEBPACK_IMPORTED_MODULE_3__["getConfig"])().flowchart.htmlLabels) {
+  if (Object(_diagrams_common_common__WEBPACK_IMPORTED_MODULE_8__["evaluate"])(Object(_config__WEBPACK_IMPORTED_MODULE_3__["getConfig"])().flowchart.htmlLabels)) {
     var div = interfaceLabel.children[0];
     var dv = Object(d3__WEBPACK_IMPORTED_MODULE_0__["select"])(interfaceLabel);
     interfaceBBox = div.getBoundingClientRect();
@@ -3454,7 +3492,7 @@ var class_box = function class_box(parent, node) {
   Object(d3__WEBPACK_IMPORTED_MODULE_0__["select"])(classTitleLabel).attr('class', 'classTitle');
   var classTitleBBox = classTitleLabel.getBBox();
 
-  if (Object(_config__WEBPACK_IMPORTED_MODULE_3__["getConfig"])().flowchart.htmlLabels) {
+  if (Object(_diagrams_common_common__WEBPACK_IMPORTED_MODULE_8__["evaluate"])(Object(_config__WEBPACK_IMPORTED_MODULE_3__["getConfig"])().flowchart.htmlLabels)) {
     var _div2 = classTitleLabel.children[0];
 
     var _dv2 = Object(d3__WEBPACK_IMPORTED_MODULE_0__["select"])(classTitleLabel);
@@ -3478,7 +3516,7 @@ var class_box = function class_box(parent, node) {
     var lbl = labelContainer.node().appendChild(Object(_createLabel__WEBPACK_IMPORTED_MODULE_5__["default"])(parsedText, node.labelStyle, true, true));
     var bbox = lbl.getBBox();
 
-    if (Object(_config__WEBPACK_IMPORTED_MODULE_3__["getConfig"])().flowchart.htmlLabels) {
+    if (Object(_diagrams_common_common__WEBPACK_IMPORTED_MODULE_8__["evaluate"])(Object(_config__WEBPACK_IMPORTED_MODULE_3__["getConfig"])().flowchart.htmlLabels)) {
       var _div3 = lbl.children[0];
 
       var _dv3 = Object(d3__WEBPACK_IMPORTED_MODULE_0__["select"])(lbl);
@@ -3504,7 +3542,7 @@ var class_box = function class_box(parent, node) {
     var lbl = labelContainer.node().appendChild(Object(_createLabel__WEBPACK_IMPORTED_MODULE_5__["default"])(parsedText, node.labelStyle, true, true));
     var bbox = lbl.getBBox();
 
-    if (Object(_config__WEBPACK_IMPORTED_MODULE_3__["getConfig"])().flowchart.htmlLabels) {
+    if (Object(_diagrams_common_common__WEBPACK_IMPORTED_MODULE_8__["evaluate"])(Object(_config__WEBPACK_IMPORTED_MODULE_3__["getConfig"])().flowchart.htmlLabels)) {
       var _div4 = lbl.children[0];
 
       var _dv4 = Object(d3__WEBPACK_IMPORTED_MODULE_0__["select"])(lbl);
@@ -3551,7 +3589,7 @@ var class_box = function class_box(parent, node) {
     verticalPos += classTitleBBox.height + rowPadding;
   }); //
   // let bbox;
-  // if (getConfig().flowchart.htmlLabels) {
+  // if (evaluate(getConfig().flowchart.htmlLabels)) {
   //   const div = interfaceLabel.children[0];
   //   const dv = select(interfaceLabel);
   //   bbox = div.getBoundingClientRect();
@@ -3565,7 +3603,7 @@ var class_box = function class_box(parent, node) {
   // const descr = label
   //   .node()
   //   .appendChild(createLabel(textRows.join('<br/>'), node.labelStyle, true, true));
-  // if (getConfig().flowchart.htmlLabels) {
+  // if (evaluate(getConfig().flowchart.htmlLabels)) {
   //   const div = descr.children[0];
   //   const dv = select(descr);
   //   bbox = div.getBoundingClientRect();
@@ -3675,14 +3713,17 @@ var clear = function clear() {
 };
 var positionNode = function positionNode(node) {
   var el = nodeElems[node.id];
-  _logger__WEBPACK_IMPORTED_MODULE_1__["log"].trace('Transforming node', node, 'translate(' + (node.x - node.width / 2 - 5) + ', ' + (node.y - node.height / 2 - 5) + ')');
+  _logger__WEBPACK_IMPORTED_MODULE_1__["log"].trace('Transforming node', node.diff, node, 'translate(' + (node.x - node.width / 2 - 5) + ', ' + node.width / 2 + ')');
   var padding = 8;
+  var diff = node.diff || 0;
 
   if (node.clusterNode) {
-    el.attr('transform', 'translate(' + (node.x - node.width / 2 - padding) + ', ' + (node.y - node.height / 2 - padding) + ')');
+    el.attr('transform', 'translate(' + (node.x + diff - node.width / 2) + ', ' + (node.y - node.height / 2 - padding) + ')');
   } else {
     el.attr('transform', 'translate(' + node.x + ', ' + node.y + ')');
   }
+
+  return diff;
 };
 
 /***/ }),
@@ -3743,6 +3784,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../config */ "./src/config.js");
 /* harmony import */ var d3__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! d3 */ "d3");
 /* harmony import */ var d3__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(d3__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _diagrams_common_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../diagrams/common/common */ "./src/diagrams/common/common.js");
+
 
 
 
@@ -3763,7 +3806,7 @@ var labelHelper = function labelHelper(parent, node, _classes, isNode) {
 
   var bbox = text.getBBox();
 
-  if (Object(_config__WEBPACK_IMPORTED_MODULE_1__["getConfig"])().flowchart.htmlLabels) {
+  if (Object(_diagrams_common_common__WEBPACK_IMPORTED_MODULE_3__["evaluate"])(Object(_config__WEBPACK_IMPORTED_MODULE_1__["getConfig"])().flowchart.htmlLabels)) {
     var div = text.children[0];
     var dv = Object(d3__WEBPACK_IMPORTED_MODULE_2__["select"])(text);
     bbox = div.getBoundingClientRect();
@@ -3897,7 +3940,7 @@ var config = {
    *
    * **Notes**:
    *
-   * - **strict**: (**default**) tags in text are encoded, click functionality is disabeled
+   * - **strict**: (**default**) tags in text are encoded, click functionality is disabled
    * - **loose**: tags in text are allowed, click functionality is enabled
    * - **antiscript**: html tags in text are allowed, (only script element is removed), click functionality is enabled
    */
@@ -4771,7 +4814,7 @@ var config = {
      *
      * Default value: 'dagre-d3'
      */
-    defaultRenderer: 'dagre-d3'
+    defaultRenderer: 'dagre-wrapper'
   },
 
   /**
@@ -4982,13 +5025,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _common_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../common/common */ "./src/diagrams/common/common.js");
 /* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../utils */ "./src/utils.js");
 /* harmony import */ var _mermaidAPI__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../mermaidAPI */ "./src/mermaidAPI.js");
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
 
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 
-function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
 
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 
 
 
@@ -5415,7 +5462,7 @@ var addClasses = function addClasses(classes, g) {
 
     var vertexText = vertex.text !== undefined ? vertex.text : vertex.id; // We create a SVG label, either by delegating to addHtmlLabel or manually
     // let vertexNode;
-    // if (getConfig().flowchart.htmlLabels) {
+    // if (evaluate(getConfig().flowchart.htmlLabels)) {
     //   const node = {
     //     label: vertexText.replace(
     //       /fa[lrsb]?:fa-[\w-]+/g,
@@ -7222,7 +7269,7 @@ var parseClassifier = function parseClassifier(classifier) {
 /*!***************************************!*\
   !*** ./src/diagrams/common/common.js ***!
   \***************************************/
-/*! exports provided: getRows, removeScript, sanitizeText, lineBreakRegex, hasBreaks, splitBreaks, default */
+/*! exports provided: getRows, removeScript, sanitizeText, lineBreakRegex, hasBreaks, splitBreaks, evaluate, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7233,6 +7280,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "lineBreakRegex", function() { return lineBreakRegex; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "hasBreaks", function() { return hasBreaks; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "splitBreaks", function() { return splitBreaks; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "evaluate", function() { return evaluate; });
+/* harmony import */ var dompurify__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! dompurify */ "dompurify");
+/* harmony import */ var dompurify__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(dompurify__WEBPACK_IMPORTED_MODULE_0__);
+
 var getRows = function getRows(s) {
   if (!s) return 1;
   var str = breakToPlaceholder(s);
@@ -7262,30 +7313,13 @@ var removeScript = function removeScript(txt) {
     }
   }
 
+  rs = rs.replace(/javascript:/g, '#');
+  rs = rs.replace(/onerror=/g, 'onerror:');
+  rs = rs.replace(/<iframe/g, '');
   return rs;
 };
-var sanitizeText = function sanitizeText(text, config) {
-  var txt = text;
-  var htmlLabels = true;
-
-  if (config.flowchart && (config.flowchart.htmlLabels === false || config.flowchart.htmlLabels === 'false')) {
-    htmlLabels = false;
-  }
-
-  if (htmlLabels) {
-    var level = config.securityLevel;
-
-    if (level === 'antiscript') {
-      txt = removeScript(txt);
-    } else if (level !== 'loose') {
-      // eslint-disable-line
-      txt = breakToPlaceholder(txt);
-      txt = txt.replace(/</g, '&lt;').replace(/>/g, '&gt;');
-      txt = txt.replace(/=/g, '&equals;');
-      txt = placeholderToBreak(txt);
-    }
-  }
-
+var sanitizeText = function sanitizeText(text) {
+  var txt = dompurify__WEBPACK_IMPORTED_MODULE_0___default.a.sanitize(text);
   return txt;
 };
 var lineBreakRegex = /<br\s*\/?>/gi;
@@ -7300,10 +7334,6 @@ var breakToPlaceholder = function breakToPlaceholder(s) {
   return s.replace(lineBreakRegex, '#br#');
 };
 
-var placeholderToBreak = function placeholderToBreak(s) {
-  return s.replace(/#br#/g, '<br/>');
-};
-
 var getUrl = function getUrl(useAbsolute) {
   var url = '';
 
@@ -7316,6 +7346,9 @@ var getUrl = function getUrl(useAbsolute) {
   return url;
 };
 
+var evaluate = function evaluate(val) {
+  return val === 'false' || val === false ? false : true;
+};
 /* harmony default export */ __webpack_exports__["default"] = ({
   getRows: getRows,
   sanitizeText: sanitizeText,
@@ -7323,7 +7356,8 @@ var getUrl = function getUrl(useAbsolute) {
   splitBreaks: splitBreaks,
   lineBreakRegex: lineBreakRegex,
   removeScript: removeScript,
-  getUrl: getUrl
+  getUrl: getUrl,
+  evaluate: evaluate
 });
 
 /***/ }),
@@ -9086,13 +9120,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _logger__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../logger */ "./src/logger.js");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
 
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 
-function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
 
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 
 
 
@@ -9145,7 +9183,7 @@ var lookUpDomId = function lookUpDomId(id) {
  * @param classes
  */
 
-var addVertex = function addVertex(_id, text, type, style, classes) {
+var addVertex = function addVertex(_id, text, type, style, classes, dir) {
   var txt;
   var id = _id;
 
@@ -9202,6 +9240,10 @@ var addVertex = function addVertex(_id, text, type, style, classes) {
         vertices[id].classes.push(s);
       });
     }
+  }
+
+  if (typeof dir !== 'undefined') {
+    vertices[id].dir = dir;
   }
 };
 /**
@@ -9538,6 +9580,7 @@ var defaultStyle = function defaultStyle() {
  */
 
 var addSubGraph = function addSubGraph(_id, list, _title) {
+  // console.log('addSubGraph', _id, list, _title);
   var id = _id.trim();
 
   var title = _title;
@@ -9553,8 +9596,15 @@ var addSubGraph = function addSubGraph(_id, list, _title) {
       string: {}
     };
     var objs = [];
-    return a.filter(function (item) {
+    var dir; //  = unbdefined; direction.trim();
+
+    var nodeList = a.filter(function (item) {
       var type = _typeof(item);
+
+      if (item.stmt && item.stmt === 'dir') {
+        dir = item.value;
+        return false;
+      }
 
       if (item.trim() === '') {
         return false;
@@ -9566,10 +9616,19 @@ var addSubGraph = function addSubGraph(_id, list, _title) {
         return objs.indexOf(item) >= 0 ? false : objs.push(item);
       }
     });
+    return {
+      nodeList: nodeList,
+      dir: dir
+    };
   }
 
   var nodeList = [];
-  nodeList = uniq(nodeList.concat.apply(nodeList, list));
+
+  var _uniq = uniq(nodeList.concat.apply(nodeList, list)),
+      nl = _uniq.nodeList,
+      dir = _uniq.dir;
+
+  nodeList = nl;
 
   if (version === 'gen-1') {
     _logger__WEBPACK_IMPORTED_MODULE_5__["log"].warn('LOOKING UP');
@@ -9588,9 +9647,10 @@ var addSubGraph = function addSubGraph(_id, list, _title) {
     id: id,
     nodes: nodeList,
     title: title.trim(),
-    classes: []
+    classes: [],
+    dir: dir
   };
-  _logger__WEBPACK_IMPORTED_MODULE_5__["log"].info('Adding', subGraph.id, subGraph.nodes);
+  _logger__WEBPACK_IMPORTED_MODULE_5__["log"].info('Adding', subGraph.id, subGraph.nodes, subGraph.dir);
   /**
    * Deletes an id from all subgraphs
    */
@@ -9982,7 +10042,7 @@ var addVertices = function addVertices(vert, g, svgId) {
 
     var vertexNode;
 
-    if (Object(_config__WEBPACK_IMPORTED_MODULE_4__["getConfig"])().flowchart.htmlLabels) {
+    if (Object(_common_common__WEBPACK_IMPORTED_MODULE_8__["evaluate"])(Object(_config__WEBPACK_IMPORTED_MODULE_4__["getConfig"])().flowchart.htmlLabels)) {
       // TODO: addHtmlLabel accepts a labelStyle. Do we possibly have that?
       var node = {
         label: vertexText.replace(/fa[lrsb]?:fa-[\w-]+/g, function (s) {
@@ -10097,6 +10157,7 @@ var addVertices = function addVertices(vert, g, svgId) {
       domId: _flowDb__WEBPACK_IMPORTED_MODULE_2__["default"].lookUpDomId(vertex.id),
       haveCallback: vertex.haveCallback,
       width: vertex.type === 'group' ? 500 : undefined,
+      dir: vertex.dir,
       type: vertex.type,
       padding: Object(_config__WEBPACK_IMPORTED_MODULE_4__["getConfig"])().flowchart.padding
     });
@@ -10112,6 +10173,7 @@ var addVertices = function addVertices(vert, g, svgId) {
       domId: _flowDb__WEBPACK_IMPORTED_MODULE_2__["default"].lookUpDomId(vertex.id),
       width: vertex.type === 'group' ? 500 : undefined,
       type: vertex.type,
+      dir: vertex.dir,
       padding: Object(_config__WEBPACK_IMPORTED_MODULE_4__["getConfig"])().flowchart.padding
     });
   });
@@ -10249,7 +10311,7 @@ var addEdges = function addEdges(edges, g) {
     } else {
       edgeData.arrowheadStyle = 'fill: #333';
       edgeData.labelpos = 'c';
-    } // if (getConfig().flowchart.htmlLabels && false) {
+    } // if (evaluate(getConfig().flowchart.htmlLabels) && false) {
     //   // eslint-disable-line
     //   edgeData.labelType = 'html';
     //   edgeData.label = `<span id="L-${linkId}" class="edgeLabel L-${linkNameStart}' L-${linkNameEnd}">${edge.text}</span>`;
@@ -10339,7 +10401,7 @@ var draw = function draw(text, id) {
   for (var _i = subGraphs.length - 1; _i >= 0; _i--) {
     subG = subGraphs[_i];
     _logger__WEBPACK_IMPORTED_MODULE_7__["log"].info('Subgraph - ', subG);
-    _flowDb__WEBPACK_IMPORTED_MODULE_2__["default"].addVertex(subG.id, subG.title, 'group', undefined, subG.classes);
+    _flowDb__WEBPACK_IMPORTED_MODULE_2__["default"].addVertex(subG.id, subG.title, 'group', undefined, subG.classes, subG.dir);
   } // Fetch the verices/nodes and edges/links from the parsed graph definition
 
 
@@ -10525,7 +10587,7 @@ var addVertices = function addVertices(vert, g, svgId) {
 
     var vertexNode;
 
-    if (Object(_config__WEBPACK_IMPORTED_MODULE_4__["getConfig"])().flowchart.htmlLabels) {
+    if (Object(_common_common__WEBPACK_IMPORTED_MODULE_8__["evaluate"])(Object(_config__WEBPACK_IMPORTED_MODULE_4__["getConfig"])().flowchart.htmlLabels)) {
       // TODO: addHtmlLabel accepts a labelStyle. Do we possibly have that?
       var node = {
         label: vertexText.replace(/fa[lrsb]?:fa-[\w-]+/g, function (s) {
@@ -10721,7 +10783,7 @@ var addEdges = function addEdges(edges, g) {
       edgeData.arrowheadStyle = 'fill: #333';
       edgeData.labelpos = 'c';
 
-      if (Object(_config__WEBPACK_IMPORTED_MODULE_4__["getConfig"])().flowchart.htmlLabels) {
+      if (Object(_common_common__WEBPACK_IMPORTED_MODULE_8__["evaluate"])(Object(_config__WEBPACK_IMPORTED_MODULE_4__["getConfig"])().flowchart.htmlLabels)) {
         edgeData.labelType = 'html';
         edgeData.label = "<span id=\"L-".concat(linkId, "\" class=\"edgeLabel L-").concat(linkNameStart, "' L-").concat(linkNameEnd, "\">").concat(edge.text.replace(/fa[lrsb]?:fa-[\w-]+/g, function (s) {
           return "<i class='".concat(s.replace(':', ' '), "'></i>");
@@ -10892,7 +10954,7 @@ var draw = function draw(text, id) {
   } // Add label rects for non html labels
 
 
-  if (!conf.htmlLabels || true) {
+  if (!Object(_common_common__WEBPACK_IMPORTED_MODULE_8__["evaluate"])(conf.htmlLabels) || true) {
     // eslint-disable-line
     var labels = document.querySelectorAll('[id="' + id + '"] .edgeLabel .label');
 
@@ -11041,12 +11103,12 @@ var draw = function draw(text, id) {
   }
 */
 var parser = (function(){
-var o=function(k,v,o,l){for(o=o||{},l=k.length;l--;o[k[l]]=v);return o},$V0=[1,9],$V1=[1,7],$V2=[1,6],$V3=[1,8],$V4=[1,20,21,22,23,38,46,75,76,77,78,79,80,94,95,98,99,100,102,103,109,110,111,112,113,114],$V5=[2,10],$V6=[1,20],$V7=[1,21],$V8=[1,22],$V9=[1,23],$Va=[1,30],$Vb=[1,54],$Vc=[1,32],$Vd=[1,33],$Ve=[1,34],$Vf=[1,35],$Vg=[1,36],$Vh=[1,48],$Vi=[1,43],$Vj=[1,45],$Vk=[1,40],$Vl=[1,44],$Vm=[1,47],$Vn=[1,51],$Vo=[1,52],$Vp=[1,53],$Vq=[1,42],$Vr=[1,46],$Vs=[1,49],$Vt=[1,50],$Vu=[1,41],$Vv=[1,57],$Vw=[1,62],$Vx=[1,20,21,22,23,38,42,46,75,76,77,78,79,80,94,95,98,99,100,102,103,109,110,111,112,113,114],$Vy=[1,66],$Vz=[1,65],$VA=[1,67],$VB=[20,21,23,69,70],$VC=[1,88],$VD=[1,93],$VE=[1,90],$VF=[1,95],$VG=[1,98],$VH=[1,96],$VI=[1,97],$VJ=[1,91],$VK=[1,103],$VL=[1,102],$VM=[1,92],$VN=[1,94],$VO=[1,99],$VP=[1,100],$VQ=[1,101],$VR=[1,104],$VS=[20,21,22,23,69,70],$VT=[20,21,22,23,47,69,70],$VU=[20,21,22,23,40,46,47,49,51,53,55,57,59,61,62,64,69,70,80,94,95,98,99,100,102,103,109,110,111,112,113,114],$VV=[20,21,23],$VW=[20,21,23,46,69,70,80,94,95,98,99,100,102,103,109,110,111,112,113,114],$VX=[1,12,20,21,22,23,24,38,42,46,75,76,77,78,79,80,94,95,98,99,100,102,103,109,110,111,112,113,114],$VY=[46,80,94,95,98,99,100,102,103,109,110,111,112,113,114],$VZ=[1,136],$V_=[1,144],$V$=[1,145],$V01=[1,146],$V11=[1,147],$V21=[1,131],$V31=[1,132],$V41=[1,128],$V51=[1,139],$V61=[1,140],$V71=[1,141],$V81=[1,142],$V91=[1,143],$Va1=[1,148],$Vb1=[1,149],$Vc1=[1,134],$Vd1=[1,137],$Ve1=[1,133],$Vf1=[1,130],$Vg1=[20,21,22,23,38,42,46,75,76,77,78,79,80,94,95,98,99,100,102,103,109,110,111,112,113,114],$Vh1=[1,152],$Vi1=[20,21,22,23,26,46,80,94,95,98,99,100,102,103,109,110,111,112,113,114],$Vj1=[20,21,22,23,24,26,38,40,41,42,46,50,52,54,56,58,60,61,63,65,69,70,71,75,76,77,78,79,80,81,84,94,95,98,99,100,102,103,104,105,109,110,111,112,113,114],$Vk1=[12,21,22,24],$Vl1=[22,95],$Vm1=[1,233],$Vn1=[1,237],$Vo1=[1,234],$Vp1=[1,231],$Vq1=[1,228],$Vr1=[1,229],$Vs1=[1,230],$Vt1=[1,232],$Vu1=[1,235],$Vv1=[1,236],$Vw1=[1,238],$Vx1=[1,255],$Vy1=[20,21,23,95],$Vz1=[20,21,22,23,75,91,94,95,98,99,100,101,102,103,104];
+var o=function(k,v,o,l){for(o=o||{},l=k.length;l--;o[k[l]]=v);return o},$V0=[1,9],$V1=[1,7],$V2=[1,6],$V3=[1,8],$V4=[1,20,21,22,23,38,47,76,77,78,79,80,81,95,96,99,100,101,103,104,110,111,112,113,114,115,116,117,118,119],$V5=[2,10],$V6=[1,20],$V7=[1,21],$V8=[1,22],$V9=[1,23],$Va=[1,30],$Vb=[1,59],$Vc=[1,33],$Vd=[1,34],$Ve=[1,35],$Vf=[1,36],$Vg=[1,37],$Vh=[1,53],$Vi=[1,48],$Vj=[1,50],$Vk=[1,45],$Vl=[1,49],$Vm=[1,52],$Vn=[1,56],$Vo=[1,57],$Vp=[1,38],$Vq=[1,39],$Vr=[1,40],$Vs=[1,41],$Vt=[1,58],$Vu=[1,47],$Vv=[1,51],$Vw=[1,54],$Vx=[1,55],$Vy=[1,46],$Vz=[1,62],$VA=[1,67],$VB=[1,20,21,22,23,38,42,47,76,77,78,79,80,81,95,96,99,100,101,103,104,110,111,112,113,114,115,116,117,118,119],$VC=[1,71],$VD=[1,70],$VE=[1,72],$VF=[20,21,23,70,71],$VG=[1,93],$VH=[1,98],$VI=[1,95],$VJ=[1,100],$VK=[1,103],$VL=[1,101],$VM=[1,102],$VN=[1,96],$VO=[1,108],$VP=[1,107],$VQ=[1,97],$VR=[1,99],$VS=[1,104],$VT=[1,105],$VU=[1,106],$VV=[1,109],$VW=[20,21,22,23,70,71],$VX=[20,21,22,23,48,70,71],$VY=[20,21,22,23,40,47,48,50,52,54,56,58,60,62,63,65,70,71,81,95,96,99,100,101,103,104,114,115,116,117,118,119],$VZ=[20,21,23],$V_=[20,21,23,47,70,71,81,95,96,99,100,101,103,104,114,115,116,117,118,119],$V$=[1,12,20,21,22,23,24,38,42,47,76,77,78,79,80,81,95,96,99,100,101,103,104,110,111,112,113,114,115,116,117,118,119],$V01=[47,81,95,96,99,100,101,103,104,114,115,116,117,118,119],$V11=[1,141],$V21=[1,149],$V31=[1,150],$V41=[1,151],$V51=[1,152],$V61=[1,136],$V71=[1,137],$V81=[1,133],$V91=[1,144],$Va1=[1,145],$Vb1=[1,146],$Vc1=[1,147],$Vd1=[1,148],$Ve1=[1,153],$Vf1=[1,154],$Vg1=[1,139],$Vh1=[1,142],$Vi1=[1,138],$Vj1=[1,135],$Vk1=[20,21,22,23,38,42,47,76,77,78,79,80,81,95,96,99,100,101,103,104,110,111,112,113,114,115,116,117,118,119],$Vl1=[1,157],$Vm1=[20,21,22,23,26,47,81,95,96,99,100,101,103,104,114,115,116,117,118,119],$Vn1=[20,21,22,23,24,26,38,40,41,42,47,51,53,55,57,59,61,62,64,66,70,71,72,76,77,78,79,80,81,82,85,95,96,99,100,101,103,104,105,106,114,115,116,117,118,119],$Vo1=[12,21,22,24],$Vp1=[22,96],$Vq1=[1,238],$Vr1=[1,242],$Vs1=[1,239],$Vt1=[1,236],$Vu1=[1,233],$Vv1=[1,234],$Vw1=[1,235],$Vx1=[1,237],$Vy1=[1,240],$Vz1=[1,241],$VA1=[1,243],$VB1=[1,260],$VC1=[20,21,23,96],$VD1=[20,21,22,23,76,92,95,96,99,100,101,102,103,104,105];
 var parser = {trace: function trace () { },
 yy: {},
-symbols_: {"error":2,"start":3,"mermaidDoc":4,"directive":5,"openDirective":6,"typeDirective":7,"closeDirective":8,"separator":9,":":10,"argDirective":11,"open_directive":12,"type_directive":13,"arg_directive":14,"close_directive":15,"graphConfig":16,"document":17,"line":18,"statement":19,"SEMI":20,"NEWLINE":21,"SPACE":22,"EOF":23,"GRAPH":24,"NODIR":25,"DIR":26,"FirstStmtSeperator":27,"ending":28,"endToken":29,"spaceList":30,"spaceListNewline":31,"verticeStatement":32,"styleStatement":33,"linkStyleStatement":34,"classDefStatement":35,"classStatement":36,"clickStatement":37,"subgraph":38,"text":39,"SQS":40,"SQE":41,"end":42,"link":43,"node":44,"vertex":45,"AMP":46,"STYLE_SEPARATOR":47,"idString":48,"PS":49,"PE":50,"(-":51,"-)":52,"STADIUMSTART":53,"STADIUMEND":54,"SUBROUTINESTART":55,"SUBROUTINEEND":56,"CYLINDERSTART":57,"CYLINDEREND":58,"DIAMOND_START":59,"DIAMOND_STOP":60,"TAGEND":61,"TRAPSTART":62,"TRAPEND":63,"INVTRAPSTART":64,"INVTRAPEND":65,"linkStatement":66,"arrowText":67,"TESTSTR":68,"START_LINK":69,"LINK":70,"PIPE":71,"textToken":72,"STR":73,"keywords":74,"STYLE":75,"LINKSTYLE":76,"CLASSDEF":77,"CLASS":78,"CLICK":79,"DOWN":80,"UP":81,"textNoTags":82,"textNoTagsToken":83,"DEFAULT":84,"stylesOpt":85,"alphaNum":86,"CALLBACKNAME":87,"CALLBACKARGS":88,"HREF":89,"LINK_TARGET":90,"HEX":91,"numList":92,"INTERPOLATE":93,"NUM":94,"COMMA":95,"style":96,"styleComponent":97,"ALPHA":98,"COLON":99,"MINUS":100,"UNIT":101,"BRKT":102,"DOT":103,"PCT":104,"TAGSTART":105,"alphaNumToken":106,"idStringToken":107,"alphaNumStatement":108,"PUNCTUATION":109,"UNICODE_TEXT":110,"PLUS":111,"EQUALS":112,"MULT":113,"UNDERSCORE":114,"graphCodeTokens":115,"ARROW_CROSS":116,"ARROW_POINT":117,"ARROW_CIRCLE":118,"ARROW_OPEN":119,"QUOTE":120,"$accept":0,"$end":1},
-terminals_: {2:"error",10:":",12:"open_directive",13:"type_directive",14:"arg_directive",15:"close_directive",20:"SEMI",21:"NEWLINE",22:"SPACE",23:"EOF",24:"GRAPH",25:"NODIR",26:"DIR",38:"subgraph",40:"SQS",41:"SQE",42:"end",46:"AMP",47:"STYLE_SEPARATOR",49:"PS",50:"PE",51:"(-",52:"-)",53:"STADIUMSTART",54:"STADIUMEND",55:"SUBROUTINESTART",56:"SUBROUTINEEND",57:"CYLINDERSTART",58:"CYLINDEREND",59:"DIAMOND_START",60:"DIAMOND_STOP",61:"TAGEND",62:"TRAPSTART",63:"TRAPEND",64:"INVTRAPSTART",65:"INVTRAPEND",68:"TESTSTR",69:"START_LINK",70:"LINK",71:"PIPE",73:"STR",75:"STYLE",76:"LINKSTYLE",77:"CLASSDEF",78:"CLASS",79:"CLICK",80:"DOWN",81:"UP",84:"DEFAULT",87:"CALLBACKNAME",88:"CALLBACKARGS",89:"HREF",90:"LINK_TARGET",91:"HEX",93:"INTERPOLATE",94:"NUM",95:"COMMA",98:"ALPHA",99:"COLON",100:"MINUS",101:"UNIT",102:"BRKT",103:"DOT",104:"PCT",105:"TAGSTART",109:"PUNCTUATION",110:"UNICODE_TEXT",111:"PLUS",112:"EQUALS",113:"MULT",114:"UNDERSCORE",116:"ARROW_CROSS",117:"ARROW_POINT",118:"ARROW_CIRCLE",119:"ARROW_OPEN",120:"QUOTE"},
-productions_: [0,[3,1],[3,2],[5,4],[5,6],[6,1],[7,1],[11,1],[8,1],[4,2],[17,0],[17,2],[18,1],[18,1],[18,1],[18,1],[18,1],[16,2],[16,2],[16,2],[16,3],[28,2],[28,1],[29,1],[29,1],[29,1],[27,1],[27,1],[27,2],[31,2],[31,2],[31,1],[31,1],[30,2],[30,1],[19,2],[19,2],[19,2],[19,2],[19,2],[19,2],[19,9],[19,6],[19,4],[9,1],[9,1],[9,1],[32,3],[32,4],[32,2],[32,1],[44,1],[44,5],[44,3],[45,4],[45,6],[45,4],[45,4],[45,4],[45,4],[45,4],[45,4],[45,6],[45,4],[45,4],[45,4],[45,4],[45,4],[45,1],[43,2],[43,3],[43,3],[43,1],[43,3],[66,1],[67,3],[39,1],[39,2],[39,1],[74,1],[74,1],[74,1],[74,1],[74,1],[74,1],[74,1],[74,1],[74,1],[74,1],[74,1],[82,1],[82,2],[35,5],[35,5],[36,5],[37,2],[37,4],[37,3],[37,5],[37,2],[37,4],[37,4],[37,6],[37,2],[37,4],[37,2],[37,4],[37,4],[37,6],[33,5],[33,5],[34,5],[34,5],[34,9],[34,9],[34,7],[34,7],[92,1],[92,3],[85,1],[85,3],[96,1],[96,2],[97,1],[97,1],[97,1],[97,1],[97,1],[97,1],[97,1],[97,1],[97,1],[97,1],[97,1],[72,1],[72,1],[72,1],[72,1],[72,1],[72,1],[83,1],[83,1],[83,1],[83,1],[48,1],[48,2],[86,1],[86,2],[108,1],[108,1],[108,1],[108,1],[106,1],[106,1],[106,1],[106,1],[106,1],[106,1],[106,1],[106,1],[106,1],[106,1],[106,1],[106,1],[106,1],[107,1],[107,1],[107,1],[107,1],[107,1],[107,1],[107,1],[107,1],[107,1],[107,1],[107,1],[107,1],[107,1],[107,1],[107,1],[115,1],[115,1],[115,1],[115,1],[115,1],[115,1],[115,1],[115,1],[115,1],[115,1],[115,1],[115,1],[115,1],[115,1],[115,1],[115,1],[115,1],[115,1],[115,1],[115,1],[115,1],[115,1],[115,1],[115,1],[115,1]],
+symbols_: {"error":2,"start":3,"mermaidDoc":4,"directive":5,"openDirective":6,"typeDirective":7,"closeDirective":8,"separator":9,":":10,"argDirective":11,"open_directive":12,"type_directive":13,"arg_directive":14,"close_directive":15,"graphConfig":16,"document":17,"line":18,"statement":19,"SEMI":20,"NEWLINE":21,"SPACE":22,"EOF":23,"GRAPH":24,"NODIR":25,"DIR":26,"FirstStmtSeperator":27,"ending":28,"endToken":29,"spaceList":30,"spaceListNewline":31,"verticeStatement":32,"styleStatement":33,"linkStyleStatement":34,"classDefStatement":35,"classStatement":36,"clickStatement":37,"subgraph":38,"text":39,"SQS":40,"SQE":41,"end":42,"direction":43,"link":44,"node":45,"vertex":46,"AMP":47,"STYLE_SEPARATOR":48,"idString":49,"PS":50,"PE":51,"(-":52,"-)":53,"STADIUMSTART":54,"STADIUMEND":55,"SUBROUTINESTART":56,"SUBROUTINEEND":57,"CYLINDERSTART":58,"CYLINDEREND":59,"DIAMOND_START":60,"DIAMOND_STOP":61,"TAGEND":62,"TRAPSTART":63,"TRAPEND":64,"INVTRAPSTART":65,"INVTRAPEND":66,"linkStatement":67,"arrowText":68,"TESTSTR":69,"START_LINK":70,"LINK":71,"PIPE":72,"textToken":73,"STR":74,"keywords":75,"STYLE":76,"LINKSTYLE":77,"CLASSDEF":78,"CLASS":79,"CLICK":80,"DOWN":81,"UP":82,"textNoTags":83,"textNoTagsToken":84,"DEFAULT":85,"stylesOpt":86,"alphaNum":87,"CALLBACKNAME":88,"CALLBACKARGS":89,"HREF":90,"LINK_TARGET":91,"HEX":92,"numList":93,"INTERPOLATE":94,"NUM":95,"COMMA":96,"style":97,"styleComponent":98,"ALPHA":99,"COLON":100,"MINUS":101,"UNIT":102,"BRKT":103,"DOT":104,"PCT":105,"TAGSTART":106,"alphaNumToken":107,"idStringToken":108,"alphaNumStatement":109,"direction_tb":110,"direction_bt":111,"direction_rl":112,"direction_lr":113,"PUNCTUATION":114,"UNICODE_TEXT":115,"PLUS":116,"EQUALS":117,"MULT":118,"UNDERSCORE":119,"graphCodeTokens":120,"ARROW_CROSS":121,"ARROW_POINT":122,"ARROW_CIRCLE":123,"ARROW_OPEN":124,"QUOTE":125,"$accept":0,"$end":1},
+terminals_: {2:"error",10:":",12:"open_directive",13:"type_directive",14:"arg_directive",15:"close_directive",20:"SEMI",21:"NEWLINE",22:"SPACE",23:"EOF",24:"GRAPH",25:"NODIR",26:"DIR",38:"subgraph",40:"SQS",41:"SQE",42:"end",47:"AMP",48:"STYLE_SEPARATOR",50:"PS",51:"PE",52:"(-",53:"-)",54:"STADIUMSTART",55:"STADIUMEND",56:"SUBROUTINESTART",57:"SUBROUTINEEND",58:"CYLINDERSTART",59:"CYLINDEREND",60:"DIAMOND_START",61:"DIAMOND_STOP",62:"TAGEND",63:"TRAPSTART",64:"TRAPEND",65:"INVTRAPSTART",66:"INVTRAPEND",69:"TESTSTR",70:"START_LINK",71:"LINK",72:"PIPE",74:"STR",76:"STYLE",77:"LINKSTYLE",78:"CLASSDEF",79:"CLASS",80:"CLICK",81:"DOWN",82:"UP",85:"DEFAULT",88:"CALLBACKNAME",89:"CALLBACKARGS",90:"HREF",91:"LINK_TARGET",92:"HEX",94:"INTERPOLATE",95:"NUM",96:"COMMA",99:"ALPHA",100:"COLON",101:"MINUS",102:"UNIT",103:"BRKT",104:"DOT",105:"PCT",106:"TAGSTART",110:"direction_tb",111:"direction_bt",112:"direction_rl",113:"direction_lr",114:"PUNCTUATION",115:"UNICODE_TEXT",116:"PLUS",117:"EQUALS",118:"MULT",119:"UNDERSCORE",121:"ARROW_CROSS",122:"ARROW_POINT",123:"ARROW_CIRCLE",124:"ARROW_OPEN",125:"QUOTE"},
+productions_: [0,[3,1],[3,2],[5,4],[5,6],[6,1],[7,1],[11,1],[8,1],[4,2],[17,0],[17,2],[18,1],[18,1],[18,1],[18,1],[18,1],[16,2],[16,2],[16,2],[16,3],[28,2],[28,1],[29,1],[29,1],[29,1],[27,1],[27,1],[27,2],[31,2],[31,2],[31,1],[31,1],[30,2],[30,1],[19,2],[19,2],[19,2],[19,2],[19,2],[19,2],[19,9],[19,6],[19,4],[19,1],[9,1],[9,1],[9,1],[32,3],[32,4],[32,2],[32,1],[45,1],[45,5],[45,3],[46,4],[46,6],[46,4],[46,4],[46,4],[46,4],[46,4],[46,4],[46,6],[46,4],[46,4],[46,4],[46,4],[46,4],[46,1],[44,2],[44,3],[44,3],[44,1],[44,3],[67,1],[68,3],[39,1],[39,2],[39,1],[75,1],[75,1],[75,1],[75,1],[75,1],[75,1],[75,1],[75,1],[75,1],[75,1],[75,1],[83,1],[83,2],[35,5],[35,5],[36,5],[37,2],[37,4],[37,3],[37,5],[37,2],[37,4],[37,4],[37,6],[37,2],[37,4],[37,2],[37,4],[37,4],[37,6],[33,5],[33,5],[34,5],[34,5],[34,9],[34,9],[34,7],[34,7],[93,1],[93,3],[86,1],[86,3],[97,1],[97,2],[98,1],[98,1],[98,1],[98,1],[98,1],[98,1],[98,1],[98,1],[98,1],[98,1],[98,1],[73,1],[73,1],[73,1],[73,1],[73,1],[73,1],[84,1],[84,1],[84,1],[84,1],[49,1],[49,2],[87,1],[87,2],[109,1],[109,1],[109,1],[109,1],[43,1],[43,1],[43,1],[43,1],[107,1],[107,1],[107,1],[107,1],[107,1],[107,1],[107,1],[107,1],[107,1],[107,1],[107,1],[107,1],[107,1],[108,1],[108,1],[108,1],[108,1],[108,1],[108,1],[108,1],[108,1],[108,1],[108,1],[108,1],[108,1],[108,1],[108,1],[108,1],[120,1],[120,1],[120,1],[120,1],[120,1],[120,1],[120,1],[120,1],[120,1],[120,1],[120,1],[120,1],[120,1],[120,1],[120,1],[120,1],[120,1],[120,1],[120,1],[120,1],[120,1],[120,1],[120,1],[120,1],[120,1]],
 performAction: function anonymous(yytext, yyleng, yylineno, yy, yystate /* action[1] */, $$ /* vstack */, _$ /* lstack */) {
 /* this == yyval */
 
@@ -11074,7 +11136,7 @@ case 11:
 	    }
 	    this.$=$$[$0-1];
 break;
-case 12: case 76: case 78: case 90: case 146: case 148: case 149:
+case 12: case 77: case 79: case 91: case 147: case 149: case 150:
 this.$=$$[$0];
 break;
 case 19:
@@ -11098,169 +11160,181 @@ break;
 case 43:
 this.$=yy.addSubGraph(undefined,$$[$0-1],undefined);
 break;
-case 47:
+case 48:
  /* console.warn('vs',$$[$0-2].stmt,$$[$0]); */ yy.addLink($$[$0-2].stmt,$$[$0],$$[$0-1]); this.$ = { stmt: $$[$0], nodes: $$[$0].concat($$[$0-2].nodes) } 
 break;
-case 48:
+case 49:
  /* console.warn('vs',$$[$0-3].stmt,$$[$0-1]); */ yy.addLink($$[$0-3].stmt,$$[$0-1],$$[$0-2]); this.$ = { stmt: $$[$0-1], nodes: $$[$0-1].concat($$[$0-3].nodes) } 
 break;
-case 49:
+case 50:
 /*console.warn('noda', $$[$0-1]);*/ this.$ = {stmt: $$[$0-1], nodes:$$[$0-1] }
 break;
-case 50:
+case 51:
  /*console.warn('noda', $$[$0]);*/ this.$ = {stmt: $$[$0], nodes:$$[$0] }
 break;
-case 51:
+case 52:
  /* console.warn('nod', $$[$0]); */ this.$ = [$$[$0]];
 break;
-case 52:
+case 53:
  this.$ = $$[$0-4].concat($$[$0]); /* console.warn('pip', $$[$0-4][0], $$[$0], this.$); */ 
 break;
-case 53:
+case 54:
 this.$ = [$$[$0-2]];yy.setClass($$[$0-2],$$[$0])
 break;
-case 54:
+case 55:
 this.$ = $$[$0-3];yy.addVertex($$[$0-3],$$[$0-1],'square');
 break;
-case 55:
+case 56:
 this.$ = $$[$0-5];yy.addVertex($$[$0-5],$$[$0-2],'circle');
 break;
-case 56:
+case 57:
 this.$ = $$[$0-3];yy.addVertex($$[$0-3],$$[$0-1],'ellipse');
 break;
-case 57:
+case 58:
 this.$ = $$[$0-3];yy.addVertex($$[$0-3],$$[$0-1],'stadium');
 break;
-case 58:
+case 59:
 this.$ = $$[$0-3];yy.addVertex($$[$0-3],$$[$0-1],'subroutine');
 break;
-case 59:
+case 60:
 this.$ = $$[$0-3];yy.addVertex($$[$0-3],$$[$0-1],'cylinder');
 break;
-case 60:
+case 61:
 this.$ = $$[$0-3];yy.addVertex($$[$0-3],$$[$0-1],'round');
 break;
-case 61:
+case 62:
 this.$ = $$[$0-3];yy.addVertex($$[$0-3],$$[$0-1],'diamond');
 break;
-case 62:
+case 63:
 this.$ = $$[$0-5];yy.addVertex($$[$0-5],$$[$0-2],'hexagon');
 break;
-case 63:
+case 64:
 this.$ = $$[$0-3];yy.addVertex($$[$0-3],$$[$0-1],'odd');
 break;
-case 64:
+case 65:
 this.$ = $$[$0-3];yy.addVertex($$[$0-3],$$[$0-1],'trapezoid');
 break;
-case 65:
+case 66:
 this.$ = $$[$0-3];yy.addVertex($$[$0-3],$$[$0-1],'inv_trapezoid');
 break;
-case 66:
+case 67:
 this.$ = $$[$0-3];yy.addVertex($$[$0-3],$$[$0-1],'lean_right');
 break;
-case 67:
+case 68:
 this.$ = $$[$0-3];yy.addVertex($$[$0-3],$$[$0-1],'lean_left');
 break;
-case 68:
+case 69:
  /*console.warn('h: ', $$[$0]);*/this.$ = $$[$0];yy.addVertex($$[$0]);
 break;
-case 69:
+case 70:
 $$[$0-1].text = $$[$0];this.$ = $$[$0-1];
 break;
-case 70: case 71:
+case 71: case 72:
 $$[$0-2].text = $$[$0-1];this.$ = $$[$0-2];
 break;
-case 72:
+case 73:
 this.$ = $$[$0];
 break;
-case 73:
+case 74:
 var inf = yy.destructLink($$[$0], $$[$0-2]); this.$ = {"type":inf.type,"stroke":inf.stroke,"length":inf.length,"text":$$[$0-1]};
 break;
-case 74:
+case 75:
 var inf = yy.destructLink($$[$0]);this.$ = {"type":inf.type,"stroke":inf.stroke,"length":inf.length};
 break;
-case 75:
+case 76:
 this.$ = $$[$0-1];
 break;
-case 77: case 91: case 147:
+case 78: case 92: case 148:
 this.$=$$[$0-1]+''+$$[$0];
 break;
-case 92: case 93:
+case 93: case 94:
 this.$ = $$[$0-4];yy.addClass($$[$0-2],$$[$0]);
 break;
-case 94:
+case 95:
 this.$ = $$[$0-4];yy.setClass($$[$0-2], $$[$0]);
 break;
-case 95: case 103:
+case 96: case 104:
 this.$ = $$[$0-1];yy.setClickEvent($$[$0-1], $$[$0]);
 break;
-case 96: case 104:
+case 97: case 105:
 this.$ = $$[$0-3];yy.setClickEvent($$[$0-3], $$[$0-2]);yy.setTooltip($$[$0-3], $$[$0]);
 break;
-case 97:
+case 98:
 this.$ = $$[$0-2];yy.setClickEvent($$[$0-2], $$[$0-1], $$[$0]);
 break;
-case 98:
+case 99:
 this.$ = $$[$0-4];yy.setClickEvent($$[$0-4], $$[$0-3], $$[$0-2]);yy.setTooltip($$[$0-4], $$[$0]);
 break;
-case 99: case 105:
+case 100: case 106:
 this.$ = $$[$0-1];yy.setLink($$[$0-1], $$[$0]);
 break;
-case 100: case 106:
+case 101: case 107:
 this.$ = $$[$0-3];yy.setLink($$[$0-3], $$[$0-2]);yy.setTooltip($$[$0-3], $$[$0]);
 break;
-case 101: case 107:
+case 102: case 108:
 this.$ = $$[$0-3];yy.setLink($$[$0-3], $$[$0-2], $$[$0]);
 break;
-case 102: case 108:
+case 103: case 109:
 this.$ = $$[$0-5];yy.setLink($$[$0-5], $$[$0-4], $$[$0]);yy.setTooltip($$[$0-5], $$[$0-2]);
 break;
-case 109:
+case 110:
 this.$ = $$[$0-4];yy.addVertex($$[$0-2],undefined,undefined,$$[$0]);
 break;
-case 110: case 112:
+case 111: case 113:
 this.$ = $$[$0-4];yy.updateLink($$[$0-2],$$[$0]);
 break;
-case 111:
+case 112:
 this.$ = $$[$0-4];yy.updateLink([$$[$0-2]],$$[$0]);
 break;
-case 113:
+case 114:
 this.$ = $$[$0-8];yy.updateLinkInterpolate([$$[$0-6]],$$[$0-2]);yy.updateLink([$$[$0-6]],$$[$0]);
 break;
-case 114:
+case 115:
 this.$ = $$[$0-8];yy.updateLinkInterpolate($$[$0-6],$$[$0-2]);yy.updateLink($$[$0-6],$$[$0]);
 break;
-case 115:
+case 116:
 this.$ = $$[$0-6];yy.updateLinkInterpolate([$$[$0-4]],$$[$0]);
 break;
-case 116:
+case 117:
 this.$ = $$[$0-6];yy.updateLinkInterpolate($$[$0-4],$$[$0]);
 break;
-case 117: case 119:
+case 118: case 120:
 this.$ = [$$[$0]]
 break;
-case 118: case 120:
+case 119: case 121:
 $$[$0-2].push($$[$0]);this.$ = $$[$0-2];
 break;
-case 122:
+case 123:
 this.$ = $$[$0-1] + $$[$0];
 break;
-case 144:
+case 145:
 this.$=$$[$0]
 break;
-case 145:
+case 146:
 this.$=$$[$0-1]+''+$$[$0]
 break;
-case 150:
+case 151:
 this.$='v';
 break;
-case 151:
+case 152:
 this.$='-';
+break;
+case 153:
+ this.$={stmt:'dir', value:'TB'};
+break;
+case 154:
+ this.$={stmt:'dir', value:'BT'};
+break;
+case 155:
+ this.$={stmt:'dir', value:'RL'};
+break;
+case 156:
+ this.$={stmt:'dir', value:'LR'};
 break;
 }
 },
-table: [{3:1,4:2,5:3,6:5,12:$V0,16:4,21:$V1,22:$V2,24:$V3},{1:[3]},{1:[2,1]},{3:10,4:2,5:3,6:5,12:$V0,16:4,21:$V1,22:$V2,24:$V3},o($V4,$V5,{17:11}),{7:12,13:[1,13]},{16:14,21:$V1,22:$V2,24:$V3},{16:15,21:$V1,22:$V2,24:$V3},{25:[1,16],26:[1,17]},{13:[2,5]},{1:[2,2]},{1:[2,9],18:18,19:19,20:$V6,21:$V7,22:$V8,23:$V9,32:24,33:25,34:26,35:27,36:28,37:29,38:$Va,44:31,45:37,46:$Vb,48:38,75:$Vc,76:$Vd,77:$Ve,78:$Vf,79:$Vg,80:$Vh,94:$Vi,95:$Vj,98:$Vk,99:$Vl,100:$Vm,102:$Vn,103:$Vo,107:39,109:$Vp,110:$Vq,111:$Vr,112:$Vs,113:$Vt,114:$Vu},{8:55,10:[1,56],15:$Vv},o([10,15],[2,6]),o($V4,[2,17]),o($V4,[2,18]),o($V4,[2,19]),{20:[1,59],21:[1,60],22:$Vw,27:58,30:61},o($Vx,[2,11]),o($Vx,[2,12]),o($Vx,[2,13]),o($Vx,[2,14]),o($Vx,[2,15]),o($Vx,[2,16]),{9:63,20:$Vy,21:$Vz,23:$VA,43:64,66:68,69:[1,69],70:[1,70]},{9:71,20:$Vy,21:$Vz,23:$VA},{9:72,20:$Vy,21:$Vz,23:$VA},{9:73,20:$Vy,21:$Vz,23:$VA},{9:74,20:$Vy,21:$Vz,23:$VA},{9:75,20:$Vy,21:$Vz,23:$VA},{9:77,20:$Vy,21:$Vz,22:[1,76],23:$VA},o($VB,[2,50],{30:78,22:$Vw}),{22:[1,79]},{22:[1,80]},{22:[1,81]},{22:[1,82]},{26:$VC,46:$VD,73:[1,86],80:$VE,86:85,87:[1,83],89:[1,84],94:$VF,95:$VG,98:$VH,99:$VI,100:$VJ,102:$VK,103:$VL,106:89,108:87,109:$VM,110:$VN,111:$VO,112:$VP,113:$VQ,114:$VR},o($VS,[2,51],{47:[1,105]}),o($VT,[2,68],{107:116,40:[1,106],46:$Vb,49:[1,107],51:[1,108],53:[1,109],55:[1,110],57:[1,111],59:[1,112],61:[1,113],62:[1,114],64:[1,115],80:$Vh,94:$Vi,95:$Vj,98:$Vk,99:$Vl,100:$Vm,102:$Vn,103:$Vo,109:$Vp,110:$Vq,111:$Vr,112:$Vs,113:$Vt,114:$Vu}),o($VU,[2,144]),o($VU,[2,165]),o($VU,[2,166]),o($VU,[2,167]),o($VU,[2,168]),o($VU,[2,169]),o($VU,[2,170]),o($VU,[2,171]),o($VU,[2,172]),o($VU,[2,173]),o($VU,[2,174]),o($VU,[2,175]),o($VU,[2,176]),o($VU,[2,177]),o($VU,[2,178]),o($VU,[2,179]),{9:117,20:$Vy,21:$Vz,23:$VA},{11:118,14:[1,119]},o($VV,[2,8]),o($V4,[2,20]),o($V4,[2,26]),o($V4,[2,27]),{21:[1,120]},o($VW,[2,34],{30:121,22:$Vw}),o($Vx,[2,35]),{44:122,45:37,46:$Vb,48:38,80:$Vh,94:$Vi,95:$Vj,98:$Vk,99:$Vl,100:$Vm,102:$Vn,103:$Vo,107:39,109:$Vp,110:$Vq,111:$Vr,112:$Vs,113:$Vt,114:$Vu},o($VX,[2,44]),o($VX,[2,45]),o($VX,[2,46]),o($VY,[2,72],{67:123,68:[1,124],71:[1,125]}),{22:$VZ,24:$V_,26:$V$,38:$V01,39:126,42:$V11,46:$VD,61:$V21,69:$V31,72:127,73:$V41,74:138,75:$V51,76:$V61,77:$V71,78:$V81,79:$V91,80:$Va1,81:$Vb1,83:129,84:$Vc1,94:$VF,95:$VG,98:$VH,99:$VI,100:$Vd1,102:$VK,103:$VL,104:$Ve1,105:$Vf1,106:135,109:$VM,110:$VN,111:$VO,112:$VP,113:$VQ,114:$VR},o([46,68,71,80,94,95,98,99,100,102,103,109,110,111,112,113,114],[2,74]),o($Vx,[2,36]),o($Vx,[2,37]),o($Vx,[2,38]),o($Vx,[2,39]),o($Vx,[2,40]),{22:$VZ,24:$V_,26:$V$,38:$V01,39:150,42:$V11,46:$VD,61:$V21,69:$V31,72:127,73:$V41,74:138,75:$V51,76:$V61,77:$V71,78:$V81,79:$V91,80:$Va1,81:$Vb1,83:129,84:$Vc1,94:$VF,95:$VG,98:$VH,99:$VI,100:$Vd1,102:$VK,103:$VL,104:$Ve1,105:$Vf1,106:135,109:$VM,110:$VN,111:$VO,112:$VP,113:$VQ,114:$VR},o($Vg1,$V5,{17:151}),o($VB,[2,49],{46:$Vh1}),{26:$VC,46:$VD,80:$VE,86:153,91:[1,154],94:$VF,95:$VG,98:$VH,99:$VI,100:$VJ,102:$VK,103:$VL,106:89,108:87,109:$VM,110:$VN,111:$VO,112:$VP,113:$VQ,114:$VR},{84:[1,155],92:156,94:[1,157]},{26:$VC,46:$VD,80:$VE,84:[1,158],86:159,94:$VF,95:$VG,98:$VH,99:$VI,100:$VJ,102:$VK,103:$VL,106:89,108:87,109:$VM,110:$VN,111:$VO,112:$VP,113:$VQ,114:$VR},{26:$VC,46:$VD,80:$VE,86:160,94:$VF,95:$VG,98:$VH,99:$VI,100:$VJ,102:$VK,103:$VL,106:89,108:87,109:$VM,110:$VN,111:$VO,112:$VP,113:$VQ,114:$VR},o($VV,[2,95],{22:[1,161],88:[1,162]}),o($VV,[2,99],{22:[1,163]}),o($VV,[2,103],{106:89,108:165,22:[1,164],26:$VC,46:$VD,80:$VE,94:$VF,95:$VG,98:$VH,99:$VI,100:$VJ,102:$VK,103:$VL,109:$VM,110:$VN,111:$VO,112:$VP,113:$VQ,114:$VR}),o($VV,[2,105],{22:[1,166]}),o($Vi1,[2,146]),o($Vi1,[2,148]),o($Vi1,[2,149]),o($Vi1,[2,150]),o($Vi1,[2,151]),o($Vj1,[2,152]),o($Vj1,[2,153]),o($Vj1,[2,154]),o($Vj1,[2,155]),o($Vj1,[2,156]),o($Vj1,[2,157]),o($Vj1,[2,158]),o($Vj1,[2,159]),o($Vj1,[2,160]),o($Vj1,[2,161]),o($Vj1,[2,162]),o($Vj1,[2,163]),o($Vj1,[2,164]),{46:$Vb,48:167,80:$Vh,94:$Vi,95:$Vj,98:$Vk,99:$Vl,100:$Vm,102:$Vn,103:$Vo,107:39,109:$Vp,110:$Vq,111:$Vr,112:$Vs,113:$Vt,114:$Vu},{22:$VZ,24:$V_,26:$V$,38:$V01,39:168,42:$V11,46:$VD,61:$V21,69:$V31,72:127,73:$V41,74:138,75:$V51,76:$V61,77:$V71,78:$V81,79:$V91,80:$Va1,81:$Vb1,83:129,84:$Vc1,94:$VF,95:$VG,98:$VH,99:$VI,100:$Vd1,102:$VK,103:$VL,104:$Ve1,105:$Vf1,106:135,109:$VM,110:$VN,111:$VO,112:$VP,113:$VQ,114:$VR},{22:$VZ,24:$V_,26:$V$,38:$V01,39:170,42:$V11,46:$VD,49:[1,169],61:$V21,69:$V31,72:127,73:$V41,74:138,75:$V51,76:$V61,77:$V71,78:$V81,79:$V91,80:$Va1,81:$Vb1,83:129,84:$Vc1,94:$VF,95:$VG,98:$VH,99:$VI,100:$Vd1,102:$VK,103:$VL,104:$Ve1,105:$Vf1,106:135,109:$VM,110:$VN,111:$VO,112:$VP,113:$VQ,114:$VR},{22:$VZ,24:$V_,26:$V$,38:$V01,39:171,42:$V11,46:$VD,61:$V21,69:$V31,72:127,73:$V41,74:138,75:$V51,76:$V61,77:$V71,78:$V81,79:$V91,80:$Va1,81:$Vb1,83:129,84:$Vc1,94:$VF,95:$VG,98:$VH,99:$VI,100:$Vd1,102:$VK,103:$VL,104:$Ve1,105:$Vf1,106:135,109:$VM,110:$VN,111:$VO,112:$VP,113:$VQ,114:$VR},{22:$VZ,24:$V_,26:$V$,38:$V01,39:172,42:$V11,46:$VD,61:$V21,69:$V31,72:127,73:$V41,74:138,75:$V51,76:$V61,77:$V71,78:$V81,79:$V91,80:$Va1,81:$Vb1,83:129,84:$Vc1,94:$VF,95:$VG,98:$VH,99:$VI,100:$Vd1,102:$VK,103:$VL,104:$Ve1,105:$Vf1,106:135,109:$VM,110:$VN,111:$VO,112:$VP,113:$VQ,114:$VR},{22:$VZ,24:$V_,26:$V$,38:$V01,39:173,42:$V11,46:$VD,61:$V21,69:$V31,72:127,73:$V41,74:138,75:$V51,76:$V61,77:$V71,78:$V81,79:$V91,80:$Va1,81:$Vb1,83:129,84:$Vc1,94:$VF,95:$VG,98:$VH,99:$VI,100:$Vd1,102:$VK,103:$VL,104:$Ve1,105:$Vf1,106:135,109:$VM,110:$VN,111:$VO,112:$VP,113:$VQ,114:$VR},{22:$VZ,24:$V_,26:$V$,38:$V01,39:174,42:$V11,46:$VD,61:$V21,69:$V31,72:127,73:$V41,74:138,75:$V51,76:$V61,77:$V71,78:$V81,79:$V91,80:$Va1,81:$Vb1,83:129,84:$Vc1,94:$VF,95:$VG,98:$VH,99:$VI,100:$Vd1,102:$VK,103:$VL,104:$Ve1,105:$Vf1,106:135,109:$VM,110:$VN,111:$VO,112:$VP,113:$VQ,114:$VR},{22:$VZ,24:$V_,26:$V$,38:$V01,39:175,42:$V11,46:$VD,59:[1,176],61:$V21,69:$V31,72:127,73:$V41,74:138,75:$V51,76:$V61,77:$V71,78:$V81,79:$V91,80:$Va1,81:$Vb1,83:129,84:$Vc1,94:$VF,95:$VG,98:$VH,99:$VI,100:$Vd1,102:$VK,103:$VL,104:$Ve1,105:$Vf1,106:135,109:$VM,110:$VN,111:$VO,112:$VP,113:$VQ,114:$VR},{22:$VZ,24:$V_,26:$V$,38:$V01,39:177,42:$V11,46:$VD,61:$V21,69:$V31,72:127,73:$V41,74:138,75:$V51,76:$V61,77:$V71,78:$V81,79:$V91,80:$Va1,81:$Vb1,83:129,84:$Vc1,94:$VF,95:$VG,98:$VH,99:$VI,100:$Vd1,102:$VK,103:$VL,104:$Ve1,105:$Vf1,106:135,109:$VM,110:$VN,111:$VO,112:$VP,113:$VQ,114:$VR},{22:$VZ,24:$V_,26:$V$,38:$V01,39:178,42:$V11,46:$VD,61:$V21,69:$V31,72:127,73:$V41,74:138,75:$V51,76:$V61,77:$V71,78:$V81,79:$V91,80:$Va1,81:$Vb1,83:129,84:$Vc1,94:$VF,95:$VG,98:$VH,99:$VI,100:$Vd1,102:$VK,103:$VL,104:$Ve1,105:$Vf1,106:135,109:$VM,110:$VN,111:$VO,112:$VP,113:$VQ,114:$VR},{22:$VZ,24:$V_,26:$V$,38:$V01,39:179,42:$V11,46:$VD,61:$V21,69:$V31,72:127,73:$V41,74:138,75:$V51,76:$V61,77:$V71,78:$V81,79:$V91,80:$Va1,81:$Vb1,83:129,84:$Vc1,94:$VF,95:$VG,98:$VH,99:$VI,100:$Vd1,102:$VK,103:$VL,104:$Ve1,105:$Vf1,106:135,109:$VM,110:$VN,111:$VO,112:$VP,113:$VQ,114:$VR},o($VU,[2,145]),o($Vk1,[2,3]),{8:180,15:$Vv},{15:[2,7]},o($V4,[2,28]),o($VW,[2,33]),o($VB,[2,47],{30:181,22:$Vw}),o($VY,[2,69],{22:[1,182]}),{22:[1,183]},{22:$VZ,24:$V_,26:$V$,38:$V01,39:184,42:$V11,46:$VD,61:$V21,69:$V31,72:127,73:$V41,74:138,75:$V51,76:$V61,77:$V71,78:$V81,79:$V91,80:$Va1,81:$Vb1,83:129,84:$Vc1,94:$VF,95:$VG,98:$VH,99:$VI,100:$Vd1,102:$VK,103:$VL,104:$Ve1,105:$Vf1,106:135,109:$VM,110:$VN,111:$VO,112:$VP,113:$VQ,114:$VR},{22:$VZ,24:$V_,26:$V$,38:$V01,42:$V11,46:$VD,61:$V21,69:$V31,70:[1,185],72:186,74:138,75:$V51,76:$V61,77:$V71,78:$V81,79:$V91,80:$Va1,81:$Vb1,83:129,84:$Vc1,94:$VF,95:$VG,98:$VH,99:$VI,100:$Vd1,102:$VK,103:$VL,104:$Ve1,105:$Vf1,106:135,109:$VM,110:$VN,111:$VO,112:$VP,113:$VQ,114:$VR},o($Vj1,[2,76]),o($Vj1,[2,78]),o($Vj1,[2,134]),o($Vj1,[2,135]),o($Vj1,[2,136]),o($Vj1,[2,137]),o($Vj1,[2,138]),o($Vj1,[2,139]),o($Vj1,[2,140]),o($Vj1,[2,141]),o($Vj1,[2,142]),o($Vj1,[2,143]),o($Vj1,[2,79]),o($Vj1,[2,80]),o($Vj1,[2,81]),o($Vj1,[2,82]),o($Vj1,[2,83]),o($Vj1,[2,84]),o($Vj1,[2,85]),o($Vj1,[2,86]),o($Vj1,[2,87]),o($Vj1,[2,88]),o($Vj1,[2,89]),{9:188,20:$Vy,21:$Vz,22:$VZ,23:$VA,24:$V_,26:$V$,38:$V01,40:[1,187],42:$V11,46:$VD,61:$V21,69:$V31,72:186,74:138,75:$V51,76:$V61,77:$V71,78:$V81,79:$V91,80:$Va1,81:$Vb1,83:129,84:$Vc1,94:$VF,95:$VG,98:$VH,99:$VI,100:$Vd1,102:$VK,103:$VL,104:$Ve1,105:$Vf1,106:135,109:$VM,110:$VN,111:$VO,112:$VP,113:$VQ,114:$VR},{18:18,19:19,20:$V6,21:$V7,22:$V8,23:$V9,32:24,33:25,34:26,35:27,36:28,37:29,38:$Va,42:[1,189],44:31,45:37,46:$Vb,48:38,75:$Vc,76:$Vd,77:$Ve,78:$Vf,79:$Vg,80:$Vh,94:$Vi,95:$Vj,98:$Vk,99:$Vl,100:$Vm,102:$Vn,103:$Vo,107:39,109:$Vp,110:$Vq,111:$Vr,112:$Vs,113:$Vt,114:$Vu},{22:$Vw,30:190},{22:[1,191],26:$VC,46:$VD,80:$VE,94:$VF,95:$VG,98:$VH,99:$VI,100:$VJ,102:$VK,103:$VL,106:89,108:165,109:$VM,110:$VN,111:$VO,112:$VP,113:$VQ,114:$VR},{22:[1,192]},{22:[1,193]},{22:[1,194],95:[1,195]},o($Vl1,[2,117]),{22:[1,196]},{22:[1,197],26:$VC,46:$VD,80:$VE,94:$VF,95:$VG,98:$VH,99:$VI,100:$VJ,102:$VK,103:$VL,106:89,108:165,109:$VM,110:$VN,111:$VO,112:$VP,113:$VQ,114:$VR},{22:[1,198],26:$VC,46:$VD,80:$VE,94:$VF,95:$VG,98:$VH,99:$VI,100:$VJ,102:$VK,103:$VL,106:89,108:165,109:$VM,110:$VN,111:$VO,112:$VP,113:$VQ,114:$VR},{73:[1,199]},o($VV,[2,97],{22:[1,200]}),{73:[1,201],90:[1,202]},{73:[1,203]},o($Vi1,[2,147]),{73:[1,204],90:[1,205]},o($VS,[2,53],{107:116,46:$Vb,80:$Vh,94:$Vi,95:$Vj,98:$Vk,99:$Vl,100:$Vm,102:$Vn,103:$Vo,109:$Vp,110:$Vq,111:$Vr,112:$Vs,113:$Vt,114:$Vu}),{22:$VZ,24:$V_,26:$V$,38:$V01,41:[1,206],42:$V11,46:$VD,61:$V21,69:$V31,72:186,74:138,75:$V51,76:$V61,77:$V71,78:$V81,79:$V91,80:$Va1,81:$Vb1,83:129,84:$Vc1,94:$VF,95:$VG,98:$VH,99:$VI,100:$Vd1,102:$VK,103:$VL,104:$Ve1,105:$Vf1,106:135,109:$VM,110:$VN,111:$VO,112:$VP,113:$VQ,114:$VR},{22:$VZ,24:$V_,26:$V$,38:$V01,39:207,42:$V11,46:$VD,61:$V21,69:$V31,72:127,73:$V41,74:138,75:$V51,76:$V61,77:$V71,78:$V81,79:$V91,80:$Va1,81:$Vb1,83:129,84:$Vc1,94:$VF,95:$VG,98:$VH,99:$VI,100:$Vd1,102:$VK,103:$VL,104:$Ve1,105:$Vf1,106:135,109:$VM,110:$VN,111:$VO,112:$VP,113:$VQ,114:$VR},{22:$VZ,24:$V_,26:$V$,38:$V01,42:$V11,46:$VD,50:[1,208],61:$V21,69:$V31,72:186,74:138,75:$V51,76:$V61,77:$V71,78:$V81,79:$V91,80:$Va1,81:$Vb1,83:129,84:$Vc1,94:$VF,95:$VG,98:$VH,99:$VI,100:$Vd1,102:$VK,103:$VL,104:$Ve1,105:$Vf1,106:135,109:$VM,110:$VN,111:$VO,112:$VP,113:$VQ,114:$VR},{22:$VZ,24:$V_,26:$V$,38:$V01,42:$V11,46:$VD,52:[1,209],61:$V21,69:$V31,72:186,74:138,75:$V51,76:$V61,77:$V71,78:$V81,79:$V91,80:$Va1,81:$Vb1,83:129,84:$Vc1,94:$VF,95:$VG,98:$VH,99:$VI,100:$Vd1,102:$VK,103:$VL,104:$Ve1,105:$Vf1,106:135,109:$VM,110:$VN,111:$VO,112:$VP,113:$VQ,114:$VR},{22:$VZ,24:$V_,26:$V$,38:$V01,42:$V11,46:$VD,54:[1,210],61:$V21,69:$V31,72:186,74:138,75:$V51,76:$V61,77:$V71,78:$V81,79:$V91,80:$Va1,81:$Vb1,83:129,84:$Vc1,94:$VF,95:$VG,98:$VH,99:$VI,100:$Vd1,102:$VK,103:$VL,104:$Ve1,105:$Vf1,106:135,109:$VM,110:$VN,111:$VO,112:$VP,113:$VQ,114:$VR},{22:$VZ,24:$V_,26:$V$,38:$V01,42:$V11,46:$VD,56:[1,211],61:$V21,69:$V31,72:186,74:138,75:$V51,76:$V61,77:$V71,78:$V81,79:$V91,80:$Va1,81:$Vb1,83:129,84:$Vc1,94:$VF,95:$VG,98:$VH,99:$VI,100:$Vd1,102:$VK,103:$VL,104:$Ve1,105:$Vf1,106:135,109:$VM,110:$VN,111:$VO,112:$VP,113:$VQ,114:$VR},{22:$VZ,24:$V_,26:$V$,38:$V01,42:$V11,46:$VD,58:[1,212],61:$V21,69:$V31,72:186,74:138,75:$V51,76:$V61,77:$V71,78:$V81,79:$V91,80:$Va1,81:$Vb1,83:129,84:$Vc1,94:$VF,95:$VG,98:$VH,99:$VI,100:$Vd1,102:$VK,103:$VL,104:$Ve1,105:$Vf1,106:135,109:$VM,110:$VN,111:$VO,112:$VP,113:$VQ,114:$VR},{22:$VZ,24:$V_,26:$V$,38:$V01,42:$V11,46:$VD,60:[1,213],61:$V21,69:$V31,72:186,74:138,75:$V51,76:$V61,77:$V71,78:$V81,79:$V91,80:$Va1,81:$Vb1,83:129,84:$Vc1,94:$VF,95:$VG,98:$VH,99:$VI,100:$Vd1,102:$VK,103:$VL,104:$Ve1,105:$Vf1,106:135,109:$VM,110:$VN,111:$VO,112:$VP,113:$VQ,114:$VR},{22:$VZ,24:$V_,26:$V$,38:$V01,39:214,42:$V11,46:$VD,61:$V21,69:$V31,72:127,73:$V41,74:138,75:$V51,76:$V61,77:$V71,78:$V81,79:$V91,80:$Va1,81:$Vb1,83:129,84:$Vc1,94:$VF,95:$VG,98:$VH,99:$VI,100:$Vd1,102:$VK,103:$VL,104:$Ve1,105:$Vf1,106:135,109:$VM,110:$VN,111:$VO,112:$VP,113:$VQ,114:$VR},{22:$VZ,24:$V_,26:$V$,38:$V01,41:[1,215],42:$V11,46:$VD,61:$V21,69:$V31,72:186,74:138,75:$V51,76:$V61,77:$V71,78:$V81,79:$V91,80:$Va1,81:$Vb1,83:129,84:$Vc1,94:$VF,95:$VG,98:$VH,99:$VI,100:$Vd1,102:$VK,103:$VL,104:$Ve1,105:$Vf1,106:135,109:$VM,110:$VN,111:$VO,112:$VP,113:$VQ,114:$VR},{22:$VZ,24:$V_,26:$V$,38:$V01,42:$V11,46:$VD,61:$V21,63:[1,216],65:[1,217],69:$V31,72:186,74:138,75:$V51,76:$V61,77:$V71,78:$V81,79:$V91,80:$Va1,81:$Vb1,83:129,84:$Vc1,94:$VF,95:$VG,98:$VH,99:$VI,100:$Vd1,102:$VK,103:$VL,104:$Ve1,105:$Vf1,106:135,109:$VM,110:$VN,111:$VO,112:$VP,113:$VQ,114:$VR},{22:$VZ,24:$V_,26:$V$,38:$V01,42:$V11,46:$VD,61:$V21,63:[1,219],65:[1,218],69:$V31,72:186,74:138,75:$V51,76:$V61,77:$V71,78:$V81,79:$V91,80:$Va1,81:$Vb1,83:129,84:$Vc1,94:$VF,95:$VG,98:$VH,99:$VI,100:$Vd1,102:$VK,103:$VL,104:$Ve1,105:$Vf1,106:135,109:$VM,110:$VN,111:$VO,112:$VP,113:$VQ,114:$VR},{9:220,20:$Vy,21:$Vz,23:$VA},o($VB,[2,48],{46:$Vh1}),o($VY,[2,71]),o($VY,[2,70]),{22:$VZ,24:$V_,26:$V$,38:$V01,42:$V11,46:$VD,61:$V21,69:$V31,71:[1,221],72:186,74:138,75:$V51,76:$V61,77:$V71,78:$V81,79:$V91,80:$Va1,81:$Vb1,83:129,84:$Vc1,94:$VF,95:$VG,98:$VH,99:$VI,100:$Vd1,102:$VK,103:$VL,104:$Ve1,105:$Vf1,106:135,109:$VM,110:$VN,111:$VO,112:$VP,113:$VQ,114:$VR},o($VY,[2,73]),o($Vj1,[2,77]),{22:$VZ,24:$V_,26:$V$,38:$V01,39:222,42:$V11,46:$VD,61:$V21,69:$V31,72:127,73:$V41,74:138,75:$V51,76:$V61,77:$V71,78:$V81,79:$V91,80:$Va1,81:$Vb1,83:129,84:$Vc1,94:$VF,95:$VG,98:$VH,99:$VI,100:$Vd1,102:$VK,103:$VL,104:$Ve1,105:$Vf1,106:135,109:$VM,110:$VN,111:$VO,112:$VP,113:$VQ,114:$VR},o($Vg1,$V5,{17:223}),o($Vx,[2,43]),{45:224,46:$Vb,48:38,80:$Vh,94:$Vi,95:$Vj,98:$Vk,99:$Vl,100:$Vm,102:$Vn,103:$Vo,107:39,109:$Vp,110:$Vq,111:$Vr,112:$Vs,113:$Vt,114:$Vu},{22:$Vm1,75:$Vn1,85:225,91:$Vo1,94:$Vp1,96:226,97:227,98:$Vq1,99:$Vr1,100:$Vs1,101:$Vt1,102:$Vu1,103:$Vv1,104:$Vw1},{22:$Vm1,75:$Vn1,85:239,91:$Vo1,94:$Vp1,96:226,97:227,98:$Vq1,99:$Vr1,100:$Vs1,101:$Vt1,102:$Vu1,103:$Vv1,104:$Vw1},{22:$Vm1,75:$Vn1,85:240,91:$Vo1,93:[1,241],94:$Vp1,96:226,97:227,98:$Vq1,99:$Vr1,100:$Vs1,101:$Vt1,102:$Vu1,103:$Vv1,104:$Vw1},{22:$Vm1,75:$Vn1,85:242,91:$Vo1,93:[1,243],94:$Vp1,96:226,97:227,98:$Vq1,99:$Vr1,100:$Vs1,101:$Vt1,102:$Vu1,103:$Vv1,104:$Vw1},{94:[1,244]},{22:$Vm1,75:$Vn1,85:245,91:$Vo1,94:$Vp1,96:226,97:227,98:$Vq1,99:$Vr1,100:$Vs1,101:$Vt1,102:$Vu1,103:$Vv1,104:$Vw1},{22:$Vm1,75:$Vn1,85:246,91:$Vo1,94:$Vp1,96:226,97:227,98:$Vq1,99:$Vr1,100:$Vs1,101:$Vt1,102:$Vu1,103:$Vv1,104:$Vw1},{26:$VC,46:$VD,80:$VE,86:247,94:$VF,95:$VG,98:$VH,99:$VI,100:$VJ,102:$VK,103:$VL,106:89,108:87,109:$VM,110:$VN,111:$VO,112:$VP,113:$VQ,114:$VR},o($VV,[2,96]),{73:[1,248]},o($VV,[2,100],{22:[1,249]}),o($VV,[2,101]),o($VV,[2,104]),o($VV,[2,106],{22:[1,250]}),o($VV,[2,107]),o($VT,[2,54]),{22:$VZ,24:$V_,26:$V$,38:$V01,42:$V11,46:$VD,50:[1,251],61:$V21,69:$V31,72:186,74:138,75:$V51,76:$V61,77:$V71,78:$V81,79:$V91,80:$Va1,81:$Vb1,83:129,84:$Vc1,94:$VF,95:$VG,98:$VH,99:$VI,100:$Vd1,102:$VK,103:$VL,104:$Ve1,105:$Vf1,106:135,109:$VM,110:$VN,111:$VO,112:$VP,113:$VQ,114:$VR},o($VT,[2,60]),o($VT,[2,56]),o($VT,[2,57]),o($VT,[2,58]),o($VT,[2,59]),o($VT,[2,61]),{22:$VZ,24:$V_,26:$V$,38:$V01,42:$V11,46:$VD,60:[1,252],61:$V21,69:$V31,72:186,74:138,75:$V51,76:$V61,77:$V71,78:$V81,79:$V91,80:$Va1,81:$Vb1,83:129,84:$Vc1,94:$VF,95:$VG,98:$VH,99:$VI,100:$Vd1,102:$VK,103:$VL,104:$Ve1,105:$Vf1,106:135,109:$VM,110:$VN,111:$VO,112:$VP,113:$VQ,114:$VR},o($VT,[2,63]),o($VT,[2,64]),o($VT,[2,66]),o($VT,[2,65]),o($VT,[2,67]),o($Vk1,[2,4]),o([22,46,80,94,95,98,99,100,102,103,109,110,111,112,113,114],[2,75]),{22:$VZ,24:$V_,26:$V$,38:$V01,41:[1,253],42:$V11,46:$VD,61:$V21,69:$V31,72:186,74:138,75:$V51,76:$V61,77:$V71,78:$V81,79:$V91,80:$Va1,81:$Vb1,83:129,84:$Vc1,94:$VF,95:$VG,98:$VH,99:$VI,100:$Vd1,102:$VK,103:$VL,104:$Ve1,105:$Vf1,106:135,109:$VM,110:$VN,111:$VO,112:$VP,113:$VQ,114:$VR},{18:18,19:19,20:$V6,21:$V7,22:$V8,23:$V9,32:24,33:25,34:26,35:27,36:28,37:29,38:$Va,42:[1,254],44:31,45:37,46:$Vb,48:38,75:$Vc,76:$Vd,77:$Ve,78:$Vf,79:$Vg,80:$Vh,94:$Vi,95:$Vj,98:$Vk,99:$Vl,100:$Vm,102:$Vn,103:$Vo,107:39,109:$Vp,110:$Vq,111:$Vr,112:$Vs,113:$Vt,114:$Vu},o($VS,[2,52]),o($VV,[2,109],{95:$Vx1}),o($Vy1,[2,119],{97:256,22:$Vm1,75:$Vn1,91:$Vo1,94:$Vp1,98:$Vq1,99:$Vr1,100:$Vs1,101:$Vt1,102:$Vu1,103:$Vv1,104:$Vw1}),o($Vz1,[2,121]),o($Vz1,[2,123]),o($Vz1,[2,124]),o($Vz1,[2,125]),o($Vz1,[2,126]),o($Vz1,[2,127]),o($Vz1,[2,128]),o($Vz1,[2,129]),o($Vz1,[2,130]),o($Vz1,[2,131]),o($Vz1,[2,132]),o($Vz1,[2,133]),o($VV,[2,110],{95:$Vx1}),o($VV,[2,111],{95:$Vx1}),{22:[1,257]},o($VV,[2,112],{95:$Vx1}),{22:[1,258]},o($Vl1,[2,118]),o($VV,[2,92],{95:$Vx1}),o($VV,[2,93],{95:$Vx1}),o($VV,[2,94],{106:89,108:165,26:$VC,46:$VD,80:$VE,94:$VF,95:$VG,98:$VH,99:$VI,100:$VJ,102:$VK,103:$VL,109:$VM,110:$VN,111:$VO,112:$VP,113:$VQ,114:$VR}),o($VV,[2,98]),{90:[1,259]},{90:[1,260]},{50:[1,261]},{60:[1,262]},{9:263,20:$Vy,21:$Vz,23:$VA},o($Vx,[2,42]),{22:$Vm1,75:$Vn1,91:$Vo1,94:$Vp1,96:264,97:227,98:$Vq1,99:$Vr1,100:$Vs1,101:$Vt1,102:$Vu1,103:$Vv1,104:$Vw1},o($Vz1,[2,122]),{26:$VC,46:$VD,80:$VE,86:265,94:$VF,95:$VG,98:$VH,99:$VI,100:$VJ,102:$VK,103:$VL,106:89,108:87,109:$VM,110:$VN,111:$VO,112:$VP,113:$VQ,114:$VR},{26:$VC,46:$VD,80:$VE,86:266,94:$VF,95:$VG,98:$VH,99:$VI,100:$VJ,102:$VK,103:$VL,106:89,108:87,109:$VM,110:$VN,111:$VO,112:$VP,113:$VQ,114:$VR},o($VV,[2,102]),o($VV,[2,108]),o($VT,[2,55]),o($VT,[2,62]),o($Vg1,$V5,{17:267}),o($Vy1,[2,120],{97:256,22:$Vm1,75:$Vn1,91:$Vo1,94:$Vp1,98:$Vq1,99:$Vr1,100:$Vs1,101:$Vt1,102:$Vu1,103:$Vv1,104:$Vw1}),o($VV,[2,115],{106:89,108:165,22:[1,268],26:$VC,46:$VD,80:$VE,94:$VF,95:$VG,98:$VH,99:$VI,100:$VJ,102:$VK,103:$VL,109:$VM,110:$VN,111:$VO,112:$VP,113:$VQ,114:$VR}),o($VV,[2,116],{106:89,108:165,22:[1,269],26:$VC,46:$VD,80:$VE,94:$VF,95:$VG,98:$VH,99:$VI,100:$VJ,102:$VK,103:$VL,109:$VM,110:$VN,111:$VO,112:$VP,113:$VQ,114:$VR}),{18:18,19:19,20:$V6,21:$V7,22:$V8,23:$V9,32:24,33:25,34:26,35:27,36:28,37:29,38:$Va,42:[1,270],44:31,45:37,46:$Vb,48:38,75:$Vc,76:$Vd,77:$Ve,78:$Vf,79:$Vg,80:$Vh,94:$Vi,95:$Vj,98:$Vk,99:$Vl,100:$Vm,102:$Vn,103:$Vo,107:39,109:$Vp,110:$Vq,111:$Vr,112:$Vs,113:$Vt,114:$Vu},{22:$Vm1,75:$Vn1,85:271,91:$Vo1,94:$Vp1,96:226,97:227,98:$Vq1,99:$Vr1,100:$Vs1,101:$Vt1,102:$Vu1,103:$Vv1,104:$Vw1},{22:$Vm1,75:$Vn1,85:272,91:$Vo1,94:$Vp1,96:226,97:227,98:$Vq1,99:$Vr1,100:$Vs1,101:$Vt1,102:$Vu1,103:$Vv1,104:$Vw1},o($Vx,[2,41]),o($VV,[2,113],{95:$Vx1}),o($VV,[2,114],{95:$Vx1})],
-defaultActions: {2:[2,1],9:[2,5],10:[2,2],119:[2,7]},
+table: [{3:1,4:2,5:3,6:5,12:$V0,16:4,21:$V1,22:$V2,24:$V3},{1:[3]},{1:[2,1]},{3:10,4:2,5:3,6:5,12:$V0,16:4,21:$V1,22:$V2,24:$V3},o($V4,$V5,{17:11}),{7:12,13:[1,13]},{16:14,21:$V1,22:$V2,24:$V3},{16:15,21:$V1,22:$V2,24:$V3},{25:[1,16],26:[1,17]},{13:[2,5]},{1:[2,2]},{1:[2,9],18:18,19:19,20:$V6,21:$V7,22:$V8,23:$V9,32:24,33:25,34:26,35:27,36:28,37:29,38:$Va,43:31,45:32,46:42,47:$Vb,49:43,76:$Vc,77:$Vd,78:$Ve,79:$Vf,80:$Vg,81:$Vh,95:$Vi,96:$Vj,99:$Vk,100:$Vl,101:$Vm,103:$Vn,104:$Vo,108:44,110:$Vp,111:$Vq,112:$Vr,113:$Vs,114:$Vt,115:$Vu,116:$Vv,117:$Vw,118:$Vx,119:$Vy},{8:60,10:[1,61],15:$Vz},o([10,15],[2,6]),o($V4,[2,17]),o($V4,[2,18]),o($V4,[2,19]),{20:[1,64],21:[1,65],22:$VA,27:63,30:66},o($VB,[2,11]),o($VB,[2,12]),o($VB,[2,13]),o($VB,[2,14]),o($VB,[2,15]),o($VB,[2,16]),{9:68,20:$VC,21:$VD,23:$VE,44:69,67:73,70:[1,74],71:[1,75]},{9:76,20:$VC,21:$VD,23:$VE},{9:77,20:$VC,21:$VD,23:$VE},{9:78,20:$VC,21:$VD,23:$VE},{9:79,20:$VC,21:$VD,23:$VE},{9:80,20:$VC,21:$VD,23:$VE},{9:82,20:$VC,21:$VD,22:[1,81],23:$VE},o($VB,[2,44]),o($VF,[2,51],{30:83,22:$VA}),{22:[1,84]},{22:[1,85]},{22:[1,86]},{22:[1,87]},{26:$VG,47:$VH,74:[1,91],81:$VI,87:90,88:[1,88],90:[1,89],95:$VJ,96:$VK,99:$VL,100:$VM,101:$VN,103:$VO,104:$VP,107:94,109:92,114:$VQ,115:$VR,116:$VS,117:$VT,118:$VU,119:$VV},o($VB,[2,153]),o($VB,[2,154]),o($VB,[2,155]),o($VB,[2,156]),o($VW,[2,52],{48:[1,110]}),o($VX,[2,69],{108:121,40:[1,111],47:$Vb,50:[1,112],52:[1,113],54:[1,114],56:[1,115],58:[1,116],60:[1,117],62:[1,118],63:[1,119],65:[1,120],81:$Vh,95:$Vi,96:$Vj,99:$Vk,100:$Vl,101:$Vm,103:$Vn,104:$Vo,114:$Vt,115:$Vu,116:$Vv,117:$Vw,118:$Vx,119:$Vy}),o($VY,[2,145]),o($VY,[2,170]),o($VY,[2,171]),o($VY,[2,172]),o($VY,[2,173]),o($VY,[2,174]),o($VY,[2,175]),o($VY,[2,176]),o($VY,[2,177]),o($VY,[2,178]),o($VY,[2,179]),o($VY,[2,180]),o($VY,[2,181]),o($VY,[2,182]),o($VY,[2,183]),o($VY,[2,184]),{9:122,20:$VC,21:$VD,23:$VE},{11:123,14:[1,124]},o($VZ,[2,8]),o($V4,[2,20]),o($V4,[2,26]),o($V4,[2,27]),{21:[1,125]},o($V_,[2,34],{30:126,22:$VA}),o($VB,[2,35]),{45:127,46:42,47:$Vb,49:43,81:$Vh,95:$Vi,96:$Vj,99:$Vk,100:$Vl,101:$Vm,103:$Vn,104:$Vo,108:44,114:$Vt,115:$Vu,116:$Vv,117:$Vw,118:$Vx,119:$Vy},o($V$,[2,45]),o($V$,[2,46]),o($V$,[2,47]),o($V01,[2,73],{68:128,69:[1,129],72:[1,130]}),{22:$V11,24:$V21,26:$V31,38:$V41,39:131,42:$V51,47:$VH,62:$V61,70:$V71,73:132,74:$V81,75:143,76:$V91,77:$Va1,78:$Vb1,79:$Vc1,80:$Vd1,81:$Ve1,82:$Vf1,84:134,85:$Vg1,95:$VJ,96:$VK,99:$VL,100:$VM,101:$Vh1,103:$VO,104:$VP,105:$Vi1,106:$Vj1,107:140,114:$VQ,115:$VR,116:$VS,117:$VT,118:$VU,119:$VV},o([47,69,72,81,95,96,99,100,101,103,104,114,115,116,117,118,119],[2,75]),o($VB,[2,36]),o($VB,[2,37]),o($VB,[2,38]),o($VB,[2,39]),o($VB,[2,40]),{22:$V11,24:$V21,26:$V31,38:$V41,39:155,42:$V51,47:$VH,62:$V61,70:$V71,73:132,74:$V81,75:143,76:$V91,77:$Va1,78:$Vb1,79:$Vc1,80:$Vd1,81:$Ve1,82:$Vf1,84:134,85:$Vg1,95:$VJ,96:$VK,99:$VL,100:$VM,101:$Vh1,103:$VO,104:$VP,105:$Vi1,106:$Vj1,107:140,114:$VQ,115:$VR,116:$VS,117:$VT,118:$VU,119:$VV},o($Vk1,$V5,{17:156}),o($VF,[2,50],{47:$Vl1}),{26:$VG,47:$VH,81:$VI,87:158,92:[1,159],95:$VJ,96:$VK,99:$VL,100:$VM,101:$VN,103:$VO,104:$VP,107:94,109:92,114:$VQ,115:$VR,116:$VS,117:$VT,118:$VU,119:$VV},{85:[1,160],93:161,95:[1,162]},{26:$VG,47:$VH,81:$VI,85:[1,163],87:164,95:$VJ,96:$VK,99:$VL,100:$VM,101:$VN,103:$VO,104:$VP,107:94,109:92,114:$VQ,115:$VR,116:$VS,117:$VT,118:$VU,119:$VV},{26:$VG,47:$VH,81:$VI,87:165,95:$VJ,96:$VK,99:$VL,100:$VM,101:$VN,103:$VO,104:$VP,107:94,109:92,114:$VQ,115:$VR,116:$VS,117:$VT,118:$VU,119:$VV},o($VZ,[2,96],{22:[1,166],89:[1,167]}),o($VZ,[2,100],{22:[1,168]}),o($VZ,[2,104],{107:94,109:170,22:[1,169],26:$VG,47:$VH,81:$VI,95:$VJ,96:$VK,99:$VL,100:$VM,101:$VN,103:$VO,104:$VP,114:$VQ,115:$VR,116:$VS,117:$VT,118:$VU,119:$VV}),o($VZ,[2,106],{22:[1,171]}),o($Vm1,[2,147]),o($Vm1,[2,149]),o($Vm1,[2,150]),o($Vm1,[2,151]),o($Vm1,[2,152]),o($Vn1,[2,157]),o($Vn1,[2,158]),o($Vn1,[2,159]),o($Vn1,[2,160]),o($Vn1,[2,161]),o($Vn1,[2,162]),o($Vn1,[2,163]),o($Vn1,[2,164]),o($Vn1,[2,165]),o($Vn1,[2,166]),o($Vn1,[2,167]),o($Vn1,[2,168]),o($Vn1,[2,169]),{47:$Vb,49:172,81:$Vh,95:$Vi,96:$Vj,99:$Vk,100:$Vl,101:$Vm,103:$Vn,104:$Vo,108:44,114:$Vt,115:$Vu,116:$Vv,117:$Vw,118:$Vx,119:$Vy},{22:$V11,24:$V21,26:$V31,38:$V41,39:173,42:$V51,47:$VH,62:$V61,70:$V71,73:132,74:$V81,75:143,76:$V91,77:$Va1,78:$Vb1,79:$Vc1,80:$Vd1,81:$Ve1,82:$Vf1,84:134,85:$Vg1,95:$VJ,96:$VK,99:$VL,100:$VM,101:$Vh1,103:$VO,104:$VP,105:$Vi1,106:$Vj1,107:140,114:$VQ,115:$VR,116:$VS,117:$VT,118:$VU,119:$VV},{22:$V11,24:$V21,26:$V31,38:$V41,39:175,42:$V51,47:$VH,50:[1,174],62:$V61,70:$V71,73:132,74:$V81,75:143,76:$V91,77:$Va1,78:$Vb1,79:$Vc1,80:$Vd1,81:$Ve1,82:$Vf1,84:134,85:$Vg1,95:$VJ,96:$VK,99:$VL,100:$VM,101:$Vh1,103:$VO,104:$VP,105:$Vi1,106:$Vj1,107:140,114:$VQ,115:$VR,116:$VS,117:$VT,118:$VU,119:$VV},{22:$V11,24:$V21,26:$V31,38:$V41,39:176,42:$V51,47:$VH,62:$V61,70:$V71,73:132,74:$V81,75:143,76:$V91,77:$Va1,78:$Vb1,79:$Vc1,80:$Vd1,81:$Ve1,82:$Vf1,84:134,85:$Vg1,95:$VJ,96:$VK,99:$VL,100:$VM,101:$Vh1,103:$VO,104:$VP,105:$Vi1,106:$Vj1,107:140,114:$VQ,115:$VR,116:$VS,117:$VT,118:$VU,119:$VV},{22:$V11,24:$V21,26:$V31,38:$V41,39:177,42:$V51,47:$VH,62:$V61,70:$V71,73:132,74:$V81,75:143,76:$V91,77:$Va1,78:$Vb1,79:$Vc1,80:$Vd1,81:$Ve1,82:$Vf1,84:134,85:$Vg1,95:$VJ,96:$VK,99:$VL,100:$VM,101:$Vh1,103:$VO,104:$VP,105:$Vi1,106:$Vj1,107:140,114:$VQ,115:$VR,116:$VS,117:$VT,118:$VU,119:$VV},{22:$V11,24:$V21,26:$V31,38:$V41,39:178,42:$V51,47:$VH,62:$V61,70:$V71,73:132,74:$V81,75:143,76:$V91,77:$Va1,78:$Vb1,79:$Vc1,80:$Vd1,81:$Ve1,82:$Vf1,84:134,85:$Vg1,95:$VJ,96:$VK,99:$VL,100:$VM,101:$Vh1,103:$VO,104:$VP,105:$Vi1,106:$Vj1,107:140,114:$VQ,115:$VR,116:$VS,117:$VT,118:$VU,119:$VV},{22:$V11,24:$V21,26:$V31,38:$V41,39:179,42:$V51,47:$VH,62:$V61,70:$V71,73:132,74:$V81,75:143,76:$V91,77:$Va1,78:$Vb1,79:$Vc1,80:$Vd1,81:$Ve1,82:$Vf1,84:134,85:$Vg1,95:$VJ,96:$VK,99:$VL,100:$VM,101:$Vh1,103:$VO,104:$VP,105:$Vi1,106:$Vj1,107:140,114:$VQ,115:$VR,116:$VS,117:$VT,118:$VU,119:$VV},{22:$V11,24:$V21,26:$V31,38:$V41,39:180,42:$V51,47:$VH,60:[1,181],62:$V61,70:$V71,73:132,74:$V81,75:143,76:$V91,77:$Va1,78:$Vb1,79:$Vc1,80:$Vd1,81:$Ve1,82:$Vf1,84:134,85:$Vg1,95:$VJ,96:$VK,99:$VL,100:$VM,101:$Vh1,103:$VO,104:$VP,105:$Vi1,106:$Vj1,107:140,114:$VQ,115:$VR,116:$VS,117:$VT,118:$VU,119:$VV},{22:$V11,24:$V21,26:$V31,38:$V41,39:182,42:$V51,47:$VH,62:$V61,70:$V71,73:132,74:$V81,75:143,76:$V91,77:$Va1,78:$Vb1,79:$Vc1,80:$Vd1,81:$Ve1,82:$Vf1,84:134,85:$Vg1,95:$VJ,96:$VK,99:$VL,100:$VM,101:$Vh1,103:$VO,104:$VP,105:$Vi1,106:$Vj1,107:140,114:$VQ,115:$VR,116:$VS,117:$VT,118:$VU,119:$VV},{22:$V11,24:$V21,26:$V31,38:$V41,39:183,42:$V51,47:$VH,62:$V61,70:$V71,73:132,74:$V81,75:143,76:$V91,77:$Va1,78:$Vb1,79:$Vc1,80:$Vd1,81:$Ve1,82:$Vf1,84:134,85:$Vg1,95:$VJ,96:$VK,99:$VL,100:$VM,101:$Vh1,103:$VO,104:$VP,105:$Vi1,106:$Vj1,107:140,114:$VQ,115:$VR,116:$VS,117:$VT,118:$VU,119:$VV},{22:$V11,24:$V21,26:$V31,38:$V41,39:184,42:$V51,47:$VH,62:$V61,70:$V71,73:132,74:$V81,75:143,76:$V91,77:$Va1,78:$Vb1,79:$Vc1,80:$Vd1,81:$Ve1,82:$Vf1,84:134,85:$Vg1,95:$VJ,96:$VK,99:$VL,100:$VM,101:$Vh1,103:$VO,104:$VP,105:$Vi1,106:$Vj1,107:140,114:$VQ,115:$VR,116:$VS,117:$VT,118:$VU,119:$VV},o($VY,[2,146]),o($Vo1,[2,3]),{8:185,15:$Vz},{15:[2,7]},o($V4,[2,28]),o($V_,[2,33]),o($VF,[2,48],{30:186,22:$VA}),o($V01,[2,70],{22:[1,187]}),{22:[1,188]},{22:$V11,24:$V21,26:$V31,38:$V41,39:189,42:$V51,47:$VH,62:$V61,70:$V71,73:132,74:$V81,75:143,76:$V91,77:$Va1,78:$Vb1,79:$Vc1,80:$Vd1,81:$Ve1,82:$Vf1,84:134,85:$Vg1,95:$VJ,96:$VK,99:$VL,100:$VM,101:$Vh1,103:$VO,104:$VP,105:$Vi1,106:$Vj1,107:140,114:$VQ,115:$VR,116:$VS,117:$VT,118:$VU,119:$VV},{22:$V11,24:$V21,26:$V31,38:$V41,42:$V51,47:$VH,62:$V61,70:$V71,71:[1,190],73:191,75:143,76:$V91,77:$Va1,78:$Vb1,79:$Vc1,80:$Vd1,81:$Ve1,82:$Vf1,84:134,85:$Vg1,95:$VJ,96:$VK,99:$VL,100:$VM,101:$Vh1,103:$VO,104:$VP,105:$Vi1,106:$Vj1,107:140,114:$VQ,115:$VR,116:$VS,117:$VT,118:$VU,119:$VV},o($Vn1,[2,77]),o($Vn1,[2,79]),o($Vn1,[2,135]),o($Vn1,[2,136]),o($Vn1,[2,137]),o($Vn1,[2,138]),o($Vn1,[2,139]),o($Vn1,[2,140]),o($Vn1,[2,141]),o($Vn1,[2,142]),o($Vn1,[2,143]),o($Vn1,[2,144]),o($Vn1,[2,80]),o($Vn1,[2,81]),o($Vn1,[2,82]),o($Vn1,[2,83]),o($Vn1,[2,84]),o($Vn1,[2,85]),o($Vn1,[2,86]),o($Vn1,[2,87]),o($Vn1,[2,88]),o($Vn1,[2,89]),o($Vn1,[2,90]),{9:193,20:$VC,21:$VD,22:$V11,23:$VE,24:$V21,26:$V31,38:$V41,40:[1,192],42:$V51,47:$VH,62:$V61,70:$V71,73:191,75:143,76:$V91,77:$Va1,78:$Vb1,79:$Vc1,80:$Vd1,81:$Ve1,82:$Vf1,84:134,85:$Vg1,95:$VJ,96:$VK,99:$VL,100:$VM,101:$Vh1,103:$VO,104:$VP,105:$Vi1,106:$Vj1,107:140,114:$VQ,115:$VR,116:$VS,117:$VT,118:$VU,119:$VV},{18:18,19:19,20:$V6,21:$V7,22:$V8,23:$V9,32:24,33:25,34:26,35:27,36:28,37:29,38:$Va,42:[1,194],43:31,45:32,46:42,47:$Vb,49:43,76:$Vc,77:$Vd,78:$Ve,79:$Vf,80:$Vg,81:$Vh,95:$Vi,96:$Vj,99:$Vk,100:$Vl,101:$Vm,103:$Vn,104:$Vo,108:44,110:$Vp,111:$Vq,112:$Vr,113:$Vs,114:$Vt,115:$Vu,116:$Vv,117:$Vw,118:$Vx,119:$Vy},{22:$VA,30:195},{22:[1,196],26:$VG,47:$VH,81:$VI,95:$VJ,96:$VK,99:$VL,100:$VM,101:$VN,103:$VO,104:$VP,107:94,109:170,114:$VQ,115:$VR,116:$VS,117:$VT,118:$VU,119:$VV},{22:[1,197]},{22:[1,198]},{22:[1,199],96:[1,200]},o($Vp1,[2,118]),{22:[1,201]},{22:[1,202],26:$VG,47:$VH,81:$VI,95:$VJ,96:$VK,99:$VL,100:$VM,101:$VN,103:$VO,104:$VP,107:94,109:170,114:$VQ,115:$VR,116:$VS,117:$VT,118:$VU,119:$VV},{22:[1,203],26:$VG,47:$VH,81:$VI,95:$VJ,96:$VK,99:$VL,100:$VM,101:$VN,103:$VO,104:$VP,107:94,109:170,114:$VQ,115:$VR,116:$VS,117:$VT,118:$VU,119:$VV},{74:[1,204]},o($VZ,[2,98],{22:[1,205]}),{74:[1,206],91:[1,207]},{74:[1,208]},o($Vm1,[2,148]),{74:[1,209],91:[1,210]},o($VW,[2,54],{108:121,47:$Vb,81:$Vh,95:$Vi,96:$Vj,99:$Vk,100:$Vl,101:$Vm,103:$Vn,104:$Vo,114:$Vt,115:$Vu,116:$Vv,117:$Vw,118:$Vx,119:$Vy}),{22:$V11,24:$V21,26:$V31,38:$V41,41:[1,211],42:$V51,47:$VH,62:$V61,70:$V71,73:191,75:143,76:$V91,77:$Va1,78:$Vb1,79:$Vc1,80:$Vd1,81:$Ve1,82:$Vf1,84:134,85:$Vg1,95:$VJ,96:$VK,99:$VL,100:$VM,101:$Vh1,103:$VO,104:$VP,105:$Vi1,106:$Vj1,107:140,114:$VQ,115:$VR,116:$VS,117:$VT,118:$VU,119:$VV},{22:$V11,24:$V21,26:$V31,38:$V41,39:212,42:$V51,47:$VH,62:$V61,70:$V71,73:132,74:$V81,75:143,76:$V91,77:$Va1,78:$Vb1,79:$Vc1,80:$Vd1,81:$Ve1,82:$Vf1,84:134,85:$Vg1,95:$VJ,96:$VK,99:$VL,100:$VM,101:$Vh1,103:$VO,104:$VP,105:$Vi1,106:$Vj1,107:140,114:$VQ,115:$VR,116:$VS,117:$VT,118:$VU,119:$VV},{22:$V11,24:$V21,26:$V31,38:$V41,42:$V51,47:$VH,51:[1,213],62:$V61,70:$V71,73:191,75:143,76:$V91,77:$Va1,78:$Vb1,79:$Vc1,80:$Vd1,81:$Ve1,82:$Vf1,84:134,85:$Vg1,95:$VJ,96:$VK,99:$VL,100:$VM,101:$Vh1,103:$VO,104:$VP,105:$Vi1,106:$Vj1,107:140,114:$VQ,115:$VR,116:$VS,117:$VT,118:$VU,119:$VV},{22:$V11,24:$V21,26:$V31,38:$V41,42:$V51,47:$VH,53:[1,214],62:$V61,70:$V71,73:191,75:143,76:$V91,77:$Va1,78:$Vb1,79:$Vc1,80:$Vd1,81:$Ve1,82:$Vf1,84:134,85:$Vg1,95:$VJ,96:$VK,99:$VL,100:$VM,101:$Vh1,103:$VO,104:$VP,105:$Vi1,106:$Vj1,107:140,114:$VQ,115:$VR,116:$VS,117:$VT,118:$VU,119:$VV},{22:$V11,24:$V21,26:$V31,38:$V41,42:$V51,47:$VH,55:[1,215],62:$V61,70:$V71,73:191,75:143,76:$V91,77:$Va1,78:$Vb1,79:$Vc1,80:$Vd1,81:$Ve1,82:$Vf1,84:134,85:$Vg1,95:$VJ,96:$VK,99:$VL,100:$VM,101:$Vh1,103:$VO,104:$VP,105:$Vi1,106:$Vj1,107:140,114:$VQ,115:$VR,116:$VS,117:$VT,118:$VU,119:$VV},{22:$V11,24:$V21,26:$V31,38:$V41,42:$V51,47:$VH,57:[1,216],62:$V61,70:$V71,73:191,75:143,76:$V91,77:$Va1,78:$Vb1,79:$Vc1,80:$Vd1,81:$Ve1,82:$Vf1,84:134,85:$Vg1,95:$VJ,96:$VK,99:$VL,100:$VM,101:$Vh1,103:$VO,104:$VP,105:$Vi1,106:$Vj1,107:140,114:$VQ,115:$VR,116:$VS,117:$VT,118:$VU,119:$VV},{22:$V11,24:$V21,26:$V31,38:$V41,42:$V51,47:$VH,59:[1,217],62:$V61,70:$V71,73:191,75:143,76:$V91,77:$Va1,78:$Vb1,79:$Vc1,80:$Vd1,81:$Ve1,82:$Vf1,84:134,85:$Vg1,95:$VJ,96:$VK,99:$VL,100:$VM,101:$Vh1,103:$VO,104:$VP,105:$Vi1,106:$Vj1,107:140,114:$VQ,115:$VR,116:$VS,117:$VT,118:$VU,119:$VV},{22:$V11,24:$V21,26:$V31,38:$V41,42:$V51,47:$VH,61:[1,218],62:$V61,70:$V71,73:191,75:143,76:$V91,77:$Va1,78:$Vb1,79:$Vc1,80:$Vd1,81:$Ve1,82:$Vf1,84:134,85:$Vg1,95:$VJ,96:$VK,99:$VL,100:$VM,101:$Vh1,103:$VO,104:$VP,105:$Vi1,106:$Vj1,107:140,114:$VQ,115:$VR,116:$VS,117:$VT,118:$VU,119:$VV},{22:$V11,24:$V21,26:$V31,38:$V41,39:219,42:$V51,47:$VH,62:$V61,70:$V71,73:132,74:$V81,75:143,76:$V91,77:$Va1,78:$Vb1,79:$Vc1,80:$Vd1,81:$Ve1,82:$Vf1,84:134,85:$Vg1,95:$VJ,96:$VK,99:$VL,100:$VM,101:$Vh1,103:$VO,104:$VP,105:$Vi1,106:$Vj1,107:140,114:$VQ,115:$VR,116:$VS,117:$VT,118:$VU,119:$VV},{22:$V11,24:$V21,26:$V31,38:$V41,41:[1,220],42:$V51,47:$VH,62:$V61,70:$V71,73:191,75:143,76:$V91,77:$Va1,78:$Vb1,79:$Vc1,80:$Vd1,81:$Ve1,82:$Vf1,84:134,85:$Vg1,95:$VJ,96:$VK,99:$VL,100:$VM,101:$Vh1,103:$VO,104:$VP,105:$Vi1,106:$Vj1,107:140,114:$VQ,115:$VR,116:$VS,117:$VT,118:$VU,119:$VV},{22:$V11,24:$V21,26:$V31,38:$V41,42:$V51,47:$VH,62:$V61,64:[1,221],66:[1,222],70:$V71,73:191,75:143,76:$V91,77:$Va1,78:$Vb1,79:$Vc1,80:$Vd1,81:$Ve1,82:$Vf1,84:134,85:$Vg1,95:$VJ,96:$VK,99:$VL,100:$VM,101:$Vh1,103:$VO,104:$VP,105:$Vi1,106:$Vj1,107:140,114:$VQ,115:$VR,116:$VS,117:$VT,118:$VU,119:$VV},{22:$V11,24:$V21,26:$V31,38:$V41,42:$V51,47:$VH,62:$V61,64:[1,224],66:[1,223],70:$V71,73:191,75:143,76:$V91,77:$Va1,78:$Vb1,79:$Vc1,80:$Vd1,81:$Ve1,82:$Vf1,84:134,85:$Vg1,95:$VJ,96:$VK,99:$VL,100:$VM,101:$Vh1,103:$VO,104:$VP,105:$Vi1,106:$Vj1,107:140,114:$VQ,115:$VR,116:$VS,117:$VT,118:$VU,119:$VV},{9:225,20:$VC,21:$VD,23:$VE},o($VF,[2,49],{47:$Vl1}),o($V01,[2,72]),o($V01,[2,71]),{22:$V11,24:$V21,26:$V31,38:$V41,42:$V51,47:$VH,62:$V61,70:$V71,72:[1,226],73:191,75:143,76:$V91,77:$Va1,78:$Vb1,79:$Vc1,80:$Vd1,81:$Ve1,82:$Vf1,84:134,85:$Vg1,95:$VJ,96:$VK,99:$VL,100:$VM,101:$Vh1,103:$VO,104:$VP,105:$Vi1,106:$Vj1,107:140,114:$VQ,115:$VR,116:$VS,117:$VT,118:$VU,119:$VV},o($V01,[2,74]),o($Vn1,[2,78]),{22:$V11,24:$V21,26:$V31,38:$V41,39:227,42:$V51,47:$VH,62:$V61,70:$V71,73:132,74:$V81,75:143,76:$V91,77:$Va1,78:$Vb1,79:$Vc1,80:$Vd1,81:$Ve1,82:$Vf1,84:134,85:$Vg1,95:$VJ,96:$VK,99:$VL,100:$VM,101:$Vh1,103:$VO,104:$VP,105:$Vi1,106:$Vj1,107:140,114:$VQ,115:$VR,116:$VS,117:$VT,118:$VU,119:$VV},o($Vk1,$V5,{17:228}),o($VB,[2,43]),{46:229,47:$Vb,49:43,81:$Vh,95:$Vi,96:$Vj,99:$Vk,100:$Vl,101:$Vm,103:$Vn,104:$Vo,108:44,114:$Vt,115:$Vu,116:$Vv,117:$Vw,118:$Vx,119:$Vy},{22:$Vq1,76:$Vr1,86:230,92:$Vs1,95:$Vt1,97:231,98:232,99:$Vu1,100:$Vv1,101:$Vw1,102:$Vx1,103:$Vy1,104:$Vz1,105:$VA1},{22:$Vq1,76:$Vr1,86:244,92:$Vs1,95:$Vt1,97:231,98:232,99:$Vu1,100:$Vv1,101:$Vw1,102:$Vx1,103:$Vy1,104:$Vz1,105:$VA1},{22:$Vq1,76:$Vr1,86:245,92:$Vs1,94:[1,246],95:$Vt1,97:231,98:232,99:$Vu1,100:$Vv1,101:$Vw1,102:$Vx1,103:$Vy1,104:$Vz1,105:$VA1},{22:$Vq1,76:$Vr1,86:247,92:$Vs1,94:[1,248],95:$Vt1,97:231,98:232,99:$Vu1,100:$Vv1,101:$Vw1,102:$Vx1,103:$Vy1,104:$Vz1,105:$VA1},{95:[1,249]},{22:$Vq1,76:$Vr1,86:250,92:$Vs1,95:$Vt1,97:231,98:232,99:$Vu1,100:$Vv1,101:$Vw1,102:$Vx1,103:$Vy1,104:$Vz1,105:$VA1},{22:$Vq1,76:$Vr1,86:251,92:$Vs1,95:$Vt1,97:231,98:232,99:$Vu1,100:$Vv1,101:$Vw1,102:$Vx1,103:$Vy1,104:$Vz1,105:$VA1},{26:$VG,47:$VH,81:$VI,87:252,95:$VJ,96:$VK,99:$VL,100:$VM,101:$VN,103:$VO,104:$VP,107:94,109:92,114:$VQ,115:$VR,116:$VS,117:$VT,118:$VU,119:$VV},o($VZ,[2,97]),{74:[1,253]},o($VZ,[2,101],{22:[1,254]}),o($VZ,[2,102]),o($VZ,[2,105]),o($VZ,[2,107],{22:[1,255]}),o($VZ,[2,108]),o($VX,[2,55]),{22:$V11,24:$V21,26:$V31,38:$V41,42:$V51,47:$VH,51:[1,256],62:$V61,70:$V71,73:191,75:143,76:$V91,77:$Va1,78:$Vb1,79:$Vc1,80:$Vd1,81:$Ve1,82:$Vf1,84:134,85:$Vg1,95:$VJ,96:$VK,99:$VL,100:$VM,101:$Vh1,103:$VO,104:$VP,105:$Vi1,106:$Vj1,107:140,114:$VQ,115:$VR,116:$VS,117:$VT,118:$VU,119:$VV},o($VX,[2,61]),o($VX,[2,57]),o($VX,[2,58]),o($VX,[2,59]),o($VX,[2,60]),o($VX,[2,62]),{22:$V11,24:$V21,26:$V31,38:$V41,42:$V51,47:$VH,61:[1,257],62:$V61,70:$V71,73:191,75:143,76:$V91,77:$Va1,78:$Vb1,79:$Vc1,80:$Vd1,81:$Ve1,82:$Vf1,84:134,85:$Vg1,95:$VJ,96:$VK,99:$VL,100:$VM,101:$Vh1,103:$VO,104:$VP,105:$Vi1,106:$Vj1,107:140,114:$VQ,115:$VR,116:$VS,117:$VT,118:$VU,119:$VV},o($VX,[2,64]),o($VX,[2,65]),o($VX,[2,67]),o($VX,[2,66]),o($VX,[2,68]),o($Vo1,[2,4]),o([22,47,81,95,96,99,100,101,103,104,114,115,116,117,118,119],[2,76]),{22:$V11,24:$V21,26:$V31,38:$V41,41:[1,258],42:$V51,47:$VH,62:$V61,70:$V71,73:191,75:143,76:$V91,77:$Va1,78:$Vb1,79:$Vc1,80:$Vd1,81:$Ve1,82:$Vf1,84:134,85:$Vg1,95:$VJ,96:$VK,99:$VL,100:$VM,101:$Vh1,103:$VO,104:$VP,105:$Vi1,106:$Vj1,107:140,114:$VQ,115:$VR,116:$VS,117:$VT,118:$VU,119:$VV},{18:18,19:19,20:$V6,21:$V7,22:$V8,23:$V9,32:24,33:25,34:26,35:27,36:28,37:29,38:$Va,42:[1,259],43:31,45:32,46:42,47:$Vb,49:43,76:$Vc,77:$Vd,78:$Ve,79:$Vf,80:$Vg,81:$Vh,95:$Vi,96:$Vj,99:$Vk,100:$Vl,101:$Vm,103:$Vn,104:$Vo,108:44,110:$Vp,111:$Vq,112:$Vr,113:$Vs,114:$Vt,115:$Vu,116:$Vv,117:$Vw,118:$Vx,119:$Vy},o($VW,[2,53]),o($VZ,[2,110],{96:$VB1}),o($VC1,[2,120],{98:261,22:$Vq1,76:$Vr1,92:$Vs1,95:$Vt1,99:$Vu1,100:$Vv1,101:$Vw1,102:$Vx1,103:$Vy1,104:$Vz1,105:$VA1}),o($VD1,[2,122]),o($VD1,[2,124]),o($VD1,[2,125]),o($VD1,[2,126]),o($VD1,[2,127]),o($VD1,[2,128]),o($VD1,[2,129]),o($VD1,[2,130]),o($VD1,[2,131]),o($VD1,[2,132]),o($VD1,[2,133]),o($VD1,[2,134]),o($VZ,[2,111],{96:$VB1}),o($VZ,[2,112],{96:$VB1}),{22:[1,262]},o($VZ,[2,113],{96:$VB1}),{22:[1,263]},o($Vp1,[2,119]),o($VZ,[2,93],{96:$VB1}),o($VZ,[2,94],{96:$VB1}),o($VZ,[2,95],{107:94,109:170,26:$VG,47:$VH,81:$VI,95:$VJ,96:$VK,99:$VL,100:$VM,101:$VN,103:$VO,104:$VP,114:$VQ,115:$VR,116:$VS,117:$VT,118:$VU,119:$VV}),o($VZ,[2,99]),{91:[1,264]},{91:[1,265]},{51:[1,266]},{61:[1,267]},{9:268,20:$VC,21:$VD,23:$VE},o($VB,[2,42]),{22:$Vq1,76:$Vr1,92:$Vs1,95:$Vt1,97:269,98:232,99:$Vu1,100:$Vv1,101:$Vw1,102:$Vx1,103:$Vy1,104:$Vz1,105:$VA1},o($VD1,[2,123]),{26:$VG,47:$VH,81:$VI,87:270,95:$VJ,96:$VK,99:$VL,100:$VM,101:$VN,103:$VO,104:$VP,107:94,109:92,114:$VQ,115:$VR,116:$VS,117:$VT,118:$VU,119:$VV},{26:$VG,47:$VH,81:$VI,87:271,95:$VJ,96:$VK,99:$VL,100:$VM,101:$VN,103:$VO,104:$VP,107:94,109:92,114:$VQ,115:$VR,116:$VS,117:$VT,118:$VU,119:$VV},o($VZ,[2,103]),o($VZ,[2,109]),o($VX,[2,56]),o($VX,[2,63]),o($Vk1,$V5,{17:272}),o($VC1,[2,121],{98:261,22:$Vq1,76:$Vr1,92:$Vs1,95:$Vt1,99:$Vu1,100:$Vv1,101:$Vw1,102:$Vx1,103:$Vy1,104:$Vz1,105:$VA1}),o($VZ,[2,116],{107:94,109:170,22:[1,273],26:$VG,47:$VH,81:$VI,95:$VJ,96:$VK,99:$VL,100:$VM,101:$VN,103:$VO,104:$VP,114:$VQ,115:$VR,116:$VS,117:$VT,118:$VU,119:$VV}),o($VZ,[2,117],{107:94,109:170,22:[1,274],26:$VG,47:$VH,81:$VI,95:$VJ,96:$VK,99:$VL,100:$VM,101:$VN,103:$VO,104:$VP,114:$VQ,115:$VR,116:$VS,117:$VT,118:$VU,119:$VV}),{18:18,19:19,20:$V6,21:$V7,22:$V8,23:$V9,32:24,33:25,34:26,35:27,36:28,37:29,38:$Va,42:[1,275],43:31,45:32,46:42,47:$Vb,49:43,76:$Vc,77:$Vd,78:$Ve,79:$Vf,80:$Vg,81:$Vh,95:$Vi,96:$Vj,99:$Vk,100:$Vl,101:$Vm,103:$Vn,104:$Vo,108:44,110:$Vp,111:$Vq,112:$Vr,113:$Vs,114:$Vt,115:$Vu,116:$Vv,117:$Vw,118:$Vx,119:$Vy},{22:$Vq1,76:$Vr1,86:276,92:$Vs1,95:$Vt1,97:231,98:232,99:$Vu1,100:$Vv1,101:$Vw1,102:$Vx1,103:$Vy1,104:$Vz1,105:$VA1},{22:$Vq1,76:$Vr1,86:277,92:$Vs1,95:$Vt1,97:231,98:232,99:$Vu1,100:$Vv1,101:$Vw1,102:$Vx1,103:$Vy1,104:$Vz1,105:$VA1},o($VB,[2,41]),o($VZ,[2,114],{96:$VB1}),o($VZ,[2,115],{96:$VB1})],
+defaultActions: {2:[2,1],9:[2,5],10:[2,2],124:[2,7]},
 parseError: function parseError (str, hash) {
     if (hash.recoverable) {
         this.trace(str);
@@ -11759,23 +11833,23 @@ case 8:this.popState();
 break;
 case 9:return "STR";
 break;
-case 10:return 75;
+case 10:return 76;
 break;
-case 11:return 84;
+case 11:return 85;
 break;
-case 12:return 76;
+case 12:return 77;
 break;
-case 13:return 93;
+case 13:return 94;
 break;
-case 14:return 77;
+case 14:return 78;
 break;
-case 15:return 78;
+case 15:return 79;
 break;
 case 16:this.begin("href");
 break;
 case 17:this.popState();
 break;
-case 18:return 89;
+case 18:return 90;
 break;
 case 19:this.begin("callbackname");
 break;
@@ -11783,17 +11857,17 @@ case 20:this.popState();
 break;
 case 21:this.popState(); this.begin("callbackargs");
 break;
-case 22:return 87;
+case 22:return 88;
 break;
 case 23:this.popState();
 break;
-case 24:return 88;
+case 24:return 89;
 break;
 case 25:this.begin("click");
 break;
 case 26:this.popState();
 break;
-case 27:return 79;
+case 27:return 80;
 break;
 case 28:if(yy.lex.firstGraph()){this.begin("dir");}  return 24;
 break;
@@ -11803,13 +11877,13 @@ case 30:return 38;
 break;
 case 31:return 42;
 break;
-case 32:return 90;
+case 32:return 91;
 break;
-case 33:return 90;
+case 33:return 91;
 break;
-case 34:return 90;
+case 34:return 91;
 break;
-case 35:return 90;
+case 35:return 91;
 break;
 case 36:   this.popState();  return 25; 
 break;
@@ -11833,114 +11907,122 @@ case 45:   this.popState();  return 26;
 break;
 case 46:   this.popState();  return 26; 
 break;
-case 47: return 94;
+case 47:return 110;
 break;
-case 48:return 102;
+case 48:return 111;
 break;
-case 49:return 47;
+case 49:return 112;
 break;
-case 50:return 99;
+case 50:return 113;
 break;
-case 51:return 46;
+case 51: return 95;
 break;
-case 52:return 20;
+case 52:return 103;
 break;
-case 53:return 95;
+case 53:return 48;
 break;
-case 54:return 113;
+case 54:return 100;
 break;
-case 55:return 70;
+case 55:return 47;
 break;
-case 56:return 70;
+case 56:return 20;
 break;
-case 57:return 70;
+case 57:return 96;
 break;
-case 58:return 69;
+case 58:return 118;
 break;
-case 59:return 69;
+case 59:return 71;
 break;
-case 60:return 69;
+case 60:return 71;
 break;
-case 61:return 51;
+case 61:return 71;
 break;
-case 62:return 52;
+case 62:return 70;
 break;
-case 63:return 53;
+case 63:return 70;
 break;
-case 64:return 54;
+case 64:return 70;
 break;
-case 65:return 55;
+case 65:return 52;
 break;
-case 66:return 56;
+case 66:return 53;
 break;
-case 67:return 57;
+case 67:return 54;
 break;
-case 68:return 58;
+case 68:return 55;
 break;
-case 69:return 100;
+case 69:return 56;
 break;
-case 70:return 103;
+case 70:return 57;
 break;
-case 71:return 114;
+case 71:return 58;
 break;
-case 72:return 111;
+case 72:return 59;
 break;
-case 73:return 104;
+case 73:return 101;
 break;
-case 74:return 112;
+case 74:return 104;
 break;
-case 75:return 112;
+case 75:return 119;
 break;
-case 76:return 105;
+case 76:return 116;
 break;
-case 77:return 61;
+case 77:return 105;
 break;
-case 78:return 81;
+case 78:return 117;
 break;
-case 79:return 'SEP';
+case 79:return 117;
 break;
-case 80:return 80;
+case 80:return 106;
 break;
-case 81:return 98;
+case 81:return 62;
 break;
-case 82:return 63;
+case 82:return 82;
 break;
-case 83:return 62;
+case 83:return 'SEP';
 break;
-case 84:return 65;
+case 84:return 81;
 break;
-case 85:return 64;
+case 85:return 99;
 break;
-case 86:return 109;
+case 86:return 64;
 break;
-case 87:return 110;
+case 87:return 63;
 break;
-case 88:return 71;
+case 88:return 66;
 break;
-case 89:return 49;
+case 89:return 65;
 break;
-case 90:return 50;
+case 90:return 114;
 break;
-case 91:return 40;
+case 91:return 115;
 break;
-case 92:return 41;
+case 92:return 72;
 break;
-case 93:return 59
+case 93:return 50;
 break;
-case 94:return 60
+case 94:return 51;
 break;
-case 95:return 120;
+case 95:return 40;
 break;
-case 96:return 21;
+case 96:return 41;
 break;
-case 97:return 22;
+case 97:return 60
 break;
-case 98:return 23;
+case 98:return 61
+break;
+case 99:return 125;
+break;
+case 100:return 21;
+break;
+case 101:return 22;
+break;
+case 102:return 23;
 break;
 }
 },
-rules: [/^(?:%%\{)/,/^(?:((?:(?!\}%%)[^:.])*))/,/^(?::)/,/^(?:\}%%)/,/^(?:((?:(?!\}%%).|\n)*))/,/^(?:%%(?!\{)[^\n]*)/,/^(?:[^\}]%%[^\n]*)/,/^(?:["])/,/^(?:["])/,/^(?:[^"]*)/,/^(?:style\b)/,/^(?:default\b)/,/^(?:linkStyle\b)/,/^(?:interpolate\b)/,/^(?:classDef\b)/,/^(?:class\b)/,/^(?:href[\s]+["])/,/^(?:["])/,/^(?:[^"]*)/,/^(?:call[\s]+)/,/^(?:\([\s]*\))/,/^(?:\()/,/^(?:[^(]*)/,/^(?:\))/,/^(?:[^)]*)/,/^(?:click[\s]+)/,/^(?:[\s\n])/,/^(?:[^\s\n]*)/,/^(?:graph\b)/,/^(?:flowchart\b)/,/^(?:subgraph\b)/,/^(?:end\b\s*)/,/^(?:_self\b)/,/^(?:_blank\b)/,/^(?:_parent\b)/,/^(?:_top\b)/,/^(?:(\r?\n)*\s*\n)/,/^(?:\s*LR\b)/,/^(?:\s*RL\b)/,/^(?:\s*TB\b)/,/^(?:\s*BT\b)/,/^(?:\s*TD\b)/,/^(?:\s*BR\b)/,/^(?:\s*<)/,/^(?:\s*>)/,/^(?:\s*\^)/,/^(?:\s*v\b)/,/^(?:[0-9]+)/,/^(?:#)/,/^(?::::)/,/^(?::)/,/^(?:&)/,/^(?:;)/,/^(?:,)/,/^(?:\*)/,/^(?:\s*[xo<]?--+[-xo>]\s*)/,/^(?:\s*[xo<]?==+[=xo>]\s*)/,/^(?:\s*[xo<]?-?\.+-[xo>]?\s*)/,/^(?:\s*[xo<]?--\s*)/,/^(?:\s*[xo<]?==\s*)/,/^(?:\s*[xo<]?-\.\s*)/,/^(?:\(-)/,/^(?:-\))/,/^(?:\(\[)/,/^(?:\]\))/,/^(?:\[\[)/,/^(?:\]\])/,/^(?:\[\()/,/^(?:\)\])/,/^(?:-)/,/^(?:\.)/,/^(?:[\_])/,/^(?:\+)/,/^(?:%)/,/^(?:=)/,/^(?:=)/,/^(?:<)/,/^(?:>)/,/^(?:\^)/,/^(?:\\\|)/,/^(?:v\b)/,/^(?:[A-Za-z]+)/,/^(?:\\\])/,/^(?:\[\/)/,/^(?:\/\])/,/^(?:\[\\)/,/^(?:[!"#$%&'*+,-.`?\\_/])/,/^(?:[\u00AA\u00B5\u00BA\u00C0-\u00D6\u00D8-\u00F6]|[\u00F8-\u02C1\u02C6-\u02D1\u02E0-\u02E4\u02EC\u02EE\u0370-\u0374\u0376\u0377]|[\u037A-\u037D\u0386\u0388-\u038A\u038C\u038E-\u03A1\u03A3-\u03F5]|[\u03F7-\u0481\u048A-\u0527\u0531-\u0556\u0559\u0561-\u0587\u05D0-\u05EA]|[\u05F0-\u05F2\u0620-\u064A\u066E\u066F\u0671-\u06D3\u06D5\u06E5\u06E6\u06EE]|[\u06EF\u06FA-\u06FC\u06FF\u0710\u0712-\u072F\u074D-\u07A5\u07B1\u07CA-\u07EA]|[\u07F4\u07F5\u07FA\u0800-\u0815\u081A\u0824\u0828\u0840-\u0858\u08A0]|[\u08A2-\u08AC\u0904-\u0939\u093D\u0950\u0958-\u0961\u0971-\u0977]|[\u0979-\u097F\u0985-\u098C\u098F\u0990\u0993-\u09A8\u09AA-\u09B0\u09B2]|[\u09B6-\u09B9\u09BD\u09CE\u09DC\u09DD\u09DF-\u09E1\u09F0\u09F1\u0A05-\u0A0A]|[\u0A0F\u0A10\u0A13-\u0A28\u0A2A-\u0A30\u0A32\u0A33\u0A35\u0A36\u0A38\u0A39]|[\u0A59-\u0A5C\u0A5E\u0A72-\u0A74\u0A85-\u0A8D\u0A8F-\u0A91\u0A93-\u0AA8]|[\u0AAA-\u0AB0\u0AB2\u0AB3\u0AB5-\u0AB9\u0ABD\u0AD0\u0AE0\u0AE1\u0B05-\u0B0C]|[\u0B0F\u0B10\u0B13-\u0B28\u0B2A-\u0B30\u0B32\u0B33\u0B35-\u0B39\u0B3D\u0B5C]|[\u0B5D\u0B5F-\u0B61\u0B71\u0B83\u0B85-\u0B8A\u0B8E-\u0B90\u0B92-\u0B95\u0B99]|[\u0B9A\u0B9C\u0B9E\u0B9F\u0BA3\u0BA4\u0BA8-\u0BAA\u0BAE-\u0BB9\u0BD0]|[\u0C05-\u0C0C\u0C0E-\u0C10\u0C12-\u0C28\u0C2A-\u0C33\u0C35-\u0C39\u0C3D]|[\u0C58\u0C59\u0C60\u0C61\u0C85-\u0C8C\u0C8E-\u0C90\u0C92-\u0CA8\u0CAA-\u0CB3]|[\u0CB5-\u0CB9\u0CBD\u0CDE\u0CE0\u0CE1\u0CF1\u0CF2\u0D05-\u0D0C\u0D0E-\u0D10]|[\u0D12-\u0D3A\u0D3D\u0D4E\u0D60\u0D61\u0D7A-\u0D7F\u0D85-\u0D96\u0D9A-\u0DB1]|[\u0DB3-\u0DBB\u0DBD\u0DC0-\u0DC6\u0E01-\u0E30\u0E32\u0E33\u0E40-\u0E46\u0E81]|[\u0E82\u0E84\u0E87\u0E88\u0E8A\u0E8D\u0E94-\u0E97\u0E99-\u0E9F\u0EA1-\u0EA3]|[\u0EA5\u0EA7\u0EAA\u0EAB\u0EAD-\u0EB0\u0EB2\u0EB3\u0EBD\u0EC0-\u0EC4\u0EC6]|[\u0EDC-\u0EDF\u0F00\u0F40-\u0F47\u0F49-\u0F6C\u0F88-\u0F8C\u1000-\u102A]|[\u103F\u1050-\u1055\u105A-\u105D\u1061\u1065\u1066\u106E-\u1070\u1075-\u1081]|[\u108E\u10A0-\u10C5\u10C7\u10CD\u10D0-\u10FA\u10FC-\u1248\u124A-\u124D]|[\u1250-\u1256\u1258\u125A-\u125D\u1260-\u1288\u128A-\u128D\u1290-\u12B0]|[\u12B2-\u12B5\u12B8-\u12BE\u12C0\u12C2-\u12C5\u12C8-\u12D6\u12D8-\u1310]|[\u1312-\u1315\u1318-\u135A\u1380-\u138F\u13A0-\u13F4\u1401-\u166C]|[\u166F-\u167F\u1681-\u169A\u16A0-\u16EA\u1700-\u170C\u170E-\u1711]|[\u1720-\u1731\u1740-\u1751\u1760-\u176C\u176E-\u1770\u1780-\u17B3\u17D7]|[\u17DC\u1820-\u1877\u1880-\u18A8\u18AA\u18B0-\u18F5\u1900-\u191C]|[\u1950-\u196D\u1970-\u1974\u1980-\u19AB\u19C1-\u19C7\u1A00-\u1A16]|[\u1A20-\u1A54\u1AA7\u1B05-\u1B33\u1B45-\u1B4B\u1B83-\u1BA0\u1BAE\u1BAF]|[\u1BBA-\u1BE5\u1C00-\u1C23\u1C4D-\u1C4F\u1C5A-\u1C7D\u1CE9-\u1CEC]|[\u1CEE-\u1CF1\u1CF5\u1CF6\u1D00-\u1DBF\u1E00-\u1F15\u1F18-\u1F1D]|[\u1F20-\u1F45\u1F48-\u1F4D\u1F50-\u1F57\u1F59\u1F5B\u1F5D\u1F5F-\u1F7D]|[\u1F80-\u1FB4\u1FB6-\u1FBC\u1FBE\u1FC2-\u1FC4\u1FC6-\u1FCC\u1FD0-\u1FD3]|[\u1FD6-\u1FDB\u1FE0-\u1FEC\u1FF2-\u1FF4\u1FF6-\u1FFC\u2071\u207F]|[\u2090-\u209C\u2102\u2107\u210A-\u2113\u2115\u2119-\u211D\u2124\u2126\u2128]|[\u212A-\u212D\u212F-\u2139\u213C-\u213F\u2145-\u2149\u214E\u2183\u2184]|[\u2C00-\u2C2E\u2C30-\u2C5E\u2C60-\u2CE4\u2CEB-\u2CEE\u2CF2\u2CF3]|[\u2D00-\u2D25\u2D27\u2D2D\u2D30-\u2D67\u2D6F\u2D80-\u2D96\u2DA0-\u2DA6]|[\u2DA8-\u2DAE\u2DB0-\u2DB6\u2DB8-\u2DBE\u2DC0-\u2DC6\u2DC8-\u2DCE]|[\u2DD0-\u2DD6\u2DD8-\u2DDE\u2E2F\u3005\u3006\u3031-\u3035\u303B\u303C]|[\u3041-\u3096\u309D-\u309F\u30A1-\u30FA\u30FC-\u30FF\u3105-\u312D]|[\u3131-\u318E\u31A0-\u31BA\u31F0-\u31FF\u3400-\u4DB5\u4E00-\u9FCC]|[\uA000-\uA48C\uA4D0-\uA4FD\uA500-\uA60C\uA610-\uA61F\uA62A\uA62B]|[\uA640-\uA66E\uA67F-\uA697\uA6A0-\uA6E5\uA717-\uA71F\uA722-\uA788]|[\uA78B-\uA78E\uA790-\uA793\uA7A0-\uA7AA\uA7F8-\uA801\uA803-\uA805]|[\uA807-\uA80A\uA80C-\uA822\uA840-\uA873\uA882-\uA8B3\uA8F2-\uA8F7\uA8FB]|[\uA90A-\uA925\uA930-\uA946\uA960-\uA97C\uA984-\uA9B2\uA9CF\uAA00-\uAA28]|[\uAA40-\uAA42\uAA44-\uAA4B\uAA60-\uAA76\uAA7A\uAA80-\uAAAF\uAAB1\uAAB5]|[\uAAB6\uAAB9-\uAABD\uAAC0\uAAC2\uAADB-\uAADD\uAAE0-\uAAEA\uAAF2-\uAAF4]|[\uAB01-\uAB06\uAB09-\uAB0E\uAB11-\uAB16\uAB20-\uAB26\uAB28-\uAB2E]|[\uABC0-\uABE2\uAC00-\uD7A3\uD7B0-\uD7C6\uD7CB-\uD7FB\uF900-\uFA6D]|[\uFA70-\uFAD9\uFB00-\uFB06\uFB13-\uFB17\uFB1D\uFB1F-\uFB28\uFB2A-\uFB36]|[\uFB38-\uFB3C\uFB3E\uFB40\uFB41\uFB43\uFB44\uFB46-\uFBB1\uFBD3-\uFD3D]|[\uFD50-\uFD8F\uFD92-\uFDC7\uFDF0-\uFDFB\uFE70-\uFE74\uFE76-\uFEFC]|[\uFF21-\uFF3A\uFF41-\uFF5A\uFF66-\uFFBE\uFFC2-\uFFC7\uFFCA-\uFFCF]|[\uFFD2-\uFFD7\uFFDA-\uFFDC])/,/^(?:\|)/,/^(?:\()/,/^(?:\))/,/^(?:\[)/,/^(?:\])/,/^(?:\{)/,/^(?:\})/,/^(?:")/,/^(?:(\r?\n)+)/,/^(?:\s)/,/^(?:$)/],
-conditions: {"close_directive":{"rules":[],"inclusive":false},"arg_directive":{"rules":[3,4],"inclusive":false},"type_directive":{"rules":[2,3],"inclusive":false},"open_directive":{"rules":[1],"inclusive":false},"callbackargs":{"rules":[23,24],"inclusive":false},"callbackname":{"rules":[20,21,22],"inclusive":false},"href":{"rules":[17,18],"inclusive":false},"click":{"rules":[26,27],"inclusive":false},"vertex":{"rules":[],"inclusive":false},"dir":{"rules":[36,37,38,39,40,41,42,43,44,45,46],"inclusive":false},"string":{"rules":[8,9],"inclusive":false},"INITIAL":{"rules":[0,5,6,7,10,11,12,13,14,15,16,19,25,28,29,30,31,32,33,34,35,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98],"inclusive":true}}
+rules: [/^(?:%%\{)/,/^(?:((?:(?!\}%%)[^:.])*))/,/^(?::)/,/^(?:\}%%)/,/^(?:((?:(?!\}%%).|\n)*))/,/^(?:%%(?!\{)[^\n]*)/,/^(?:[^\}]%%[^\n]*)/,/^(?:["])/,/^(?:["])/,/^(?:[^"]*)/,/^(?:style\b)/,/^(?:default\b)/,/^(?:linkStyle\b)/,/^(?:interpolate\b)/,/^(?:classDef\b)/,/^(?:class\b)/,/^(?:href[\s]+["])/,/^(?:["])/,/^(?:[^"]*)/,/^(?:call[\s]+)/,/^(?:\([\s]*\))/,/^(?:\()/,/^(?:[^(]*)/,/^(?:\))/,/^(?:[^)]*)/,/^(?:click[\s]+)/,/^(?:[\s\n])/,/^(?:[^\s\n]*)/,/^(?:graph\b)/,/^(?:flowchart\b)/,/^(?:subgraph\b)/,/^(?:end\b\s*)/,/^(?:_self\b)/,/^(?:_blank\b)/,/^(?:_parent\b)/,/^(?:_top\b)/,/^(?:(\r?\n)*\s*\n)/,/^(?:\s*LR\b)/,/^(?:\s*RL\b)/,/^(?:\s*TB\b)/,/^(?:\s*BT\b)/,/^(?:\s*TD\b)/,/^(?:\s*BR\b)/,/^(?:\s*<)/,/^(?:\s*>)/,/^(?:\s*\^)/,/^(?:\s*v\b)/,/^(?:.*direction\s+TB[^\n]*)/,/^(?:.*direction\s+BT[^\n]*)/,/^(?:.*direction\s+RL[^\n]*)/,/^(?:.*direction\s+LR[^\n]*)/,/^(?:[0-9]+)/,/^(?:#)/,/^(?::::)/,/^(?::)/,/^(?:&)/,/^(?:;)/,/^(?:,)/,/^(?:\*)/,/^(?:\s*[xo<]?--+[-xo>]\s*)/,/^(?:\s*[xo<]?==+[=xo>]\s*)/,/^(?:\s*[xo<]?-?\.+-[xo>]?\s*)/,/^(?:\s*[xo<]?--\s*)/,/^(?:\s*[xo<]?==\s*)/,/^(?:\s*[xo<]?-\.\s*)/,/^(?:\(-)/,/^(?:-\))/,/^(?:\(\[)/,/^(?:\]\))/,/^(?:\[\[)/,/^(?:\]\])/,/^(?:\[\()/,/^(?:\)\])/,/^(?:-)/,/^(?:\.)/,/^(?:[\_])/,/^(?:\+)/,/^(?:%)/,/^(?:=)/,/^(?:=)/,/^(?:<)/,/^(?:>)/,/^(?:\^)/,/^(?:\\\|)/,/^(?:v\b)/,/^(?:[A-Za-z]+)/,/^(?:\\\])/,/^(?:\[\/)/,/^(?:\/\])/,/^(?:\[\\)/,/^(?:[!"#$%&'*+,-.`?\\_/])/,/^(?:[\u00AA\u00B5\u00BA\u00C0-\u00D6\u00D8-\u00F6]|[\u00F8-\u02C1\u02C6-\u02D1\u02E0-\u02E4\u02EC\u02EE\u0370-\u0374\u0376\u0377]|[\u037A-\u037D\u0386\u0388-\u038A\u038C\u038E-\u03A1\u03A3-\u03F5]|[\u03F7-\u0481\u048A-\u0527\u0531-\u0556\u0559\u0561-\u0587\u05D0-\u05EA]|[\u05F0-\u05F2\u0620-\u064A\u066E\u066F\u0671-\u06D3\u06D5\u06E5\u06E6\u06EE]|[\u06EF\u06FA-\u06FC\u06FF\u0710\u0712-\u072F\u074D-\u07A5\u07B1\u07CA-\u07EA]|[\u07F4\u07F5\u07FA\u0800-\u0815\u081A\u0824\u0828\u0840-\u0858\u08A0]|[\u08A2-\u08AC\u0904-\u0939\u093D\u0950\u0958-\u0961\u0971-\u0977]|[\u0979-\u097F\u0985-\u098C\u098F\u0990\u0993-\u09A8\u09AA-\u09B0\u09B2]|[\u09B6-\u09B9\u09BD\u09CE\u09DC\u09DD\u09DF-\u09E1\u09F0\u09F1\u0A05-\u0A0A]|[\u0A0F\u0A10\u0A13-\u0A28\u0A2A-\u0A30\u0A32\u0A33\u0A35\u0A36\u0A38\u0A39]|[\u0A59-\u0A5C\u0A5E\u0A72-\u0A74\u0A85-\u0A8D\u0A8F-\u0A91\u0A93-\u0AA8]|[\u0AAA-\u0AB0\u0AB2\u0AB3\u0AB5-\u0AB9\u0ABD\u0AD0\u0AE0\u0AE1\u0B05-\u0B0C]|[\u0B0F\u0B10\u0B13-\u0B28\u0B2A-\u0B30\u0B32\u0B33\u0B35-\u0B39\u0B3D\u0B5C]|[\u0B5D\u0B5F-\u0B61\u0B71\u0B83\u0B85-\u0B8A\u0B8E-\u0B90\u0B92-\u0B95\u0B99]|[\u0B9A\u0B9C\u0B9E\u0B9F\u0BA3\u0BA4\u0BA8-\u0BAA\u0BAE-\u0BB9\u0BD0]|[\u0C05-\u0C0C\u0C0E-\u0C10\u0C12-\u0C28\u0C2A-\u0C33\u0C35-\u0C39\u0C3D]|[\u0C58\u0C59\u0C60\u0C61\u0C85-\u0C8C\u0C8E-\u0C90\u0C92-\u0CA8\u0CAA-\u0CB3]|[\u0CB5-\u0CB9\u0CBD\u0CDE\u0CE0\u0CE1\u0CF1\u0CF2\u0D05-\u0D0C\u0D0E-\u0D10]|[\u0D12-\u0D3A\u0D3D\u0D4E\u0D60\u0D61\u0D7A-\u0D7F\u0D85-\u0D96\u0D9A-\u0DB1]|[\u0DB3-\u0DBB\u0DBD\u0DC0-\u0DC6\u0E01-\u0E30\u0E32\u0E33\u0E40-\u0E46\u0E81]|[\u0E82\u0E84\u0E87\u0E88\u0E8A\u0E8D\u0E94-\u0E97\u0E99-\u0E9F\u0EA1-\u0EA3]|[\u0EA5\u0EA7\u0EAA\u0EAB\u0EAD-\u0EB0\u0EB2\u0EB3\u0EBD\u0EC0-\u0EC4\u0EC6]|[\u0EDC-\u0EDF\u0F00\u0F40-\u0F47\u0F49-\u0F6C\u0F88-\u0F8C\u1000-\u102A]|[\u103F\u1050-\u1055\u105A-\u105D\u1061\u1065\u1066\u106E-\u1070\u1075-\u1081]|[\u108E\u10A0-\u10C5\u10C7\u10CD\u10D0-\u10FA\u10FC-\u1248\u124A-\u124D]|[\u1250-\u1256\u1258\u125A-\u125D\u1260-\u1288\u128A-\u128D\u1290-\u12B0]|[\u12B2-\u12B5\u12B8-\u12BE\u12C0\u12C2-\u12C5\u12C8-\u12D6\u12D8-\u1310]|[\u1312-\u1315\u1318-\u135A\u1380-\u138F\u13A0-\u13F4\u1401-\u166C]|[\u166F-\u167F\u1681-\u169A\u16A0-\u16EA\u1700-\u170C\u170E-\u1711]|[\u1720-\u1731\u1740-\u1751\u1760-\u176C\u176E-\u1770\u1780-\u17B3\u17D7]|[\u17DC\u1820-\u1877\u1880-\u18A8\u18AA\u18B0-\u18F5\u1900-\u191C]|[\u1950-\u196D\u1970-\u1974\u1980-\u19AB\u19C1-\u19C7\u1A00-\u1A16]|[\u1A20-\u1A54\u1AA7\u1B05-\u1B33\u1B45-\u1B4B\u1B83-\u1BA0\u1BAE\u1BAF]|[\u1BBA-\u1BE5\u1C00-\u1C23\u1C4D-\u1C4F\u1C5A-\u1C7D\u1CE9-\u1CEC]|[\u1CEE-\u1CF1\u1CF5\u1CF6\u1D00-\u1DBF\u1E00-\u1F15\u1F18-\u1F1D]|[\u1F20-\u1F45\u1F48-\u1F4D\u1F50-\u1F57\u1F59\u1F5B\u1F5D\u1F5F-\u1F7D]|[\u1F80-\u1FB4\u1FB6-\u1FBC\u1FBE\u1FC2-\u1FC4\u1FC6-\u1FCC\u1FD0-\u1FD3]|[\u1FD6-\u1FDB\u1FE0-\u1FEC\u1FF2-\u1FF4\u1FF6-\u1FFC\u2071\u207F]|[\u2090-\u209C\u2102\u2107\u210A-\u2113\u2115\u2119-\u211D\u2124\u2126\u2128]|[\u212A-\u212D\u212F-\u2139\u213C-\u213F\u2145-\u2149\u214E\u2183\u2184]|[\u2C00-\u2C2E\u2C30-\u2C5E\u2C60-\u2CE4\u2CEB-\u2CEE\u2CF2\u2CF3]|[\u2D00-\u2D25\u2D27\u2D2D\u2D30-\u2D67\u2D6F\u2D80-\u2D96\u2DA0-\u2DA6]|[\u2DA8-\u2DAE\u2DB0-\u2DB6\u2DB8-\u2DBE\u2DC0-\u2DC6\u2DC8-\u2DCE]|[\u2DD0-\u2DD6\u2DD8-\u2DDE\u2E2F\u3005\u3006\u3031-\u3035\u303B\u303C]|[\u3041-\u3096\u309D-\u309F\u30A1-\u30FA\u30FC-\u30FF\u3105-\u312D]|[\u3131-\u318E\u31A0-\u31BA\u31F0-\u31FF\u3400-\u4DB5\u4E00-\u9FCC]|[\uA000-\uA48C\uA4D0-\uA4FD\uA500-\uA60C\uA610-\uA61F\uA62A\uA62B]|[\uA640-\uA66E\uA67F-\uA697\uA6A0-\uA6E5\uA717-\uA71F\uA722-\uA788]|[\uA78B-\uA78E\uA790-\uA793\uA7A0-\uA7AA\uA7F8-\uA801\uA803-\uA805]|[\uA807-\uA80A\uA80C-\uA822\uA840-\uA873\uA882-\uA8B3\uA8F2-\uA8F7\uA8FB]|[\uA90A-\uA925\uA930-\uA946\uA960-\uA97C\uA984-\uA9B2\uA9CF\uAA00-\uAA28]|[\uAA40-\uAA42\uAA44-\uAA4B\uAA60-\uAA76\uAA7A\uAA80-\uAAAF\uAAB1\uAAB5]|[\uAAB6\uAAB9-\uAABD\uAAC0\uAAC2\uAADB-\uAADD\uAAE0-\uAAEA\uAAF2-\uAAF4]|[\uAB01-\uAB06\uAB09-\uAB0E\uAB11-\uAB16\uAB20-\uAB26\uAB28-\uAB2E]|[\uABC0-\uABE2\uAC00-\uD7A3\uD7B0-\uD7C6\uD7CB-\uD7FB\uF900-\uFA6D]|[\uFA70-\uFAD9\uFB00-\uFB06\uFB13-\uFB17\uFB1D\uFB1F-\uFB28\uFB2A-\uFB36]|[\uFB38-\uFB3C\uFB3E\uFB40\uFB41\uFB43\uFB44\uFB46-\uFBB1\uFBD3-\uFD3D]|[\uFD50-\uFD8F\uFD92-\uFDC7\uFDF0-\uFDFB\uFE70-\uFE74\uFE76-\uFEFC]|[\uFF21-\uFF3A\uFF41-\uFF5A\uFF66-\uFFBE\uFFC2-\uFFC7\uFFCA-\uFFCF]|[\uFFD2-\uFFD7\uFFDA-\uFFDC])/,/^(?:\|)/,/^(?:\()/,/^(?:\))/,/^(?:\[)/,/^(?:\])/,/^(?:\{)/,/^(?:\})/,/^(?:")/,/^(?:(\r?\n)+)/,/^(?:\s)/,/^(?:$)/],
+conditions: {"close_directive":{"rules":[],"inclusive":false},"arg_directive":{"rules":[3,4],"inclusive":false},"type_directive":{"rules":[2,3],"inclusive":false},"open_directive":{"rules":[1],"inclusive":false},"callbackargs":{"rules":[23,24],"inclusive":false},"callbackname":{"rules":[20,21,22],"inclusive":false},"href":{"rules":[17,18],"inclusive":false},"click":{"rules":[26,27],"inclusive":false},"vertex":{"rules":[],"inclusive":false},"dir":{"rules":[36,37,38,39,40,41,42,43,44,45,46],"inclusive":false},"string":{"rules":[8,9],"inclusive":false},"INITIAL":{"rules":[0,5,6,7,10,11,12,13,14,15,16,19,25,28,29,30,31,32,33,34,35,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102],"inclusive":true}}
 });
 return lexer;
 })();
@@ -12033,13 +12115,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../config */ "./src/config.js");
 /* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../utils */ "./src/utils.js");
 /* harmony import */ var _mermaidAPI__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../mermaidAPI */ "./src/mermaidAPI.js");
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
 
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 
-function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
 
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 
 
 
@@ -16051,42 +16137,45 @@ var getStyles = function getStyles() {
   }
 */
 var parser = (function(){
-var o=function(k,v,o,l){for(o=o||{},l=k.length;l--;o[k[l]]=v);return o},$V0=[1,4],$V1=[1,5],$V2=[1,6],$V3=[1,7],$V4=[1,9],$V5=[1,10,12,19,20,21,22],$V6=[1,6,10,12,19,20,21,22],$V7=[19,20,21],$V8=[1,22],$V9=[6,19,20,21,22];
+var o=function(k,v,o,l){for(o=o||{},l=k.length;l--;o[k[l]]=v);return o},$V0=[1,4],$V1=[1,5],$V2=[1,6],$V3=[1,7],$V4=[1,9],$V5=[1,11,13,20,21,22,23],$V6=[2,5],$V7=[1,6,11,13,20,21,22,23],$V8=[20,21,22],$V9=[2,8],$Va=[1,18],$Vb=[1,19],$Vc=[1,24],$Vd=[6,20,21,22,23];
 var parser = {trace: function trace () { },
 yy: {},
-symbols_: {"error":2,"start":3,"eol":4,"directive":5,"PIE":6,"document":7,"line":8,"statement":9,"txt":10,"value":11,"title":12,"title_value":13,"openDirective":14,"typeDirective":15,"closeDirective":16,":":17,"argDirective":18,"NEWLINE":19,";":20,"EOF":21,"open_directive":22,"type_directive":23,"arg_directive":24,"close_directive":25,"$accept":0,"$end":1},
-terminals_: {2:"error",6:"PIE",10:"txt",11:"value",12:"title",13:"title_value",17:":",19:"NEWLINE",20:";",21:"EOF",22:"open_directive",23:"type_directive",24:"arg_directive",25:"close_directive"},
-productions_: [0,[3,2],[3,2],[3,2],[7,0],[7,2],[8,2],[9,0],[9,2],[9,2],[9,1],[5,3],[5,5],[4,1],[4,1],[4,1],[14,1],[15,1],[18,1],[16,1]],
+symbols_: {"error":2,"start":3,"eol":4,"directive":5,"PIE":6,"document":7,"showData":8,"line":9,"statement":10,"txt":11,"value":12,"title":13,"title_value":14,"openDirective":15,"typeDirective":16,"closeDirective":17,":":18,"argDirective":19,"NEWLINE":20,";":21,"EOF":22,"open_directive":23,"type_directive":24,"arg_directive":25,"close_directive":26,"$accept":0,"$end":1},
+terminals_: {2:"error",6:"PIE",8:"showData",11:"txt",12:"value",13:"title",14:"title_value",18:":",20:"NEWLINE",21:";",22:"EOF",23:"open_directive",24:"type_directive",25:"arg_directive",26:"close_directive"},
+productions_: [0,[3,2],[3,2],[3,2],[3,3],[7,0],[7,2],[9,2],[10,0],[10,2],[10,2],[10,1],[5,3],[5,5],[4,1],[4,1],[4,1],[15,1],[16,1],[19,1],[17,1]],
 performAction: function anonymous(yytext, yyleng, yylineno, yy, yystate /* action[1] */, $$ /* vstack */, _$ /* lstack */) {
 /* this == yyval */
 
 var $0 = $$.length - 1;
 switch (yystate) {
-case 6:
+case 4:
+yy.setShowData(true);
+break;
+case 7:
  this.$ = $$[$0-1] 
 break;
-case 8:
+case 9:
  yy.addSection($$[$0-1],yy.cleanupValue($$[$0])); 
 break;
-case 9:
+case 10:
  this.$=$$[$0].trim();yy.setTitle(this.$); 
 break;
-case 16:
+case 17:
  yy.parseDirective('%%{', 'open_directive'); 
 break;
-case 17:
+case 18:
  yy.parseDirective($$[$0], 'type_directive'); 
 break;
-case 18:
+case 19:
  $$[$0] = $$[$0].trim().replace(/'/g, '"'); yy.parseDirective($$[$0], 'arg_directive'); 
 break;
-case 19:
+case 20:
  yy.parseDirective('}%%', 'close_directive', 'pie'); 
 break;
 }
 },
-table: [{3:1,4:2,5:3,6:$V0,14:8,19:$V1,20:$V2,21:$V3,22:$V4},{1:[3]},{3:10,4:2,5:3,6:$V0,14:8,19:$V1,20:$V2,21:$V3,22:$V4},{3:11,4:2,5:3,6:$V0,14:8,19:$V1,20:$V2,21:$V3,22:$V4},o($V5,[2,4],{7:12}),o($V6,[2,13]),o($V6,[2,14]),o($V6,[2,15]),{15:13,23:[1,14]},{23:[2,16]},{1:[2,1]},{1:[2,2]},o($V7,[2,7],{14:8,8:15,9:16,5:19,1:[2,3],10:[1,17],12:[1,18],22:$V4}),{16:20,17:[1,21],25:$V8},o([17,25],[2,17]),o($V5,[2,5]),{4:23,19:$V1,20:$V2,21:$V3},{11:[1,24]},{13:[1,25]},o($V7,[2,10]),o($V9,[2,11]),{18:26,24:[1,27]},o($V9,[2,19]),o($V5,[2,6]),o($V7,[2,8]),o($V7,[2,9]),{16:28,25:$V8},{25:[2,18]},o($V9,[2,12])],
-defaultActions: {9:[2,16],10:[2,1],11:[2,2],27:[2,18]},
+table: [{3:1,4:2,5:3,6:$V0,15:8,20:$V1,21:$V2,22:$V3,23:$V4},{1:[3]},{3:10,4:2,5:3,6:$V0,15:8,20:$V1,21:$V2,22:$V3,23:$V4},{3:11,4:2,5:3,6:$V0,15:8,20:$V1,21:$V2,22:$V3,23:$V4},o($V5,$V6,{7:12,8:[1,13]}),o($V7,[2,14]),o($V7,[2,15]),o($V7,[2,16]),{16:14,24:[1,15]},{24:[2,17]},{1:[2,1]},{1:[2,2]},o($V8,$V9,{15:8,9:16,10:17,5:20,1:[2,3],11:$Va,13:$Vb,23:$V4}),o($V5,$V6,{7:21}),{17:22,18:[1,23],26:$Vc},o([18,26],[2,18]),o($V5,[2,6]),{4:25,20:$V1,21:$V2,22:$V3},{12:[1,26]},{14:[1,27]},o($V8,[2,11]),o($V8,$V9,{15:8,9:16,10:17,5:20,1:[2,4],11:$Va,13:$Vb,23:$V4}),o($Vd,[2,12]),{19:28,25:[1,29]},o($Vd,[2,20]),o($V5,[2,7]),o($V8,[2,9]),o($V8,[2,10]),{17:30,26:$Vc},{26:[2,19]},o($Vd,[2,13])],
+defaultActions: {9:[2,17],10:[2,1],11:[2,2],29:[2,19]},
 parseError: function parseError (str, hash) {
     if (hash.recoverable) {
         this.trace(str);
@@ -16565,27 +16654,27 @@ options: {"case-insensitive":true},
 performAction: function anonymous(yy,yy_,$avoiding_name_collisions,YY_START) {
 var YYSTATE=YY_START;
 switch($avoiding_name_collisions) {
-case 0: this.begin('open_directive'); return 22; 
+case 0: this.begin('open_directive'); return 23; 
 break;
-case 1: this.begin('type_directive'); return 23; 
+case 1: this.begin('type_directive'); return 24; 
 break;
-case 2: this.popState(); this.begin('arg_directive'); return 17; 
+case 2: this.popState(); this.begin('arg_directive'); return 18; 
 break;
-case 3: this.popState(); this.popState(); return 25; 
+case 3: this.popState(); this.popState(); return 26; 
 break;
-case 4:return 24;
+case 4:return 25;
 break;
 case 5:/* skip comments */
 break;
 case 6:/* skip comments */{ /*console.log('');*/ }
 break;
-case 7:return 19;
+case 7:return 20;
 break;
 case 8:/* do nothing */
 break;
 case 9:/* ignore */
 break;
-case 10: this.begin("title");return 12; 
+case 10: this.begin("title");return 13; 
 break;
 case 11: this.popState(); return "title_value"; 
 break;
@@ -16597,14 +16686,16 @@ case 14: return "txt";
 break;
 case 15:return 6;
 break;
-case 16:return "value";
+case 16:return 8;
 break;
-case 17:return 21;
+case 17:return "value";
+break;
+case 18:return 22;
 break;
 }
 },
-rules: [/^(?:%%\{)/i,/^(?:((?:(?!\}%%)[^:.])*))/i,/^(?::)/i,/^(?:\}%%)/i,/^(?:((?:(?!\}%%).|\n)*))/i,/^(?:%%(?!\{)[^\n]*)/i,/^(?:[^\}]%%[^\n]*)/i,/^(?:[\n\r]+)/i,/^(?:%%[^\n]*)/i,/^(?:[\s]+)/i,/^(?:title\b)/i,/^(?:(?!\n||)*[^\n]*)/i,/^(?:["])/i,/^(?:["])/i,/^(?:[^"]*)/i,/^(?:pie\b)/i,/^(?::[\s]*[\d]+(?:\.[\d]+)?)/i,/^(?:$)/i],
-conditions: {"close_directive":{"rules":[],"inclusive":false},"arg_directive":{"rules":[3,4],"inclusive":false},"type_directive":{"rules":[2,3],"inclusive":false},"open_directive":{"rules":[1],"inclusive":false},"title":{"rules":[11],"inclusive":false},"string":{"rules":[13,14],"inclusive":false},"INITIAL":{"rules":[0,5,6,7,8,9,10,12,15,16,17],"inclusive":true}}
+rules: [/^(?:%%\{)/i,/^(?:((?:(?!\}%%)[^:.])*))/i,/^(?::)/i,/^(?:\}%%)/i,/^(?:((?:(?!\}%%).|\n)*))/i,/^(?:%%(?!\{)[^\n]*)/i,/^(?:[^\}]%%[^\n]*)/i,/^(?:[\n\r]+)/i,/^(?:%%[^\n]*)/i,/^(?:[\s]+)/i,/^(?:title\b)/i,/^(?:(?!\n||)*[^\n]*)/i,/^(?:["])/i,/^(?:["])/i,/^(?:[^"]*)/i,/^(?:pie\b)/i,/^(?:showData\b)/i,/^(?::[\s]*[\d]+(?:\.[\d]+)?)/i,/^(?:$)/i],
+conditions: {"close_directive":{"rules":[],"inclusive":false},"arg_directive":{"rules":[3,4],"inclusive":false},"type_directive":{"rules":[2,3],"inclusive":false},"open_directive":{"rules":[1],"inclusive":false},"title":{"rules":[11],"inclusive":false},"string":{"rules":[13,14],"inclusive":false},"INITIAL":{"rules":[0,5,6,7,8,9,10,12,15,16,17,18],"inclusive":true}}
 });
 return lexer;
 })();
@@ -16658,6 +16749,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var sections = {};
 var title = '';
+var showData = false;
 var parseDirective = function parseDirective(statement, context, type) {
   _mermaidAPI__WEBPACK_IMPORTED_MODULE_1__["default"].parseDirective(this, statement, context, type);
 };
@@ -16677,6 +16769,14 @@ var setTitle = function setTitle(txt) {
   title = txt;
 };
 
+var setShowData = function setShowData(toggle) {
+  showData = toggle;
+};
+
+var getShowData = function getShowData() {
+  return showData;
+};
+
 var getTitle = function getTitle() {
   return title;
 };
@@ -16693,6 +16793,7 @@ var cleanupValue = function cleanupValue(value) {
 var clear = function clear() {
   sections = {};
   title = '';
+  showData = false;
 }; // export const parseError = (err, hash) => {
 //   global.mermaidAPI.parseError(err, hash)
 // }
@@ -16708,7 +16809,9 @@ var clear = function clear() {
   cleanupValue: cleanupValue,
   clear: clear,
   setTitle: setTitle,
-  getTitle: getTitle // parseError
+  getTitle: getTitle,
+  setShowData: setShowData,
+  getShowData: getShowData // parseError
 
 });
 
@@ -16718,12 +16821,11 @@ var clear = function clear() {
 /*!*****************************************!*\
   !*** ./src/diagrams/pie/pieRenderer.js ***!
   \*****************************************/
-/*! exports provided: setConf, draw, default */
+/*! exports provided: draw, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setConf", function() { return setConf; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "draw", function() { return draw; });
 /* harmony import */ var d3__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! d3 */ "d3");
 /* harmony import */ var d3__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(d3__WEBPACK_IMPORTED_MODULE_0__);
@@ -16732,6 +16834,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _parser_pie__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_parser_pie__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _logger__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../logger */ "./src/logger.js");
 /* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../utils */ "./src/utils.js");
+/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../config */ "./src/config.js");
 /**
  * Created by AshishJ on 11-09-2019.
  */
@@ -16740,13 +16843,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var conf = {};
-var setConf = function setConf(cnf) {
-  var keys = Object.keys(cnf);
-  keys.forEach(function (key) {
-    conf[key] = cnf[key];
-  });
-};
+
+var conf = _config__WEBPACK_IMPORTED_MODULE_5__["getConfig"]();
 /**
  * Draws a Pie Chart with the data given in text.
  * @param text
@@ -16757,6 +16855,7 @@ var width;
 var height = 450;
 var draw = function draw(txt, id) {
   try {
+    conf = _config__WEBPACK_IMPORTED_MODULE_5__["getConfig"]();
     var parser = _parser_pie__WEBPACK_IMPORTED_MODULE_2___default.a.parser;
     parser.yy = _pieDb__WEBPACK_IMPORTED_MODULE_1__["default"];
     _logger__WEBPACK_IMPORTED_MODULE_3__["log"].debug('Rendering info diagram\n' + txt); // Parse the Pie Chart definition
@@ -16775,8 +16874,12 @@ var draw = function draw(txt, id) {
       width = conf.useWidth;
     }
 
+    if (typeof conf.pie.useWidth !== 'undefined') {
+      width = conf.pie.useWidth;
+    }
+
     var diagram = Object(d3__WEBPACK_IMPORTED_MODULE_0__["select"])('#' + id);
-    Object(_utils__WEBPACK_IMPORTED_MODULE_4__["configureSvgSize"])(diagram, height, width, conf.useMaxWidth); // Set viewBox
+    Object(_utils__WEBPACK_IMPORTED_MODULE_4__["configureSvgSize"])(diagram, height, width, conf.pie.useMaxWidth); // Set viewBox
 
     elem.setAttribute('viewBox', '0 0 ' + width + ' ' + height); // Fetch the default direction, use TD if none was found
 
@@ -16789,9 +16892,11 @@ var draw = function draw(txt, id) {
     var sum = 0;
     Object.keys(data).forEach(function (key) {
       sum += data[key];
-    }); // Set the color scale
+    });
+    var themeVariables = conf.themeVariables;
+    var myGeneratedColors = [themeVariables.pie1, themeVariables.pie2, themeVariables.pie3, themeVariables.pie4, themeVariables.pie5, themeVariables.pie6, themeVariables.pie7, themeVariables.pie8, themeVariables.pie9, themeVariables.pie10, themeVariables.pie11, themeVariables.pie12]; // Set the color scale
 
-    var color = Object(d3__WEBPACK_IMPORTED_MODULE_0__["scaleOrdinal"])().domain(data).range(d3__WEBPACK_IMPORTED_MODULE_0__["schemeSet2"]); // Compute the position of each group on the pie:
+    var color = Object(d3__WEBPACK_IMPORTED_MODULE_0__["scaleOrdinal"])().domain(data).range(myGeneratedColors); // Compute the position of each group on the pie:
 
     var pie = Object(d3__WEBPACK_IMPORTED_MODULE_0__["pie"])().value(function (d) {
       return d.value;
@@ -16802,7 +16907,7 @@ var draw = function draw(txt, id) {
 
     svg.selectAll('mySlices').data(dataReady).enter().append('path').attr('d', arcGenerator).attr('fill', function (d) {
       return color(d.data.key);
-    }).attr('stroke', 'black').style('stroke-width', '2px').style('opacity', 0.7); // Now add the percentage.
+    }).attr('class', 'pieCircle'); // Now add the percentage.
     // Use the centroid method to get the best coordinates.
 
     svg.selectAll('mySlices').data(dataReady.filter(function (value) {
@@ -16811,7 +16916,7 @@ var draw = function draw(txt, id) {
       return (d.data.value / sum * 100).toFixed(0) + '%';
     }).attr('transform', function (d) {
       return 'translate(' + arcGenerator.centroid(d) + ')';
-    }).style('text-anchor', 'middle').attr('class', 'slice').style('font-size', 17);
+    }).style('text-anchor', 'middle').attr('class', 'slice');
     svg.append('text').text(parser.yy.getTitle()).attr('x', 0).attr('y', -(height - 50) / 2).attr('class', 'pieTitleText'); // Add the legends/annotations for each section
 
     var legend = svg.selectAll('.legend').data(color.domain()).enter().append('g').attr('class', 'legend').attr('transform', function (d, i) {
@@ -16822,8 +16927,14 @@ var draw = function draw(txt, id) {
       return 'translate(' + horz + ',' + vert + ')';
     });
     legend.append('rect').attr('width', legendRectSize).attr('height', legendRectSize).style('fill', color).style('stroke', color);
-    legend.append('text').attr('x', legendRectSize + legendSpacing).attr('y', legendRectSize - legendSpacing).text(function (d) {
-      return d;
+    legend.data(dataReady.filter(function (value) {
+      return value.data.value !== 0;
+    })).append('text').attr('x', legendRectSize + legendSpacing).attr('y', legendRectSize - legendSpacing).text(function (d) {
+      if (parser.yy.getShowData() || conf.showData || conf.pie.showData) {
+        return d.data.key + ' [' + d.data.value + ']';
+      } else {
+        return d.data.key;
+      }
     });
   } catch (e) {
     _logger__WEBPACK_IMPORTED_MODULE_3__["log"].error('Error while rendering info diagram');
@@ -16831,7 +16942,6 @@ var draw = function draw(txt, id) {
   }
 };
 /* harmony default export */ __webpack_exports__["default"] = ({
-  setConf: setConf,
   draw: draw
 });
 
@@ -16847,7 +16957,7 @@ var draw = function draw(txt, id) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 var getStyles = function getStyles(options) {
-  return ".pieTitleText {\n    text-anchor: middle;\n    font-size: 25px;\n    fill: ".concat(options.taskTextDarkColor, ";\n    font-family: ").concat(options.fontFamily, ";\n  }\n  .slice {\n    font-family: ").concat(options.fontFamily, ";\n    fill: ").concat(options.textColor, ";\n    // fill: white;\n  }\n  .legend text {\n    fill: ").concat(options.taskTextDarkColor, ";\n    font-family: ").concat(options.fontFamily, ";\n    font-size: 17px;\n  }\n");
+  return "\n  .pieCircle{\n    stroke: ".concat(options.pieStrokeColor, ";\n    stroke-width : ").concat(options.pieStrokeWidth, ";\n    opacity : ").concat(options.pieOpacity, ";\n  }\n  .pieTitleText {\n    text-anchor: middle;\n    font-size: ").concat(options.pieTitleTextSize, ";\n    fill: ").concat(options.pieTitleTextColor, ";\n    font-family: ").concat(options.fontFamily, ";\n  }\n  .slice {\n    font-family: ").concat(options.fontFamily, ";\n    fill: ").concat(options.pieSectionTextColor, ";\n    font-size:").concat(options.pieSectionTextSize, ";\n    // fill: white;\n  }\n  .legend text {\n    fill: ").concat(options.pieLegendTextColor, ";\n    font-family: ").concat(options.fontFamily, ";\n    font-size: ").concat(options.pieLegendTextSize, ";\n  }\n");
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (getStyles);
@@ -18029,7 +18139,6 @@ var drawReqs = function drawReqs(reqs, graph, svgNode) {
   Object.keys(reqs).forEach(function (reqName) {
     var req = reqs[reqName];
     reqName = elementString(reqName);
-    console.log('reqName: ', reqName);
     _logger__WEBPACK_IMPORTED_MODULE_3__["log"].info('Added new requirement: ', reqName);
     var groupNode = svgNode.append('g').attr('id', reqName);
     var textId = 'req-' + reqName;
@@ -18059,7 +18168,7 @@ var drawElements = function drawElements(els, graph, svgNode) {
     var nodes = [];
     var titleNodeInfo = newTitleNode(groupNode, textId + '_title', ["<<Element>>", "".concat(elName)]);
     nodes.push(titleNodeInfo.titleNode);
-    var bodyNode = newBodyNode(groupNode, textId + '_body', ["Type: ".concat(el.type || 'Not Specified'), "Doc Ref: ".concat(el.docref || 'None')], titleNodeInfo.y);
+    var bodyNode = newBodyNode(groupNode, textId + '_body', ["Type: ".concat(el.type || 'Not Specified'), "Doc Ref: ".concat(el.docRef || 'None')], titleNodeInfo.y);
     nodes.push(bodyNode);
     var rectBBox = rectNode.node().getBBox(); // Add the entity to the graph
 
@@ -18099,6 +18208,7 @@ var elementString = function elementString(str) {
 
 var draw = function draw(text, id) {
   _parser_requirementDiagram__WEBPACK_IMPORTED_MODULE_6__["parser"].yy = _requirementDb__WEBPACK_IMPORTED_MODULE_7__["default"];
+  _parser_requirementDiagram__WEBPACK_IMPORTED_MODULE_6__["parser"].yy.clear();
   _parser_requirementDiagram__WEBPACK_IMPORTED_MODULE_6__["parser"].parse(text);
   var svg = Object(d3__WEBPACK_IMPORTED_MODULE_0__["select"])("[id='".concat(id, "']"));
   _requirementMarkers__WEBPACK_IMPORTED_MODULE_8__["default"].insertLineEndings(svg, conf);
@@ -18152,7 +18262,7 @@ var draw = function draw(text, id) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 var getStyles = function getStyles(options) {
-  return "\n\n  marker {\n    fill: ".concat(options.relationColor, ";\n    stroke: ").concat(options.relationColor, ";\n  }\n\n  marker.cross {\n    stroke: ").concat(options.lineColor, ";\n  }\n\n  svg {\n    font-family: ").concat(options.fontFamily, ";\n    font-size: ").concat(options.fontSize, ";\n  }\n\n  .reqBox {\n    fill: ").concat(options.requirementBackground, ";\n    fill-opacity: 100%;\n    stroke: ").concat(options.requirementBorderColor, ";\n    stroke-size: ").concat(options.requirementBorderSize, ";\n  }\n  .reqLabelBox {\n    fill: ").concat(options.relationLabelBackground, ";\n    fill-opacity: 100%;\n  }\n\n  .req-title-line {\n    stroke: ").concat(options.requirementBorderColor, ";\n    stroke-width: 1;\n  }\n  .relationshipLine {\n    stroke: ").concat(options.relationColor, ";\n    stroke-width: 1;\n  }\n  .relationshipLabel {\n    fill: ").concat(options.relationLabelColor, ";\n  }\n\n");
+  return "\n\n  marker {\n    fill: ".concat(options.relationColor, ";\n    stroke: ").concat(options.relationColor, ";\n  }\n\n  marker.cross {\n    stroke: ").concat(options.lineColor, ";\n  }\n\n  svg {\n    font-family: ").concat(options.fontFamily, ";\n    font-size: ").concat(options.fontSize, ";\n  }\n\n  .reqBox {\n    fill: ").concat(options.requirementBackground, ";\n    fill-opacity: 100%;\n    stroke: ").concat(options.requirementBorderColor, ";\n    stroke-width: ").concat(options.requirementBorderSize, ";\n  }\n  \n  .reqTitle, .reqLabel{\n    fill:  ").concat(options.requirementTextColor, ";\n  }\n  .reqLabelBox {\n    fill: ").concat(options.relationLabelBackground, ";\n    fill-opacity: 100%;\n  }\n\n  .req-title-line {\n    stroke: ").concat(options.requirementBorderColor, ";\n    stroke-width: ").concat(options.requirementBorderSize, ";\n  }\n  .relationshipLine {\n    stroke: ").concat(options.relationColor, ";\n    stroke-width: 1;\n  }\n  .relationshipLabel {\n    fill: ").concat(options.relationLabelColor, ";\n  }\n\n");
 }; // fill', conf.rect_fill)
 
 
@@ -20828,7 +20938,7 @@ var _drawTextCandidateFunc = function () {
   function byFo(content, g, x, y, width, height, textAttrs, conf) {
     var s = g.append('switch');
     var f = s.append('foreignObject').attr('x', x).attr('y', y).attr('width', width).attr('height', height);
-    var text = f.append('div').style('display', 'table').style('height', '100%').style('width', '100%');
+    var text = f.append('xhtml:div').style('display', 'table').style('height', '100%').style('width', '100%');
     text.append('div').style('display', 'table-cell').style('text-align', 'center').style('vertical-align', 'middle').text(content);
     byTspan(content, s, x, y, width, height, textAttrs, conf);
 
@@ -20984,12 +21094,12 @@ var size = function size() {
   }
 */
 var parser = (function(){
-var o=function(k,v,o,l){for(o=o||{},l=k.length;l--;o[k[l]]=v);return o},$V0=[1,2],$V1=[1,3],$V2=[1,5],$V3=[1,7],$V4=[2,5],$V5=[1,15],$V6=[1,17],$V7=[1,19],$V8=[1,20],$V9=[1,21],$Va=[1,22],$Vb=[1,29],$Vc=[1,23],$Vd=[1,24],$Ve=[1,25],$Vf=[1,26],$Vg=[1,27],$Vh=[1,30],$Vi=[1,33],$Vj=[1,4,5,14,15,17,19,20,22,23,24,25,26,27,37,40],$Vk=[1,4,5,12,13,14,15,17,19,20,22,23,24,25,26,27,37,40],$Vl=[1,4,5,7,14,15,17,19,20,22,23,24,25,26,27,37,40],$Vm=[4,5,14,15,17,19,20,22,23,24,25,26,27,37,40];
+var o=function(k,v,o,l){for(o=o||{},l=k.length;l--;o[k[l]]=v);return o},$V0=[1,2],$V1=[1,3],$V2=[1,5],$V3=[1,7],$V4=[2,5],$V5=[1,15],$V6=[1,17],$V7=[1,19],$V8=[1,20],$V9=[1,21],$Va=[1,22],$Vb=[1,30],$Vc=[1,23],$Vd=[1,24],$Ve=[1,25],$Vf=[1,26],$Vg=[1,27],$Vh=[1,32],$Vi=[1,33],$Vj=[1,34],$Vk=[1,35],$Vl=[1,31],$Vm=[1,38],$Vn=[1,4,5,14,15,17,19,20,22,23,24,25,26,27,36,37,38,39,42,45],$Vo=[1,4,5,12,13,14,15,17,19,20,22,23,24,25,26,27,36,37,38,39,42,45],$Vp=[1,4,5,7,14,15,17,19,20,22,23,24,25,26,27,36,37,38,39,42,45],$Vq=[4,5,14,15,17,19,20,22,23,24,25,26,27,36,37,38,39,42,45];
 var parser = {trace: function trace () { },
 yy: {},
-symbols_: {"error":2,"start":3,"SPACE":4,"NL":5,"directive":6,"SD":7,"document":8,"line":9,"statement":10,"idStatement":11,"DESCR":12,"-->":13,"HIDE_EMPTY":14,"scale":15,"WIDTH":16,"COMPOSIT_STATE":17,"STRUCT_START":18,"STRUCT_STOP":19,"STATE_DESCR":20,"AS":21,"ID":22,"FORK":23,"JOIN":24,"CHOICE":25,"CONCURRENT":26,"note":27,"notePosition":28,"NOTE_TEXT":29,"openDirective":30,"typeDirective":31,"closeDirective":32,":":33,"argDirective":34,"eol":35,";":36,"EDGE_STATE":37,"left_of":38,"right_of":39,"open_directive":40,"type_directive":41,"arg_directive":42,"close_directive":43,"$accept":0,"$end":1},
-terminals_: {2:"error",4:"SPACE",5:"NL",7:"SD",12:"DESCR",13:"-->",14:"HIDE_EMPTY",15:"scale",16:"WIDTH",17:"COMPOSIT_STATE",18:"STRUCT_START",19:"STRUCT_STOP",20:"STATE_DESCR",21:"AS",22:"ID",23:"FORK",24:"JOIN",25:"CHOICE",26:"CONCURRENT",27:"note",29:"NOTE_TEXT",33:":",36:";",37:"EDGE_STATE",38:"left_of",39:"right_of",40:"open_directive",41:"type_directive",42:"arg_directive",43:"close_directive"},
-productions_: [0,[3,2],[3,2],[3,2],[3,2],[8,0],[8,2],[9,2],[9,1],[9,1],[10,1],[10,2],[10,3],[10,4],[10,1],[10,2],[10,1],[10,4],[10,3],[10,6],[10,1],[10,1],[10,1],[10,1],[10,4],[10,4],[10,1],[6,3],[6,5],[35,1],[35,1],[11,1],[11,1],[28,1],[28,1],[30,1],[31,1],[34,1],[32,1]],
+symbols_: {"error":2,"start":3,"SPACE":4,"NL":5,"directive":6,"SD":7,"document":8,"line":9,"statement":10,"idStatement":11,"DESCR":12,"-->":13,"HIDE_EMPTY":14,"scale":15,"WIDTH":16,"COMPOSIT_STATE":17,"STRUCT_START":18,"STRUCT_STOP":19,"STATE_DESCR":20,"AS":21,"ID":22,"FORK":23,"JOIN":24,"CHOICE":25,"CONCURRENT":26,"note":27,"notePosition":28,"NOTE_TEXT":29,"direction":30,"openDirective":31,"typeDirective":32,"closeDirective":33,":":34,"argDirective":35,"direction_tb":36,"direction_bt":37,"direction_rl":38,"direction_lr":39,"eol":40,";":41,"EDGE_STATE":42,"left_of":43,"right_of":44,"open_directive":45,"type_directive":46,"arg_directive":47,"close_directive":48,"$accept":0,"$end":1},
+terminals_: {2:"error",4:"SPACE",5:"NL",7:"SD",12:"DESCR",13:"-->",14:"HIDE_EMPTY",15:"scale",16:"WIDTH",17:"COMPOSIT_STATE",18:"STRUCT_START",19:"STRUCT_STOP",20:"STATE_DESCR",21:"AS",22:"ID",23:"FORK",24:"JOIN",25:"CHOICE",26:"CONCURRENT",27:"note",29:"NOTE_TEXT",34:":",36:"direction_tb",37:"direction_bt",38:"direction_rl",39:"direction_lr",41:";",42:"EDGE_STATE",43:"left_of",44:"right_of",45:"open_directive",46:"type_directive",47:"arg_directive",48:"close_directive"},
+productions_: [0,[3,2],[3,2],[3,2],[3,2],[8,0],[8,2],[9,2],[9,1],[9,1],[10,1],[10,2],[10,3],[10,4],[10,1],[10,2],[10,1],[10,4],[10,3],[10,6],[10,1],[10,1],[10,1],[10,1],[10,4],[10,4],[10,1],[10,1],[6,3],[6,5],[30,1],[30,1],[30,1],[30,1],[40,1],[40,1],[11,1],[11,1],[28,1],[28,1],[31,1],[32,1],[35,1],[33,1]],
 performAction: function anonymous(yytext, yyleng, yylineno, yy, yystate /* action[1] */, $$ /* vstack */, _$ /* lstack */) {
 /* this == yyval */
 
@@ -21035,7 +21145,6 @@ case 13:
 break;
 case 17:
 
-
         /* console.warn('Adding document for state without id ', $$[$0-3]);*/
         this.$={ stmt: 'state', id: $$[$0-3], type: 'default', description: '', doc: $$[$0-1] }
     
@@ -21055,7 +21164,7 @@ case 18:
 break;
 case 19:
 
-         //console.warn('Adding document for state with id ', $$[$0-3], $$[$0-2]); yy.addDocument($$[$0-3]);
+         // console.warn('Adding document for state with id zxzx', $$[$0-3], $$[$0-2], yy.getDirection()); yy.addDocument($$[$0-3]);
          this.$={ stmt: 'state', id: $$[$0-3], type: 'default', description: $$[$0-5], doc: $$[$0-1] }
     
 break;
@@ -21081,29 +21190,41 @@ case 23:
 break;
 case 24:
 
-        /*console.warn('got NOTE, position: ', $$[$0-2].trim(), 'id = ', $$[$0-1].trim(), 'note: ', $$[$0]);*/
+        /* console.warn('got NOTE, position: ', $$[$0-2].trim(), 'id = ', $$[$0-1].trim(), 'note: ', $$[$0]);*/
         this.$={ stmt: 'state', id: $$[$0-1].trim(), note:{position: $$[$0-2].trim(), text: $$[$0].trim()}};
     
 break;
-case 31: case 32:
+case 30:
+ yy.setDirection('TB');this.$={stmt:'dir', value:'TB'};
+break;
+case 31:
+ yy.setDirection('BT');this.$={stmt:'dir', value:'BT'};
+break;
+case 32:
+ yy.setDirection('RL'); this.$={stmt:'dir', value:'RL'};
+break;
+case 33:
+ yy.setDirection('LR');this.$={stmt:'dir', value:'LR'};
+break;
+case 36: case 37:
 this.$=$$[$0];
 break;
-case 35:
+case 40:
  yy.parseDirective('%%{', 'open_directive'); 
 break;
-case 36:
+case 41:
  yy.parseDirective($$[$0], 'type_directive'); 
 break;
-case 37:
+case 42:
  $$[$0] = $$[$0].trim().replace(/'/g, '"'); yy.parseDirective($$[$0], 'arg_directive'); 
 break;
-case 38:
+case 43:
  yy.parseDirective('}%%', 'close_directive', 'state'); 
 break;
 }
 },
-table: [{3:1,4:$V0,5:$V1,6:4,7:$V2,30:6,40:$V3},{1:[3]},{3:8,4:$V0,5:$V1,6:4,7:$V2,30:6,40:$V3},{3:9,4:$V0,5:$V1,6:4,7:$V2,30:6,40:$V3},{3:10,4:$V0,5:$V1,6:4,7:$V2,30:6,40:$V3},o([1,4,5,14,15,17,20,22,23,24,25,26,27,37,40],$V4,{8:11}),{31:12,41:[1,13]},{41:[2,35]},{1:[2,1]},{1:[2,2]},{1:[2,3]},{1:[2,4],4:$V5,5:$V6,6:28,9:14,10:16,11:18,14:$V7,15:$V8,17:$V9,20:$Va,22:$Vb,23:$Vc,24:$Vd,25:$Ve,26:$Vf,27:$Vg,30:6,37:$Vh,40:$V3},{32:31,33:[1,32],43:$Vi},o([33,43],[2,36]),o($Vj,[2,6]),{6:28,10:34,11:18,14:$V7,15:$V8,17:$V9,20:$Va,22:$Vb,23:$Vc,24:$Vd,25:$Ve,26:$Vf,27:$Vg,30:6,37:$Vh,40:$V3},o($Vj,[2,8]),o($Vj,[2,9]),o($Vj,[2,10],{12:[1,35],13:[1,36]}),o($Vj,[2,14]),{16:[1,37]},o($Vj,[2,16],{18:[1,38]}),{21:[1,39]},o($Vj,[2,20]),o($Vj,[2,21]),o($Vj,[2,22]),o($Vj,[2,23]),{28:40,29:[1,41],38:[1,42],39:[1,43]},o($Vj,[2,26]),o($Vk,[2,31]),o($Vk,[2,32]),o($Vl,[2,27]),{34:44,42:[1,45]},o($Vl,[2,38]),o($Vj,[2,7]),o($Vj,[2,11]),{11:46,22:$Vb,37:$Vh},o($Vj,[2,15]),o($Vm,$V4,{8:47}),{22:[1,48]},{22:[1,49]},{21:[1,50]},{22:[2,33]},{22:[2,34]},{32:51,43:$Vi},{43:[2,37]},o($Vj,[2,12],{12:[1,52]}),{4:$V5,5:$V6,6:28,9:14,10:16,11:18,14:$V7,15:$V8,17:$V9,19:[1,53],20:$Va,22:$Vb,23:$Vc,24:$Vd,25:$Ve,26:$Vf,27:$Vg,30:6,37:$Vh,40:$V3},o($Vj,[2,18],{18:[1,54]}),{29:[1,55]},{22:[1,56]},o($Vl,[2,28]),o($Vj,[2,13]),o($Vj,[2,17]),o($Vm,$V4,{8:57}),o($Vj,[2,24]),o($Vj,[2,25]),{4:$V5,5:$V6,6:28,9:14,10:16,11:18,14:$V7,15:$V8,17:$V9,19:[1,58],20:$Va,22:$Vb,23:$Vc,24:$Vd,25:$Ve,26:$Vf,27:$Vg,30:6,37:$Vh,40:$V3},o($Vj,[2,19])],
-defaultActions: {7:[2,35],8:[2,1],9:[2,2],10:[2,3],42:[2,33],43:[2,34],45:[2,37]},
+table: [{3:1,4:$V0,5:$V1,6:4,7:$V2,31:6,45:$V3},{1:[3]},{3:8,4:$V0,5:$V1,6:4,7:$V2,31:6,45:$V3},{3:9,4:$V0,5:$V1,6:4,7:$V2,31:6,45:$V3},{3:10,4:$V0,5:$V1,6:4,7:$V2,31:6,45:$V3},o([1,4,5,14,15,17,20,22,23,24,25,26,27,36,37,38,39,42,45],$V4,{8:11}),{32:12,46:[1,13]},{46:[2,40]},{1:[2,1]},{1:[2,2]},{1:[2,3]},{1:[2,4],4:$V5,5:$V6,6:28,9:14,10:16,11:18,14:$V7,15:$V8,17:$V9,20:$Va,22:$Vb,23:$Vc,24:$Vd,25:$Ve,26:$Vf,27:$Vg,30:29,31:6,36:$Vh,37:$Vi,38:$Vj,39:$Vk,42:$Vl,45:$V3},{33:36,34:[1,37],48:$Vm},o([34,48],[2,41]),o($Vn,[2,6]),{6:28,10:39,11:18,14:$V7,15:$V8,17:$V9,20:$Va,22:$Vb,23:$Vc,24:$Vd,25:$Ve,26:$Vf,27:$Vg,30:29,31:6,36:$Vh,37:$Vi,38:$Vj,39:$Vk,42:$Vl,45:$V3},o($Vn,[2,8]),o($Vn,[2,9]),o($Vn,[2,10],{12:[1,40],13:[1,41]}),o($Vn,[2,14]),{16:[1,42]},o($Vn,[2,16],{18:[1,43]}),{21:[1,44]},o($Vn,[2,20]),o($Vn,[2,21]),o($Vn,[2,22]),o($Vn,[2,23]),{28:45,29:[1,46],43:[1,47],44:[1,48]},o($Vn,[2,26]),o($Vn,[2,27]),o($Vo,[2,36]),o($Vo,[2,37]),o($Vn,[2,30]),o($Vn,[2,31]),o($Vn,[2,32]),o($Vn,[2,33]),o($Vp,[2,28]),{35:49,47:[1,50]},o($Vp,[2,43]),o($Vn,[2,7]),o($Vn,[2,11]),{11:51,22:$Vb,42:$Vl},o($Vn,[2,15]),o($Vq,$V4,{8:52}),{22:[1,53]},{22:[1,54]},{21:[1,55]},{22:[2,38]},{22:[2,39]},{33:56,48:$Vm},{48:[2,42]},o($Vn,[2,12],{12:[1,57]}),{4:$V5,5:$V6,6:28,9:14,10:16,11:18,14:$V7,15:$V8,17:$V9,19:[1,58],20:$Va,22:$Vb,23:$Vc,24:$Vd,25:$Ve,26:$Vf,27:$Vg,30:29,31:6,36:$Vh,37:$Vi,38:$Vj,39:$Vk,42:$Vl,45:$V3},o($Vn,[2,18],{18:[1,59]}),{29:[1,60]},{22:[1,61]},o($Vp,[2,29]),o($Vn,[2,13]),o($Vn,[2,17]),o($Vq,$V4,{8:62}),o($Vn,[2,24]),o($Vn,[2,25]),{4:$V5,5:$V6,6:28,9:14,10:16,11:18,14:$V7,15:$V8,17:$V9,19:[1,63],20:$Va,22:$Vb,23:$Vc,24:$Vd,25:$Ve,26:$Vf,27:$Vg,30:29,31:6,36:$Vh,37:$Vi,38:$Vj,39:$Vk,42:$Vl,45:$V3},o($Vn,[2,19])],
+defaultActions: {7:[2,40],8:[2,1],9:[2,2],10:[2,3],47:[2,38],48:[2,39],50:[2,42]},
 parseError: function parseError (str, hash) {
     if (hash.recoverable) {
         this.trace(str);
@@ -21582,116 +21703,132 @@ options: {"case-insensitive":true},
 performAction: function anonymous(yy,yy_,$avoiding_name_collisions,YY_START) {
 var YYSTATE=YY_START;
 switch($avoiding_name_collisions) {
-case 0: this.begin('open_directive'); return 40; 
+case 0:return 36;
 break;
-case 1: this.begin('type_directive'); return 41; 
+case 1:return 37;
 break;
-case 2: this.popState(); this.begin('arg_directive'); return 33; 
+case 2:return 38;
 break;
-case 3: this.popState(); this.popState(); return 43; 
+case 3:return 39;
 break;
-case 4:return 42;
+case 4: this.begin('open_directive'); return 45; 
 break;
-case 5:/* skip comments */
+case 5: this.begin('type_directive'); return 46; 
 break;
-case 6:/* skip comments */{ console.log('Crap after close'); }
+case 6: this.popState(); this.begin('arg_directive'); return 34; 
 break;
-case 7:return 5;
+case 7: this.popState(); this.popState(); return 48; 
 break;
-case 8:/* skip all whitespace */
+case 8:return 47;
 break;
-case 9:/* skip same-line whitespace */
+case 9:/* skip comments */
 break;
-case 10:/* skip comments */
+case 10:/* skip comments */{ /*console.log('Crap after close');*/ }
 break;
-case 11:/* skip comments */
+case 11:return 5;
 break;
-case 12: this.pushState('SCALE'); /* console.log('Got scale', yy_.yytext);*/ return 15; 
+case 12:/* skip all whitespace */
 break;
-case 13:return 16;
+case 13:/* skip same-line whitespace */
 break;
-case 14:this.popState();
+case 14:/* skip comments */
 break;
-case 15: console.log('Starting STATE');this.pushState('STATE'); 
+case 15:/* skip comments */
 break;
-case 16:this.popState();yy_.yytext=yy_.yytext.slice(0,-8).trim(); /*console.warn('Fork Fork: ',yy_.yytext);*/return 23;
+case 16: this.pushState('SCALE'); /* console.log('Got scale', yy_.yytext);*/ return 15; 
 break;
-case 17:this.popState();yy_.yytext=yy_.yytext.slice(0,-8).trim();/*console.warn('Fork Join: ',yy_.yytext);*/return 24;
+case 17:return 16;
 break;
-case 18:this.popState();yy_.yytext=yy_.yytext.slice(0,-10).trim();/*console.warn('Fork Join: ',yy_.yytext);*/return 25;
+case 18:this.popState();
 break;
-case 19:this.popState();yy_.yytext=yy_.yytext.slice(0,-8).trim();/*console.warn('Fork Fork: ',yy_.yytext);*/return 23;
+case 19: /*console.log('Starting STATE zxzx'+yy.getDirection());*/this.pushState('STATE'); 
 break;
-case 20:this.popState();yy_.yytext=yy_.yytext.slice(0,-8).trim();/*console.warn('Fork Join: ',yy_.yytext);*/return 24;
+case 20:this.popState();yy_.yytext=yy_.yytext.slice(0,-8).trim(); /*console.warn('Fork Fork: ',yy_.yytext);*/return 23;
 break;
-case 21:this.popState();yy_.yytext=yy_.yytext.slice(0,-10).trim();/*console.warn('Fork Join: ',yy_.yytext);*/return 25;
+case 21:this.popState();yy_.yytext=yy_.yytext.slice(0,-8).trim();/*console.warn('Fork Join: ',yy_.yytext);*/return 24;
 break;
-case 22: console.log('Starting STATE_STRING');this.begin("STATE_STRING");
+case 22:this.popState();yy_.yytext=yy_.yytext.slice(0,-10).trim();/*console.warn('Fork Join: ',yy_.yytext);*/return 25;
 break;
-case 23:this.popState();this.pushState('STATE_ID');return "AS";
+case 23:this.popState();yy_.yytext=yy_.yytext.slice(0,-8).trim();/*console.warn('Fork Fork: ',yy_.yytext);*/return 23;
 break;
-case 24:this.popState();/* console.log('STATE_ID', yy_.yytext);*/return "ID";
+case 24:this.popState();yy_.yytext=yy_.yytext.slice(0,-8).trim();/*console.warn('Fork Join: ',yy_.yytext);*/return 24;
 break;
-case 25:this.popState();
+case 25:this.popState();yy_.yytext=yy_.yytext.slice(0,-10).trim();/*console.warn('Fork Join: ',yy_.yytext);*/return 25;
 break;
-case 26: console.log('Long description:', yy_.yytext);return "STATE_DESCR";
+case 26: return 36;
 break;
-case 27:/*console.log('COMPOSIT_STATE', yy_.yytext);*/return 17;
+case 27: return 37;
 break;
-case 28:this.popState();
+case 28: return 38;
 break;
-case 29:this.popState();this.pushState('struct'); /*console.log('begin struct', yy_.yytext);*/return 18;
+case 29: return 39;
 break;
-case 30: /*console.log('Ending struct');*/ this.popState(); return 19;
+case 30: /*console.log('Starting STATE_STRING zxzx');*/this.begin("STATE_STRING");
 break;
-case 31:/* nothing */
+case 31:this.popState();this.pushState('STATE_ID');return "AS";
 break;
-case 32: this.begin('NOTE'); return 27; 
+case 32:this.popState();/* console.log('STATE_ID', yy_.yytext);*/return "ID";
 break;
-case 33: this.popState();this.pushState('NOTE_ID');return 38;
+case 33:this.popState();
 break;
-case 34: this.popState();this.pushState('NOTE_ID');return 39;
+case 34: /*console.log('Long description:', yy_.yytext);*/return "STATE_DESCR";
 break;
-case 35: this.popState();this.pushState('FLOATING_NOTE');
+case 35:/*console.log('COMPOSIT_STATE', yy_.yytext);*/return 17;
 break;
-case 36:this.popState();this.pushState('FLOATING_NOTE_ID');return "AS";
+case 36:this.popState();
 break;
-case 37:/**/
+case 37:this.popState();this.pushState('struct'); /*console.log('begin struct', yy_.yytext);*/return 18;
 break;
-case 38: /*console.log('Floating note text: ', yy_.yytext);*/return "NOTE_TEXT";
+case 38: /*console.log('Ending struct');*/ this.popState(); return 19;
 break;
-case 39:this.popState();/*console.log('Floating note ID', yy_.yytext);*/return "ID";
+case 39:/* nothing */
 break;
-case 40: this.popState();this.pushState('NOTE_TEXT');/*console.log('Got ID for note', yy_.yytext);*/return 22;
+case 40: this.begin('NOTE'); return 27; 
 break;
-case 41: this.popState();/*console.log('Got NOTE_TEXT for note',yy_.yytext);*/yy_.yytext = yy_.yytext.substr(2).trim();return 29;
+case 41: this.popState();this.pushState('NOTE_ID');return 43;
 break;
-case 42: this.popState();/*console.log('Got NOTE_TEXT for note',yy_.yytext);*/yy_.yytext = yy_.yytext.slice(0,-8).trim();return 29;
+case 42: this.popState();this.pushState('NOTE_ID');return 44;
 break;
-case 43: /*console.log('Got state diagram', yy_.yytext,'#');*/return 7; 
+case 43: this.popState();this.pushState('FLOATING_NOTE');
 break;
-case 44: /*console.log('Got state diagram', yy_.yytext,'#');*/return 7; 
+case 44:this.popState();this.pushState('FLOATING_NOTE_ID');return "AS";
 break;
-case 45: /*console.log('HIDE_EMPTY', yy_.yytext,'#');*/return 14; 
+case 45:/**/
 break;
-case 46: /*console.log('EDGE_STATE=',yy_.yytext);*/ return 37;
+case 46: /*console.log('Floating note text: ', yy_.yytext);*/return "NOTE_TEXT";
 break;
-case 47: /*console.log('=>ID=',yy_.yytext);*/ return 22;
+case 47:this.popState();/*console.log('Floating note ID', yy_.yytext);*/return "ID";
 break;
-case 48: yy_.yytext = yy_.yytext.trim(); /*console.log('Descr = ', yy_.yytext);*/ return 12; 
+case 48: this.popState();this.pushState('NOTE_TEXT');/*console.log('Got ID for note', yy_.yytext);*/return 22;
 break;
-case 49:return 13;
+case 49: this.popState();/*console.log('Got NOTE_TEXT for note',yy_.yytext);*/yy_.yytext = yy_.yytext.substr(2).trim();return 29;
 break;
-case 50:return 26;
+case 50: this.popState();/*console.log('Got NOTE_TEXT for note',yy_.yytext);*/yy_.yytext = yy_.yytext.slice(0,-8).trim();return 29;
 break;
-case 51:return 5;
+case 51: /*console.log('Got state diagram', yy_.yytext,'#');*/return 7; 
 break;
-case 52:return 'INVALID';
+case 52: /*console.log('Got state diagram', yy_.yytext,'#');*/return 7; 
+break;
+case 53: /*console.log('HIDE_EMPTY', yy_.yytext,'#');*/return 14; 
+break;
+case 54: /*console.log('EDGE_STATE=',yy_.yytext);*/ return 42;
+break;
+case 55: /*console.log('=>ID=',yy_.yytext);*/ return 22;
+break;
+case 56: yy_.yytext = yy_.yytext.trim(); /*console.log('Descr = ', yy_.yytext);*/ return 12; 
+break;
+case 57:return 13;
+break;
+case 58:return 26;
+break;
+case 59:return 5;
+break;
+case 60:return 'INVALID';
 break;
 }
 },
-rules: [/^(?:%%\{)/i,/^(?:((?:(?!\}%%)[^:.])*))/i,/^(?::)/i,/^(?:\}%%)/i,/^(?:((?:(?!\}%%).|\n)*))/i,/^(?:%%(?!\{)[^\n]*)/i,/^(?:[^\}]%%[^\n]*)/i,/^(?:[\n]+)/i,/^(?:[\s]+)/i,/^(?:((?!\n)\s)+)/i,/^(?:#[^\n]*)/i,/^(?:%[^\n]*)/i,/^(?:scale\s+)/i,/^(?:\d+)/i,/^(?:\s+width\b)/i,/^(?:state\s+)/i,/^(?:.*<<fork>>)/i,/^(?:.*<<join>>)/i,/^(?:.*<<choice>>)/i,/^(?:.*\[\[fork\]\])/i,/^(?:.*\[\[join\]\])/i,/^(?:.*\[\[choice\]\])/i,/^(?:["])/i,/^(?:\s*as\s+)/i,/^(?:[^\n\{]*)/i,/^(?:["])/i,/^(?:[^"]*)/i,/^(?:[^\n\s\{]+)/i,/^(?:\n)/i,/^(?:\{)/i,/^(?:\})/i,/^(?:[\n])/i,/^(?:note\s+)/i,/^(?:left of\b)/i,/^(?:right of\b)/i,/^(?:")/i,/^(?:\s*as\s*)/i,/^(?:["])/i,/^(?:[^"]*)/i,/^(?:[^\n]*)/i,/^(?:\s*[^:\n\s\-]+)/i,/^(?:\s*:[^:\n;]+)/i,/^(?:[\s\S]*?end note\b)/i,/^(?:stateDiagram\s+)/i,/^(?:stateDiagram-v2\s+)/i,/^(?:hide empty description\b)/i,/^(?:\[\*\])/i,/^(?:[^:\n\s\-\{]+)/i,/^(?:\s*:[^:\n;]+)/i,/^(?:-->)/i,/^(?:--)/i,/^(?:$)/i,/^(?:.)/i],
-conditions: {"LINE":{"rules":[9,10],"inclusive":false},"close_directive":{"rules":[9,10],"inclusive":false},"arg_directive":{"rules":[3,4,9,10],"inclusive":false},"type_directive":{"rules":[2,3,9,10],"inclusive":false},"open_directive":{"rules":[1,9,10],"inclusive":false},"struct":{"rules":[9,10,15,30,31,32,46,47,48,49,50],"inclusive":false},"FLOATING_NOTE_ID":{"rules":[39],"inclusive":false},"FLOATING_NOTE":{"rules":[36,37,38],"inclusive":false},"NOTE_TEXT":{"rules":[41,42],"inclusive":false},"NOTE_ID":{"rules":[40],"inclusive":false},"NOTE":{"rules":[33,34,35],"inclusive":false},"SCALE":{"rules":[13,14],"inclusive":false},"ALIAS":{"rules":[],"inclusive":false},"STATE_ID":{"rules":[24],"inclusive":false},"STATE_STRING":{"rules":[25,26],"inclusive":false},"FORK_STATE":{"rules":[],"inclusive":false},"STATE":{"rules":[9,10,16,17,18,19,20,21,22,23,27,28,29],"inclusive":false},"ID":{"rules":[9,10],"inclusive":false},"INITIAL":{"rules":[0,5,6,7,8,10,11,12,15,29,32,43,44,45,46,47,48,49,51,52],"inclusive":true}}
+rules: [/^(?:.*direction\s+TB[^\n]*)/i,/^(?:.*direction\s+BT[^\n]*)/i,/^(?:.*direction\s+RL[^\n]*)/i,/^(?:.*direction\s+LR[^\n]*)/i,/^(?:%%\{)/i,/^(?:((?:(?!\}%%)[^:.])*))/i,/^(?::)/i,/^(?:\}%%)/i,/^(?:((?:(?!\}%%).|\n)*))/i,/^(?:%%(?!\{)[^\n]*)/i,/^(?:[^\}]%%[^\n]*)/i,/^(?:[\n]+)/i,/^(?:[\s]+)/i,/^(?:((?!\n)\s)+)/i,/^(?:#[^\n]*)/i,/^(?:%[^\n]*)/i,/^(?:scale\s+)/i,/^(?:\d+)/i,/^(?:\s+width\b)/i,/^(?:state\s+)/i,/^(?:.*<<fork>>)/i,/^(?:.*<<join>>)/i,/^(?:.*<<choice>>)/i,/^(?:.*\[\[fork\]\])/i,/^(?:.*\[\[join\]\])/i,/^(?:.*\[\[choice\]\])/i,/^(?:.*direction\s+TB[^\n]*)/i,/^(?:.*direction\s+BT[^\n]*)/i,/^(?:.*direction\s+RL[^\n]*)/i,/^(?:.*direction\s+LR[^\n]*)/i,/^(?:["])/i,/^(?:\s*as\s+)/i,/^(?:[^\n\{]*)/i,/^(?:["])/i,/^(?:[^"]*)/i,/^(?:[^\n\s\{]+)/i,/^(?:\n)/i,/^(?:\{)/i,/^(?:\})/i,/^(?:[\n])/i,/^(?:note\s+)/i,/^(?:left of\b)/i,/^(?:right of\b)/i,/^(?:")/i,/^(?:\s*as\s*)/i,/^(?:["])/i,/^(?:[^"]*)/i,/^(?:[^\n]*)/i,/^(?:\s*[^:\n\s\-]+)/i,/^(?:\s*:[^:\n;]+)/i,/^(?:[\s\S]*?end note\b)/i,/^(?:stateDiagram\s+)/i,/^(?:stateDiagram-v2\s+)/i,/^(?:hide empty description\b)/i,/^(?:\[\*\])/i,/^(?:[^:\n\s\-\{]+)/i,/^(?:\s*:[^:\n;]+)/i,/^(?:-->)/i,/^(?:--)/i,/^(?:$)/i,/^(?:.)/i],
+conditions: {"LINE":{"rules":[13,14],"inclusive":false},"close_directive":{"rules":[13,14],"inclusive":false},"arg_directive":{"rules":[7,8,13,14],"inclusive":false},"type_directive":{"rules":[6,7,13,14],"inclusive":false},"open_directive":{"rules":[5,13,14],"inclusive":false},"struct":{"rules":[13,14,19,26,27,28,29,38,39,40,54,55,56,57,58],"inclusive":false},"FLOATING_NOTE_ID":{"rules":[47],"inclusive":false},"FLOATING_NOTE":{"rules":[44,45,46],"inclusive":false},"NOTE_TEXT":{"rules":[49,50],"inclusive":false},"NOTE_ID":{"rules":[48],"inclusive":false},"NOTE":{"rules":[41,42,43],"inclusive":false},"SCALE":{"rules":[17,18],"inclusive":false},"ALIAS":{"rules":[],"inclusive":false},"STATE_ID":{"rules":[32],"inclusive":false},"STATE_STRING":{"rules":[33,34],"inclusive":false},"FORK_STATE":{"rules":[],"inclusive":false},"STATE":{"rules":[13,14,20,21,22,23,24,25,30,31,35,36,37],"inclusive":false},"ID":{"rules":[13,14],"inclusive":false},"INITIAL":{"rules":[0,1,2,3,4,9,10,11,12,14,15,16,19,37,40,51,52,53,54,55,56,57,59,60],"inclusive":true}}
 });
 return lexer;
 })();
@@ -21750,6 +21887,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _common_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../common/common */ "./src/diagrams/common/common.js");
 /* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../config */ "./src/config.js");
 /* harmony import */ var _logger__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../logger */ "./src/logger.js");
+function _createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (!it) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = it.call(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it.return != null) it.return(); } finally { if (didErr) throw err; } } }; }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
 
 
 
@@ -21953,12 +22096,12 @@ var _drawLongText = function _drawLongText(_text, x, y, g) {
   text = text.replace(/\n/g, '<br/>');
   var lines = text.split(_common_common__WEBPACK_IMPORTED_MODULE_4__["default"].lineBreakRegex);
   var tHeight = 1.25 * Object(_config__WEBPACK_IMPORTED_MODULE_5__["getConfig"])().state.noteMargin;
-  var _iteratorNormalCompletion = true;
-  var _didIteratorError = false;
-  var _iteratorError = undefined;
+
+  var _iterator = _createForOfIteratorHelper(lines),
+      _step;
 
   try {
-    for (var _iterator = lines[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+    for (_iterator.s(); !(_step = _iterator.n()).done;) {
       var _line = _step.value;
 
       var txt = _line.trim();
@@ -21978,18 +22121,9 @@ var _drawLongText = function _drawLongText(_text, x, y, g) {
       }
     }
   } catch (err) {
-    _didIteratorError = true;
-    _iteratorError = err;
+    _iterator.e(err);
   } finally {
-    try {
-      if (!_iteratorNormalCompletion && _iterator.return != null) {
-        _iterator.return();
-      }
-    } finally {
-      if (_didIteratorError) {
-        throw _iteratorError;
-      }
-    }
+    _iterator.f();
   }
 
   return {
@@ -22260,7 +22394,7 @@ var getRootDocV2 = function getRootDocV2() {
   return {
     id: 'root',
     doc: rootDoc
-  };
+  }; // Here
 };
 
 var extract = function extract(_doc) {
@@ -22432,8 +22566,14 @@ var getClasses = function getClasses() {
   return classes;
 };
 
+var direction = 'TB';
+
 var getDirection = function getDirection() {
-  return 'TB';
+  return direction;
+};
+
+var setDirection = function setDirection(dir) {
+  direction = dir;
 };
 
 var relationType = {
@@ -22461,6 +22601,7 @@ var trimColon = function trimColon(str) {
   getDirection: getDirection,
   addRelation: addRelation,
   getDividerId: getDividerId,
+  setDirection: setDirection,
   // addDescription,
   cleanupLabel: cleanupLabel,
   lineType: lineType,
@@ -22502,6 +22643,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+ // import { evaluate } from '../common/common';
 
 
 
@@ -22584,8 +22726,9 @@ var setupNode = function setupNode(g, parent, node, altFlag) {
 
 
     if (!nodeDb[node.id].type && node.doc) {
-      _logger__WEBPACK_IMPORTED_MODULE_6__["log"].info('Setting cluser for ', node.id);
+      _logger__WEBPACK_IMPORTED_MODULE_6__["log"].info('Setting cluster for ', node.id, getDir(node));
       nodeDb[node.id].type = 'group';
+      nodeDb[node.id].dir = getDir(node);
       nodeDb[node.id].shape = node.type === 'divider' ? 'divider' : 'roundedWithTitle';
       nodeDb[node.id].classes = nodeDb[node.id].classes + ' ' + (altFlag ? 'statediagram-cluster statediagram-cluster-alt' : 'statediagram-cluster');
     }
@@ -22602,7 +22745,7 @@ var setupNode = function setupNode(g, parent, node, altFlag) {
       style: '',
       //styles.style,
       id: node.id,
-      dir: altFlag ? 'LR' : 'TB',
+      dir: nodeDb[node.id].dir,
       domId: 'state-' + node.id + '-' + cnt,
       type: nodeDb[node.id].type,
       padding: 15 //getConfig().flowchart.padding
@@ -22619,7 +22762,7 @@ var setupNode = function setupNode(g, parent, node, altFlag) {
         //classStr,
         style: '',
         //styles.style,
-        id: node.id + '----note',
+        id: node.id + '----note-' + cnt,
         domId: 'state-' + node.id + '----note-' + cnt,
         type: nodeDb[node.id].type,
         padding: 15 //getConfig().flowchart.padding
@@ -22713,6 +22856,22 @@ var setupDoc = function setupDoc(g, parent, doc, altFlag) {
     }
   });
 };
+
+var getDir = function getDir(nodes, defaultDir) {
+  var dir = defaultDir || 'TB';
+
+  if (nodes.doc) {
+    for (var i = 0; i < nodes.doc.length; i++) {
+      var node = nodes.doc[i];
+
+      if (node.stmt === 'dir') {
+        dir = node.value;
+      }
+    }
+  }
+
+  return dir;
+};
 /**
  * Draws a flowchart in the tag with id: id based on the graph definition in text.
  * @param text
@@ -22737,13 +22896,16 @@ var draw = function draw(text, id) {
 
   var conf = Object(_config__WEBPACK_IMPORTED_MODULE_4__["getConfig"])().state;
   var nodeSpacing = conf.nodeSpacing || 50;
-  var rankSpacing = conf.rankSpacing || 50; // Create the input mermaid.graph
+  var rankSpacing = conf.rankSpacing || 50;
+  _logger__WEBPACK_IMPORTED_MODULE_6__["log"].info(_stateDb__WEBPACK_IMPORTED_MODULE_2__["default"].getRootDocV2());
+  _stateDb__WEBPACK_IMPORTED_MODULE_2__["default"].extract(_stateDb__WEBPACK_IMPORTED_MODULE_2__["default"].getRootDocV2());
+  _logger__WEBPACK_IMPORTED_MODULE_6__["log"].info(_stateDb__WEBPACK_IMPORTED_MODULE_2__["default"].getRootDocV2()); // Create the input mermaid.graph
 
   var g = new graphlib__WEBPACK_IMPORTED_MODULE_0___default.a.Graph({
     multigraph: true,
     compound: true
   }).setGraph({
-    rankdir: 'TB',
+    rankdir: getDir(_stateDb__WEBPACK_IMPORTED_MODULE_2__["default"].getRootDocV2()),
     nodesep: nodeSpacing,
     ranksep: rankSpacing,
     marginx: 8,
@@ -22751,9 +22913,6 @@ var draw = function draw(text, id) {
   }).setDefaultEdgeLabel(function () {
     return {};
   });
-  _logger__WEBPACK_IMPORTED_MODULE_6__["log"].info(_stateDb__WEBPACK_IMPORTED_MODULE_2__["default"].getRootDocV2());
-  _stateDb__WEBPACK_IMPORTED_MODULE_2__["default"].extract(_stateDb__WEBPACK_IMPORTED_MODULE_2__["default"].getRootDocV2());
-  _logger__WEBPACK_IMPORTED_MODULE_6__["log"].info(_stateDb__WEBPACK_IMPORTED_MODULE_2__["default"].getRootDocV2());
   setupNode(g, undefined, _stateDb__WEBPACK_IMPORTED_MODULE_2__["default"].getRootDocV2(), true); // Set up an SVG group so that we can translate the final graph.
 
   var svg = Object(d3__WEBPACK_IMPORTED_MODULE_1__["select"])("[id=\"".concat(id, "\"]")); // Run the renderer. This is what draws the final graph.
@@ -22772,21 +22931,20 @@ var draw = function draw(text, id) {
   var vBox = "".concat(svgBounds.x - padding, " ").concat(svgBounds.y - padding, " ").concat(width, " ").concat(height);
   _logger__WEBPACK_IMPORTED_MODULE_6__["log"].debug("viewBox ".concat(vBox));
   svg.attr('viewBox', vBox); // Add label rects for non html labels
+  // if (!evaluate(conf.htmlLabels) || true) {
 
-  if (!conf.htmlLabels) {
-    var labels = document.querySelectorAll('[id="' + id + '"] .edgeLabel .label');
+  var labels = document.querySelectorAll('[id="' + id + '"] .edgeLabel .label');
 
-    for (var k = 0; k < labels.length; k++) {
-      var label = labels[k]; // Get dimensions of label
+  for (var k = 0; k < labels.length; k++) {
+    var label = labels[k]; // Get dimensions of label
 
-      var dim = label.getBBox();
-      var rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
-      rect.setAttribute('rx', 0);
-      rect.setAttribute('ry', 0);
-      rect.setAttribute('width', dim.width);
-      rect.setAttribute('height', dim.height);
-      label.insertBefore(rect, label.firstChild);
-    }
+    var dim = label.getBBox();
+    var rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+    rect.setAttribute('rx', 0);
+    rect.setAttribute('ry', 0);
+    rect.setAttribute('width', dim.width);
+    rect.setAttribute('height', dim.height);
+    label.insertBefore(rect, label.firstChild); // }
   }
 };
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -23083,7 +23241,7 @@ var renderDoc = function renderDoc(doc, diagram, parentId, altBkg) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 var getStyles = function getStyles(options) {
-  return "g.stateGroup text {\n  fill: ".concat(options.nodeBorder, ";\n  stroke: none;\n  font-size: 10px;\n}\ng.stateGroup text {\n  fill: ").concat(options.textColor, ";\n  stroke: none;\n  font-size: 10px;\n\n}\ng.stateGroup .state-title {\n  font-weight: bolder;\n  fill: ").concat(options.labelColor, ";\n}\n\ng.stateGroup rect {\n  fill: ").concat(options.mainBkg, ";\n  stroke: ").concat(options.nodeBorder, ";\n}\n\ng.stateGroup line {\n  stroke: ").concat(options.lineColor, ";\n  stroke-width: 1;\n}\n\n.transition {\n  stroke: ").concat(options.lineColor, ";\n  stroke-width: 1;\n  fill: none;\n}\n\n.stateGroup .composit {\n  fill: ").concat(options.background, ";\n  border-bottom: 1px\n}\n\n.stateGroup .alt-composit {\n  fill: #e0e0e0;\n  border-bottom: 1px\n}\n\n.state-note {\n  stroke: ").concat(options.noteBorderColor, ";\n  fill: ").concat(options.noteBkgColor, ";\n\n  text {\n    fill: black;\n    stroke: none;\n    font-size: 10px;\n  }\n}\n\n.stateLabel .box {\n  stroke: none;\n  stroke-width: 0;\n  fill: ").concat(options.mainBkg, ";\n  opacity: 0.5;\n}\n\n.edgeLabel .label rect {\n  fill: ").concat(options.tertiaryColor, ";\n  opacity: 0.5;\n}\n.edgeLabel .label text {\n  fill: ").concat(options.tertiaryTextColor, ";\n}\n.label div .edgeLabel {\n  color: ").concat(options.tertiaryTextColor, ";\n}\n\n.stateLabel text {\n  fill: ").concat(options.labelColor, ";\n  font-size: 10px;\n  font-weight: bold;\n}\n\n.node circle.state-start {\n  fill: ").concat(options.lineColor, ";\n  stroke: black;\n}\n.node circle.state-end {\n  fill: ").concat(options.primaryBorderColor, ";\n  stroke: ").concat(options.background, ";\n  stroke-width: 1.5\n}\n.end-state-inner {\n  fill: ").concat(options.background, ";\n  // stroke: ").concat(options.background, ";\n  stroke-width: 1.5\n}\n\n.node rect {\n  fill: ").concat(options.mainBkg, ";\n  stroke: ").concat(options.nodeBorder, ";\n  stroke-width: 1px;\n}\n.node polygon {\n  fill: ").concat(options.mainBkg, ";\n  stroke: ").concat(options.nodeBorder, ";\n  stroke-width: 1px;\n}\n#statediagram-barbEnd {\n  fill: ").concat(options.lineColor, ";\n}\n\n.statediagram-cluster rect {\n  fill: ").concat(options.mainBkg, ";\n  stroke: ").concat(options.nodeBorder, ";\n  stroke-width: 1px;\n}\n\n.cluster-label, .nodeLabel {\n  color: ").concat(options.textColor, ";\n}\n\n.statediagram-cluster rect.outer {\n  rx: 5px;\n  ry: 5px;\n}\n.statediagram-state .divider {\n  stroke: ").concat(options.nodeBorder, ";\n}\n\n.statediagram-state .title-state {\n  rx: 5px;\n  ry: 5px;\n}\n.statediagram-cluster.statediagram-cluster .inner {\n  fill: ").concat(options.background, ";\n}\n.statediagram-cluster.statediagram-cluster-alt .inner {\n  fill: #e0e0e0;\n}\n\n.statediagram-cluster .inner {\n  rx:0;\n  ry:0;\n}\n\n.statediagram-state rect.basic {\n  rx: 5px;\n  ry: 5px;\n}\n.statediagram-state rect.divider {\n  stroke-dasharray: 10,10;\n  fill: ").concat(options.altBackground ? options.altBackground : '#efefef', ";\n}\n\n.note-edge {\n  stroke-dasharray: 5;\n}\n\n.statediagram-note rect {\n  fill: ").concat(options.noteBkgColor, ";\n  stroke: ").concat(options.noteBorderColor, ";\n  stroke-width: 1px;\n  rx: 0;\n  ry: 0;\n}\n.statediagram-note rect {\n  fill: ").concat(options.noteBkgColor, ";\n  stroke: ").concat(options.noteBorderColor, ";\n  stroke-width: 1px;\n  rx: 0;\n  ry: 0;\n}\n\n.statediagram-note text {\n  fill: ").concat(options.noteTextColor, ";\n}\n\n.statediagram-note .nodeLabel {\n  color: ").concat(options.noteTextColor, ";\n}\n\n#dependencyStart, #dependencyEnd {\n  fill: ").concat(options.lineColor, ";\n  stroke: ").concat(options.lineColor, ";\n  stroke-width: 1;\n}\n");
+  return "\ndefs #statediagram-barbEnd {\n    fill: ".concat(options.transitionColor, ";\n    stroke: ").concat(options.transitionColor, ";\n  }\ng.stateGroup text {\n  fill: ").concat(options.nodeBorder, ";\n  stroke: none;\n  font-size: 10px;\n}\ng.stateGroup text {\n  fill: ").concat(options.textColor, ";\n  stroke: none;\n  font-size: 10px;\n\n}\ng.stateGroup .state-title {\n  font-weight: bolder;\n  fill: ").concat(options.stateLabelColor, ";\n}\n\ng.stateGroup rect {\n  fill: ").concat(options.mainBkg, ";\n  stroke: ").concat(options.nodeBorder, ";\n}\n\ng.stateGroup line {\n  stroke: ").concat(options.lineColor, ";\n  stroke-width: 1;\n}\n\n.transition {\n  stroke: ").concat(options.transitionColor, ";\n  stroke-width: 1;\n  fill: none;\n}\n\n.stateGroup .composit {\n  fill: ").concat(options.background, ";\n  border-bottom: 1px\n}\n\n.stateGroup .alt-composit {\n  fill: #e0e0e0;\n  border-bottom: 1px\n}\n\n.state-note {\n  stroke: ").concat(options.noteBorderColor, ";\n  fill: ").concat(options.noteBkgColor, ";\n\n  text {\n    fill: ").concat(options.noteTextColor, ";\n    stroke: none;\n    font-size: 10px;\n  }\n}\n\n.stateLabel .box {\n  stroke: none;\n  stroke-width: 0;\n  fill: ").concat(options.mainBkg, ";\n  opacity: 0.5;\n}\n\n.edgeLabel .label rect {\n  fill: ").concat(options.labelBackgroundColor, ";\n  opacity: 0.5;\n}\n.edgeLabel .label text {\n  fill: ").concat(options.transitionLabelColor || options.tertiaryTextColor, ";\n}\n.label div .edgeLabel {\n  color: ").concat(options.transitionLabelColor || options.tertiaryTextColor, ";\n}\n\n.stateLabel text {\n  fill: ").concat(options.stateLabelColor, ";\n  font-size: 10px;\n  font-weight: bold;\n}\n\n.node circle.state-start {\n  fill: ").concat(options.specialStateColor, ";\n  stroke: ").concat(options.specialStateColor, ";\n}\n\n.node .fork-join {\n  fill: ").concat(options.specialStateColor, ";\n  stroke: ").concat(options.specialStateColor, ";\n}\n\n.node circle.state-end {\n  fill: ").concat(options.innerEndBackground, ";\n  stroke: ").concat(options.background, ";\n  stroke-width: 1.5\n}\n.end-state-inner {\n  fill: ").concat(options.compositeBackground || options.background, ";\n  // stroke: ").concat(options.background, ";\n  stroke-width: 1.5\n}\n\n.node rect {\n  fill: ").concat(options.stateBkg || options.mainBkg, ";\n  stroke: ").concat(options.stateBorder || options.nodeBorder, ";\n  stroke-width: 1px;\n}\n.node polygon {\n  fill: ").concat(options.mainBkg, ";\n  stroke: ").concat(options.stateBorder || options.nodeBorder, ";;\n  stroke-width: 1px;\n}\n#statediagram-barbEnd {\n  fill: ").concat(options.lineColor, ";\n}\n\n.statediagram-cluster rect {\n  fill: ").concat(options.compositeTitleBackground, ";\n  stroke: ").concat(options.stateBorder || options.nodeBorder, ";\n  stroke-width: 1px;\n}\n\n.cluster-label, .nodeLabel {\n  color: ").concat(options.stateLabelColor, ";\n}\n\n.statediagram-cluster rect.outer {\n  rx: 5px;\n  ry: 5px;\n}\n.statediagram-state .divider {\n  stroke: ").concat(options.stateBorder || options.nodeBorder, ";\n}\n\n.statediagram-state .title-state {\n  rx: 5px;\n  ry: 5px;\n}\n.statediagram-cluster.statediagram-cluster .inner {\n  fill: ").concat(options.compositeBackground || options.background, ";\n}\n.statediagram-cluster.statediagram-cluster-alt .inner {\n  fill: ").concat(options.altBackground ? options.altBackground : '#efefef', ";\n}\n\n.statediagram-cluster .inner {\n  rx:0;\n  ry:0;\n}\n\n.statediagram-state rect.basic {\n  rx: 5px;\n  ry: 5px;\n}\n.statediagram-state rect.divider {\n  stroke-dasharray: 10,10;\n  fill: ").concat(options.altBackground ? options.altBackground : '#efefef', ";\n}\n\n.note-edge {\n  stroke-dasharray: 5;\n}\n\n.statediagram-note rect {\n  fill: ").concat(options.noteBkgColor, ";\n  stroke: ").concat(options.noteBorderColor, ";\n  stroke-width: 1px;\n  rx: 0;\n  ry: 0;\n}\n.statediagram-note rect {\n  fill: ").concat(options.noteBkgColor, ";\n  stroke: ").concat(options.noteBorderColor, ";\n  stroke-width: 1px;\n  rx: 0;\n  ry: 0;\n}\n\n.statediagram-note text {\n  fill: ").concat(options.noteTextColor, ";\n}\n\n.statediagram-note .nodeLabel {\n  color: ").concat(options.noteTextColor, ";\n}\n.statediagram .edgeLabel {\n  color: red; // ").concat(options.noteTextColor, ";\n}\n\n#dependencyStart, #dependencyEnd {\n  fill: ").concat(options.lineColor, ";\n  stroke: ").concat(options.lineColor, ";\n  stroke-width: 1;\n}\n");
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (getStyles);
@@ -23110,13 +23268,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "addTaskOrg", function() { return addTaskOrg; });
 /* harmony import */ var _mermaidAPI__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../mermaidAPI */ "./src/mermaidAPI.js");
 /* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../config */ "./src/config.js");
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
 
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 
-function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
 
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 
 
 
@@ -23287,13 +23449,14 @@ function drawActorLegend(diagram) {
 
   var yPos = 60;
   Object.keys(actors).forEach(function (person) {
-    var colour = actors[person];
+    var colour = actors[person].color;
     var circleData = {
       cx: 20,
       cy: yPos,
       r: 7,
       fill: colour,
-      stroke: '#000'
+      stroke: '#000',
+      pos: actors[person].position
     };
     _svgDraw__WEBPACK_IMPORTED_MODULE_3__["default"].drawCircle(diagram, circleData);
     var labelData = {
@@ -23328,12 +23491,14 @@ var draw = function draw(text, id) {
 
   var actorPos = 0;
   actorNames.forEach(function (actorName) {
-    actors[actorName] = conf.actorColours[actorPos % conf.actorColours.length];
+    actors[actorName] = {
+      color: conf.actorColours[actorPos % conf.actorColours.length],
+      position: actorPos
+    };
     actorPos++;
   });
   drawActorLegend(diagram);
   bounds.insert(0, 0, LEFT_MARGIN, Object.keys(actors).length * 50);
-  console.log(bounds);
   drawTasks(diagram, tasks, 0);
   var box = bounds.getBounds();
 
@@ -24193,7 +24358,7 @@ if ( true && __webpack_require__.c[__webpack_require__.s] === module) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 var getStyles = function getStyles(options) {
-  return ".label {\n    font-family: 'trebuchet ms', verdana, arial, sans-serif;\n    font-family: var(--mermaid-font-family);\n    color: ".concat(options.textColor, ";\n  }\n  .mouth {\n    stroke: #666;\n  }\n\n  line {\n    stroke: ").concat(options.textColor, "\n  }\n\n  .legend {\n    fill: ").concat(options.textColor, ";\n  }\n\n  .label text {\n    fill: #333;\n  }\n  .label {\n    color: ").concat(options.textColor, "\n  }\n\n  .face {\n    fill: #FFF8DC;\n    stroke: #999;\n  }\n\n  .node rect,\n  .node circle,\n  .node ellipse,\n  .node polygon,\n  .node path {\n    fill: ").concat(options.mainBkg, ";\n    stroke: ").concat(options.nodeBorder, ";\n    stroke-width: 1px;\n  }\n\n  .node .label {\n    text-align: center;\n  }\n  .node.clickable {\n    cursor: pointer;\n  }\n\n  .arrowheadPath {\n    fill: ").concat(options.arrowheadColor, ";\n  }\n\n  .edgePath .path {\n    stroke: ").concat(options.lineColor, ";\n    stroke-width: 1.5px;\n  }\n\n  .flowchart-link {\n    stroke: ").concat(options.lineColor, ";\n    fill: none;\n  }\n\n  .edgeLabel {\n    background-color: ").concat(options.edgeLabelBackground, ";\n    rect {\n      opacity: 0.5;\n    }\n    text-align: center;\n  }\n\n  .cluster rect {\n  }\n\n  .cluster text {\n    fill: ").concat(options.titleColor, ";\n  }\n\n  div.mermaidTooltip {\n    position: absolute;\n    text-align: center;\n    max-width: 200px;\n    padding: 2px;\n    font-family: 'trebuchet ms', verdana, arial, sans-serif;\n    font-family: var(--mermaid-font-family);\n    font-size: 12px;\n    background: ").concat(options.tertiaryColor, ";\n    border: 1px solid ").concat(options.border2, ";\n    border-radius: 2px;\n    pointer-events: none;\n    z-index: 100;\n  }\n\n  .task-type-0, .section-type-0  {\n    ").concat(options.fillType0 ? "fill: ".concat(options.fillType0) : '', ";\n  }\n  .task-type-1, .section-type-1  {\n    ").concat(options.fillType0 ? "fill: ".concat(options.fillType1) : '', ";\n  }\n  .task-type-2, .section-type-2  {\n    ").concat(options.fillType0 ? "fill: ".concat(options.fillType2) : '', ";\n  }\n  .task-type-3, .section-type-3  {\n    ").concat(options.fillType0 ? "fill: ".concat(options.fillType3) : '', ";\n  }\n  .task-type-4, .section-type-4  {\n    ").concat(options.fillType0 ? "fill: ".concat(options.fillType4) : '', ";\n  }\n  .task-type-5, .section-type-5  {\n    ").concat(options.fillType0 ? "fill: ".concat(options.fillType5) : '', ";\n  }\n  .task-type-6, .section-type-6  {\n    ").concat(options.fillType0 ? "fill: ".concat(options.fillType6) : '', ";\n  }\n  .task-type-7, .section-type-7  {\n    ").concat(options.fillType0 ? "fill: ".concat(options.fillType7) : '', ";\n  }\n");
+  return ".label {\n    font-family: 'trebuchet ms', verdana, arial, sans-serif;\n    font-family: var(--mermaid-font-family);\n    color: ".concat(options.textColor, ";\n  }\n  .mouth {\n    stroke: #666;\n  }\n\n  line {\n    stroke: ").concat(options.textColor, "\n  }\n\n  .legend {\n    fill: ").concat(options.textColor, ";\n  }\n\n  .label text {\n    fill: #333;\n  }\n  .label {\n    color: ").concat(options.textColor, "\n  }\n\n  .face {\n    ").concat(options.faceColor ? "fill: ".concat(options.faceColor) : 'fill: #FFF8DC', ";\n    stroke: #999;\n  }\n\n  .node rect,\n  .node circle,\n  .node ellipse,\n  .node polygon,\n  .node path {\n    fill: ").concat(options.mainBkg, ";\n    stroke: ").concat(options.nodeBorder, ";\n    stroke-width: 1px;\n  }\n\n  .node .label {\n    text-align: center;\n  }\n  .node.clickable {\n    cursor: pointer;\n  }\n\n  .arrowheadPath {\n    fill: ").concat(options.arrowheadColor, ";\n  }\n\n  .edgePath .path {\n    stroke: ").concat(options.lineColor, ";\n    stroke-width: 1.5px;\n  }\n\n  .flowchart-link {\n    stroke: ").concat(options.lineColor, ";\n    fill: none;\n  }\n\n  .edgeLabel {\n    background-color: ").concat(options.edgeLabelBackground, ";\n    rect {\n      opacity: 0.5;\n    }\n    text-align: center;\n  }\n\n  .cluster rect {\n  }\n\n  .cluster text {\n    fill: ").concat(options.titleColor, ";\n  }\n\n  div.mermaidTooltip {\n    position: absolute;\n    text-align: center;\n    max-width: 200px;\n    padding: 2px;\n    font-family: 'trebuchet ms', verdana, arial, sans-serif;\n    font-family: var(--mermaid-font-family);\n    font-size: 12px;\n    background: ").concat(options.tertiaryColor, ";\n    border: 1px solid ").concat(options.border2, ";\n    border-radius: 2px;\n    pointer-events: none;\n    z-index: 100;\n  }\n\n  .task-type-0, .section-type-0  {\n    ").concat(options.fillType0 ? "fill: ".concat(options.fillType0) : '', ";\n  }\n  .task-type-1, .section-type-1  {\n    ").concat(options.fillType0 ? "fill: ".concat(options.fillType1) : '', ";\n  }\n  .task-type-2, .section-type-2  {\n    ").concat(options.fillType0 ? "fill: ".concat(options.fillType2) : '', ";\n  }\n  .task-type-3, .section-type-3  {\n    ").concat(options.fillType0 ? "fill: ".concat(options.fillType3) : '', ";\n  }\n  .task-type-4, .section-type-4  {\n    ").concat(options.fillType0 ? "fill: ".concat(options.fillType4) : '', ";\n  }\n  .task-type-5, .section-type-5  {\n    ").concat(options.fillType0 ? "fill: ".concat(options.fillType5) : '', ";\n  }\n  .task-type-6, .section-type-6  {\n    ").concat(options.fillType0 ? "fill: ".concat(options.fillType6) : '', ";\n  }\n  .task-type-7, .section-type-7  {\n    ").concat(options.fillType0 ? "fill: ".concat(options.fillType7) : '', ";\n  }\n\n  .actor-0 {\n    ").concat(options.actor0 ? "fill: ".concat(options.actor0) : '', ";\n  }\n  .actor-1 {\n    ").concat(options.actor1 ? "fill: ".concat(options.actor1) : '', ";\n  }\n  .actor-2 {\n    ").concat(options.actor2 ? "fill: ".concat(options.actor2) : '', ";\n  }\n  .actor-3 {\n    ").concat(options.actor3 ? "fill: ".concat(options.actor3) : '', ";\n  }\n  .actor-4 {\n    ").concat(options.actor4 ? "fill: ".concat(options.actor4) : '', ";\n  }\n  .actor-5 {\n    ").concat(options.actor5 ? "fill: ".concat(options.actor5) : '', ";\n  }\n\n  }\n");
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (getStyles);
@@ -24278,6 +24443,7 @@ var drawCircle = function drawCircle(element, circleData) {
   var circleElement = element.append('circle');
   circleElement.attr('cx', circleData.cx);
   circleElement.attr('cy', circleData.cy);
+  circleElement.attr('class', 'actor-' + circleData.pos);
   circleElement.attr('fill', circleData.fill);
   circleElement.attr('stroke', circleData.stroke);
   circleElement.attr('r', circleData.r);
@@ -24370,14 +24536,15 @@ var drawTask = function drawTask(elem, task, conf) {
   drawRect(g, rect);
   var xPos = task.x + 14;
   task.people.forEach(function (person) {
-    var colour = task.actors[person];
+    var colour = task.actors[person].color;
     var circle = {
       cx: xPos,
       cy: task.y,
       r: 7,
       fill: colour,
       stroke: '#000',
-      title: person
+      title: person,
+      pos: task.actors[person].position
     };
     drawCircle(g, circle);
     xPos += 10;
@@ -24454,7 +24621,7 @@ var _drawTextCandidateFunc = function () {
   function byFo(content, g, x, y, width, height, textAttrs, conf) {
     var body = g.append('switch');
     var f = body.append('foreignObject').attr('x', x).attr('y', y).attr('width', width).attr('height', height).attr('position', 'fixed');
-    var text = f.append('div').style('display', 'table').style('height', '100%').style('width', '100%');
+    var text = f.append('xhtml:div').style('display', 'table').style('height', '100%').style('width', '100%');
     text.append('div').attr('class', 'label').style('display', 'table-cell').style('text-align', 'center').style('vertical-align', 'middle') // .style('color', colour)
     .text(content);
     byTspan(content, body, x, y, width, height, textAttrs, conf);
@@ -24648,17 +24815,13 @@ var format = function format(level) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var entity_decode_browser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! entity-decode/browser */ "entity-decode/browser");
-/* harmony import */ var entity_decode_browser__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(entity_decode_browser__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _logger__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./logger */ "./src/logger.js");
-/* harmony import */ var _mermaidAPI__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./mermaidAPI */ "./src/mermaidAPI.js");
-/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./utils */ "./src/utils.js");
+/* harmony import */ var _logger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./logger */ "./src/logger.js");
+/* harmony import */ var _mermaidAPI__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./mermaidAPI */ "./src/mermaidAPI.js");
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./utils */ "./src/utils.js");
 /**
  * Web page integration module for the mermaid framework. It uses the mermaidAPI for mermaid functionality and to render
  * the diagrams to svg code.
  */
-// import { decode } from 'he';
-
 
 
 
@@ -24687,7 +24850,7 @@ __webpack_require__.r(__webpack_exports__);
 var init = function init() {
   var _this = this;
 
-  var conf = _mermaidAPI__WEBPACK_IMPORTED_MODULE_2__["default"].getConfig(); // console.log('Starting rendering diagrams (init) - mermaid.init', conf);
+  var conf = _mermaidAPI__WEBPACK_IMPORTED_MODULE_1__["default"].getConfig(); // console.log('Starting rendering diagrams (init) - mermaid.init', conf);
 
   var nodes;
 
@@ -24707,36 +24870,36 @@ var init = function init() {
 
   if (typeof arguments[arguments.length - 1] === 'function') {
     callback = arguments[arguments.length - 1];
-    _logger__WEBPACK_IMPORTED_MODULE_1__["log"].debug('Callback function found');
+    _logger__WEBPACK_IMPORTED_MODULE_0__["log"].debug('Callback function found');
   } else {
     if (typeof conf.mermaid !== 'undefined') {
       if (typeof conf.mermaid.callback === 'function') {
         callback = conf.mermaid.callback;
-        _logger__WEBPACK_IMPORTED_MODULE_1__["log"].debug('Callback function found');
+        _logger__WEBPACK_IMPORTED_MODULE_0__["log"].debug('Callback function found');
       } else {
-        _logger__WEBPACK_IMPORTED_MODULE_1__["log"].debug('No Callback function found');
+        _logger__WEBPACK_IMPORTED_MODULE_0__["log"].debug('No Callback function found');
       }
     }
   }
 
   nodes = nodes === undefined ? document.querySelectorAll('.mermaid') : typeof nodes === 'string' ? document.querySelectorAll(nodes) : nodes instanceof window.Node ? [nodes] : nodes; // Last case  - sequence config was passed pick next
 
-  _logger__WEBPACK_IMPORTED_MODULE_1__["log"].debug('Start On Load before: ' + mermaid.startOnLoad);
+  _logger__WEBPACK_IMPORTED_MODULE_0__["log"].debug('Start On Load before: ' + mermaid.startOnLoad);
 
   if (typeof mermaid.startOnLoad !== 'undefined') {
-    _logger__WEBPACK_IMPORTED_MODULE_1__["log"].debug('Start On Load inner: ' + mermaid.startOnLoad);
-    _mermaidAPI__WEBPACK_IMPORTED_MODULE_2__["default"].updateSiteConfig({
+    _logger__WEBPACK_IMPORTED_MODULE_0__["log"].debug('Start On Load inner: ' + mermaid.startOnLoad);
+    _mermaidAPI__WEBPACK_IMPORTED_MODULE_1__["default"].updateSiteConfig({
       startOnLoad: mermaid.startOnLoad
     });
   }
 
   if (typeof mermaid.ganttConfig !== 'undefined') {
-    _mermaidAPI__WEBPACK_IMPORTED_MODULE_2__["default"].updateSiteConfig({
+    _mermaidAPI__WEBPACK_IMPORTED_MODULE_1__["default"].updateSiteConfig({
       gantt: mermaid.ganttConfig
     });
   }
 
-  var idGeneratior = new _utils__WEBPACK_IMPORTED_MODULE_3__["default"].initIdGeneratior(conf.deterministicIds, conf.deterministicIDSeed);
+  var idGeneratior = new _utils__WEBPACK_IMPORTED_MODULE_2__["default"].initIdGeneratior(conf.deterministicIds, conf.deterministicIDSeed);
   var txt;
 
   var _loop = function _loop(i) {
@@ -24753,15 +24916,15 @@ var init = function init() {
 
     txt = element.innerHTML; // transforms the html to pure text
 
-    txt = entity_decode_browser__WEBPACK_IMPORTED_MODULE_0___default()(txt).trim().replace(/<br\s*\/?>/gi, '<br/>');
-    var init = _utils__WEBPACK_IMPORTED_MODULE_3__["default"].detectInit(txt);
+    txt = _utils__WEBPACK_IMPORTED_MODULE_2__["default"].entityDecode(txt).trim().replace(/<br\s*\/?>/gi, '<br/>');
+    var init = _utils__WEBPACK_IMPORTED_MODULE_2__["default"].detectInit(txt);
 
     if (init) {
-      _logger__WEBPACK_IMPORTED_MODULE_1__["log"].debug('Detected early reinit: ', init);
+      _logger__WEBPACK_IMPORTED_MODULE_0__["log"].debug('Detected early reinit: ', init);
     }
 
     try {
-      _mermaidAPI__WEBPACK_IMPORTED_MODULE_2__["default"].render(id, txt, function (svgCode, bindFunctions) {
+      _mermaidAPI__WEBPACK_IMPORTED_MODULE_1__["default"].render(id, txt, function (svgCode, bindFunctions) {
         element.innerHTML = svgCode;
 
         if (typeof callback !== 'undefined') {
@@ -24771,8 +24934,8 @@ var init = function init() {
         if (bindFunctions) bindFunctions(element);
       }, element);
     } catch (e) {
-      _logger__WEBPACK_IMPORTED_MODULE_1__["log"].warn('Syntax Error rendering');
-      _logger__WEBPACK_IMPORTED_MODULE_1__["log"].warn(e);
+      _logger__WEBPACK_IMPORTED_MODULE_0__["log"].warn('Syntax Error rendering');
+      _logger__WEBPACK_IMPORTED_MODULE_0__["log"].warn(e);
 
       if (_this.parseError) {
         _this.parseError(e);
@@ -24795,11 +24958,11 @@ var initialize = function initialize(config) {
     }
 
     if (typeof config.mermaid.htmlLabels !== 'undefined') {
-      mermaid.htmlLabels = config.mermaid.htmlLabels;
+      mermaid.htmlLabels = config.mermaid.htmlLabels === 'false' || config.mermaid.htmlLabels === false ? false : true;
     }
   }
 
-  _mermaidAPI__WEBPACK_IMPORTED_MODULE_2__["default"].initialize(config); // mermaidAPI.reset();
+  _mermaidAPI__WEBPACK_IMPORTED_MODULE_1__["default"].initialize(config); // mermaidAPI.reset();
 };
 /**
  * ##contentLoaded
@@ -24813,15 +24976,15 @@ var contentLoaded = function contentLoaded() {
 
   if (mermaid.startOnLoad) {
     // No config found, do check API config
-    config = _mermaidAPI__WEBPACK_IMPORTED_MODULE_2__["default"].getConfig();
+    config = _mermaidAPI__WEBPACK_IMPORTED_MODULE_1__["default"].getConfig();
 
     if (config.startOnLoad) {
       mermaid.init();
     }
   } else {
     if (typeof mermaid.startOnLoad === 'undefined') {
-      _logger__WEBPACK_IMPORTED_MODULE_1__["log"].debug('In start, no config');
-      config = _mermaidAPI__WEBPACK_IMPORTED_MODULE_2__["default"].getConfig();
+      _logger__WEBPACK_IMPORTED_MODULE_0__["log"].debug('In start, no config');
+      config = _mermaidAPI__WEBPACK_IMPORTED_MODULE_1__["default"].getConfig();
 
       if (config.startOnLoad) {
         mermaid.init();
@@ -24842,9 +25005,9 @@ if (typeof document !== 'undefined') {
 var mermaid = {
   startOnLoad: true,
   htmlLabels: true,
-  mermaidAPI: _mermaidAPI__WEBPACK_IMPORTED_MODULE_2__["default"],
-  parse: _mermaidAPI__WEBPACK_IMPORTED_MODULE_2__["default"].parse,
-  render: _mermaidAPI__WEBPACK_IMPORTED_MODULE_2__["default"].render,
+  mermaidAPI: _mermaidAPI__WEBPACK_IMPORTED_MODULE_1__["default"],
+  parse: _mermaidAPI__WEBPACK_IMPORTED_MODULE_1__["default"].parse,
+  render: _mermaidAPI__WEBPACK_IMPORTED_MODULE_1__["default"].render,
   init: init,
   initialize: initialize,
   contentLoaded: contentLoaded
@@ -25082,7 +25245,6 @@ function parse(text) {
 
     case 'requirement':
     case 'requirementDiagram':
-      console.log('RequirementDiagram');
       _logger__WEBPACK_IMPORTED_MODULE_41__["log"].debug('RequirementDiagram');
       parser = _diagrams_requirement_parser_requirementDiagram__WEBPACK_IMPORTED_MODULE_27___default.a;
       parser.parser.yy = _diagrams_requirement_requirementDb__WEBPACK_IMPORTED_MODULE_28__["default"];
@@ -25227,13 +25389,13 @@ var render = function render(id, _txt, cb, container) {
 
   if (graphType === 'flowchart' || graphType === 'flowchart-v2' || graphType === 'graph') {
     var classes = _diagrams_flowchart_flowRenderer__WEBPACK_IMPORTED_MODULE_12__["default"].getClasses(txt);
+    var htmlLabels = cnf.htmlLabels || cnf.flowchart.htmlLabels;
 
     for (var className in classes) {
-      if (cnf.htmlLabels || cnf.flowchart.htmlLabels) {
+      if (htmlLabels) {
         userStyles += "\n.".concat(className, " > * { ").concat(classes[className].styles.join(' !important; '), " !important; }");
         userStyles += "\n.".concat(className, " span { ").concat(classes[className].styles.join(' !important; '), " !important; }");
       } else {
-        // console.log('classes[className].styles', classes[className].styles, cnf.htmlLabels);
         userStyles += "\n.".concat(className, " path { ").concat(classes[className].styles.join(' !important; '), " !important; }");
         userStyles += "\n.".concat(className, " rect { ").concat(classes[className].styles.join(' !important; '), " !important; }");
         userStyles += "\n.".concat(className, " polygon { ").concat(classes[className].styles.join(' !important; '), " !important; }");
@@ -25248,10 +25410,13 @@ var render = function render(id, _txt, cb, container) {
   } // log.warn(cnf.themeVariables);
 
 
-  var stylis = new stylis__WEBPACK_IMPORTED_MODULE_1___default.a();
+  var stylis = function stylis(selector, styles) {
+    return Object(stylis__WEBPACK_IMPORTED_MODULE_1__["serialize"])(Object(stylis__WEBPACK_IMPORTED_MODULE_1__["compile"])("".concat(selector, "{").concat(styles, "}")), stylis__WEBPACK_IMPORTED_MODULE_1__["stringify"]);
+  };
+
   var rules = stylis("#".concat(id), Object(_styles__WEBPACK_IMPORTED_MODULE_42__["default"])(graphType, userStyles, cnf.themeVariables));
   var style1 = document.createElement('style');
-  style1.innerHTML = rules;
+  style1.innerHTML = "#".concat(id, " ") + rules;
   svg.insertBefore(style1, firstChild); // Verify that the generated svgs are ok before removing this
   // const style2 = document.createElement('style');
   // const cs = window.getComputedStyle(svg);
@@ -25334,8 +25499,8 @@ var render = function render(id, _txt, cb, container) {
         break;
 
       case 'pie':
-        cnf.class.arrowMarkerAbsolute = cnf.arrowMarkerAbsolute;
-        _diagrams_pie_pieRenderer__WEBPACK_IMPORTED_MODULE_26__["default"].setConf(cnf.pie);
+        //cnf.class.arrowMarkerAbsolute = cnf.arrowMarkerAbsolute;
+        //pieRenderer.setConf(cnf.pie);
         _diagrams_pie_pieRenderer__WEBPACK_IMPORTED_MODULE_26__["default"].draw(txt, id, _package_json__WEBPACK_IMPORTED_MODULE_2__.version);
         break;
 
@@ -25498,8 +25663,8 @@ function updateRendererConfigs(conf) {
   _diagrams_class_classRenderer__WEBPACK_IMPORTED_MODULE_5__["default"].setConf(conf.class);
   _diagrams_state_stateRenderer__WEBPACK_IMPORTED_MODULE_35__["default"].setConf(conf.state);
   _diagrams_state_stateRenderer_v2__WEBPACK_IMPORTED_MODULE_36__["default"].setConf(conf.state);
-  _diagrams_info_infoRenderer__WEBPACK_IMPORTED_MODULE_22__["default"].setConf(conf.class);
-  _diagrams_pie_pieRenderer__WEBPACK_IMPORTED_MODULE_26__["default"].setConf(conf.class);
+  _diagrams_info_infoRenderer__WEBPACK_IMPORTED_MODULE_22__["default"].setConf(conf.class); // pieRenderer.setConf(conf.class);
+
   _diagrams_er_erRenderer__WEBPACK_IMPORTED_MODULE_9__["default"].setConf(conf.er);
   _diagrams_user_journey_journeyRenderer__WEBPACK_IMPORTED_MODULE_38__["default"].setConf(conf.journey);
   _diagrams_requirement_requirementRenderer__WEBPACK_IMPORTED_MODULE_29__["default"].setConf(conf.requirement);
@@ -25767,9 +25932,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 
 
-var Theme =
-/*#__PURE__*/
-function () {
+var Theme = /*#__PURE__*/function () {
   function Theme() {
     _classCallCheck(this, Theme);
 
@@ -25819,6 +25982,8 @@ function () {
       this.secondaryBorderColor = this.secondaryBorderColor || Object(_theme_helpers__WEBPACK_IMPORTED_MODULE_1__["mkBorder"])(this.secondaryColor, this.darkMode);
       this.tertiaryBorderColor = this.tertiaryBorderColor || Object(_theme_helpers__WEBPACK_IMPORTED_MODULE_1__["mkBorder"])(this.tertiaryColor, this.darkMode);
       this.noteBorderColor = this.noteBorderColor || Object(_theme_helpers__WEBPACK_IMPORTED_MODULE_1__["mkBorder"])(this.noteBkgColor, this.darkMode);
+      this.noteBkgColor = this.noteBkgColor || '#fff5ad';
+      this.noteTextColor = this.noteTextColor || '#333';
       this.secondaryTextColor = this.secondaryTextColor || Object(khroma__WEBPACK_IMPORTED_MODULE_0__["invert"])(this.secondaryColor);
       this.tertiaryTextColor = this.tertiaryTextColor || Object(khroma__WEBPACK_IMPORTED_MODULE_0__["invert"])(this.tertiaryColor);
       this.lineColor = this.lineColor || Object(khroma__WEBPACK_IMPORTED_MODULE_0__["invert"])(this.background);
@@ -25874,10 +26039,22 @@ function () {
       this.taskTextClickableColor = this.taskTextClickableColor || '#003163';
       /* state colors */
 
-      this.labelColor = this.labelColor || this.primaryTextColor;
+      this.transitionColor = this.transitionColor || this.lineColor;
+      this.transitionLabelColor = this.transitionLabelColor || this.textColor;
+      /* The color of the text tables of the tstates*/
+
+      this.stateLabelColor = this.stateLabelColor || this.stateBkg || this.primaryTextColor;
+      this.stateBkg = this.stateBkg || this.mainBkg;
+      this.labelBackgroundColor = this.labelBackgroundColor || this.stateBkg;
+      this.compositeBackground = this.compositeBackground || this.background || this.tertiaryColor;
       this.altBackground = this.altBackground || this.tertiaryColor;
+      this.compositeTitleBackground = this.compositeTitleBackground || this.mainBkg;
+      this.compositeBorder = this.compositeBorder || this.nodeBorder;
+      this.innerEndBackground = this.nodeBorder;
       this.errorBkgColor = this.errorBkgColor || this.tertiaryColor;
       this.errorTextColor = this.errorTextColor || this.tertiaryTextColor;
+      this.transitionColor = this.transitionColor || this.lineColor;
+      this.specialStateColor = this.lineColor;
       /* class */
 
       this.classText = this.classText || this.textColor;
@@ -25903,6 +26080,53 @@ function () {
       this.fillType7 = this.fillType7 || Object(khroma__WEBPACK_IMPORTED_MODULE_0__["adjust"])(this.secondaryColor, {
         h: 128
       });
+      /* pie */
+
+      this.pie1 = this.pie1 || this.primaryColor;
+      this.pie2 = this.pie2 || this.secondaryColor;
+      this.pie3 = this.pie3 || this.tertiaryColor;
+      this.pie4 = this.pie4 || Object(khroma__WEBPACK_IMPORTED_MODULE_0__["adjust"])(this.primaryColor, {
+        l: -10
+      });
+      this.pie5 = this.pie5 || Object(khroma__WEBPACK_IMPORTED_MODULE_0__["adjust"])(this.secondaryColor, {
+        l: -10
+      });
+      this.pie6 = this.pie6 || Object(khroma__WEBPACK_IMPORTED_MODULE_0__["adjust"])(this.tertiaryColor, {
+        l: -10
+      });
+      this.pie7 = this.pie7 || Object(khroma__WEBPACK_IMPORTED_MODULE_0__["adjust"])(this.primaryColor, {
+        h: +60,
+        l: -10
+      });
+      this.pie8 = this.pie8 || Object(khroma__WEBPACK_IMPORTED_MODULE_0__["adjust"])(this.primaryColor, {
+        h: -60,
+        l: -10
+      });
+      this.pie9 = this.pie9 || Object(khroma__WEBPACK_IMPORTED_MODULE_0__["adjust"])(this.primaryColor, {
+        h: 120,
+        l: 0
+      });
+      this.pie10 = this.pie10 || Object(khroma__WEBPACK_IMPORTED_MODULE_0__["adjust"])(this.primaryColor, {
+        h: +60,
+        l: -20
+      });
+      this.pie11 = this.pie11 || Object(khroma__WEBPACK_IMPORTED_MODULE_0__["adjust"])(this.primaryColor, {
+        h: -60,
+        l: -20
+      });
+      this.pie12 = this.pie12 || Object(khroma__WEBPACK_IMPORTED_MODULE_0__["adjust"])(this.primaryColor, {
+        h: 120,
+        l: -10
+      });
+      this.pieTitleTextSize = this.pieTitleTextSize || '25px';
+      this.pieTitleTextColor = this.pieTitleTextColor || this.taskTextDarkColor;
+      this.pieSectionTextSize = this.pieSectionTextSize || '17px';
+      this.pieSectionTextColor = this.pieSectionTextColor || this.textColor;
+      this.pieLegendTextSize = this.pieLegendTextSize || '17px';
+      this.pieLegendTextColor = this.pieLegendTextColor || this.taskTextDarkColor;
+      this.pieStrokeColor = this.pieStrokeColor || 'black';
+      this.pieStrokeWidth = this.pieStrokeWidth || '2px';
+      this.pieOpacity = this.pieOpacity || '0.7';
       /* requirement-diagram */
 
       this.requirementBackground = this.requirementBackground || this.primaryColor;
@@ -25973,9 +26197,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 
 
-var Theme =
-/*#__PURE__*/
-function () {
+var Theme = /*#__PURE__*/function () {
   function Theme() {
     _classCallCheck(this, Theme);
 
@@ -26102,8 +26324,20 @@ function () {
       this.taskTextDarkColor = this.darkTextColor;
       /* state colors */
 
-      this.labelColor = this.textColor;
-      this.altBackground = Object(khroma__WEBPACK_IMPORTED_MODULE_0__["lighten"])(this.background, 20);
+      this.transitionColor = this.transitionColor || this.lineColor;
+      this.transitionLabelColor = this.transitionLabelColor || this.textColor;
+      this.stateLabelColor = this.stateLabelColor || this.stateBkg || this.primaryTextColor;
+      this.stateBkg = this.stateBkg || this.mainBkg;
+      this.labelBackgroundColor = this.labelBackgroundColor || this.stateBkg;
+      this.compositeBackground = this.compositeBackground || this.background || this.tertiaryColor;
+      this.altBackground = this.altBackground || '#555';
+      this.compositeTitleBackground = this.compositeTitleBackground || this.mainBkg;
+      this.compositeBorder = this.compositeBorder || this.nodeBorder;
+      this.innerEndBackground = this.primaryBorderColor;
+      this.specialStateColor = '#f4f4f4'; // this.lineColor;
+
+      this.errorBkgColor = this.errorBkgColor || this.tertiaryColor;
+      this.errorTextColor = this.errorTextColor || this.tertiaryTextColor;
       this.fillType0 = this.primaryColor;
       this.fillType1 = this.secondaryColor;
       this.fillType2 = Object(khroma__WEBPACK_IMPORTED_MODULE_0__["adjust"])(this.primaryColor, {
@@ -26124,6 +26358,29 @@ function () {
       this.fillType7 = Object(khroma__WEBPACK_IMPORTED_MODULE_0__["adjust"])(this.secondaryColor, {
         h: 128
       });
+      /* pie */
+
+      this.pie1 = this.pie1 || '#0b0000';
+      this.pie2 = this.pie2 || '#4d1037';
+      this.pie3 = this.pie3 || '#3f5258';
+      this.pie4 = this.pie4 || '#4f2f1b';
+      this.pie5 = this.pie5 || '#6e0a0a';
+      this.pie6 = this.pie6 || '#3b0048';
+      this.pie7 = this.pie7 || '#995a01';
+      this.pie8 = this.pie8 || '#154706';
+      this.pie9 = this.pie9 || '#161722';
+      this.pie10 = this.pie10 || '#00296f';
+      this.pie11 = this.pie11 || '#01629c';
+      this.pie12 = this.pie12 || '#010029';
+      this.pieTitleTextSize = this.pieTitleTextSize || '25px';
+      this.pieTitleTextColor = this.pieTitleTextColor || this.taskTextDarkColor;
+      this.pieSectionTextSize = this.pieSectionTextSize || '17px';
+      this.pieSectionTextColor = this.pieSectionTextColor || this.textColor;
+      this.pieLegendTextSize = this.pieLegendTextSize || '17px';
+      this.pieLegendTextColor = this.pieLegendTextColor || this.taskTextDarkColor;
+      this.pieStrokeColor = this.pieStrokeColor || 'black';
+      this.pieStrokeWidth = this.pieStrokeWidth || '2px';
+      this.pieOpacity = this.pieOpacity || '0.7';
       /* class */
 
       this.classText = this.primaryTextColor;
@@ -26197,9 +26454,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 
 
-var Theme =
-/*#__PURE__*/
-function () {
+var Theme = /*#__PURE__*/function () {
   function Theme() {
     _classCallCheck(this, Theme);
 
@@ -26337,6 +26592,20 @@ function () {
       this.taskTextOutsideColor = this.taskTextDarkColor;
       /* state colors */
 
+      this.transitionColor = this.transitionColor || this.lineColor;
+      this.transitionLabelColor = this.transitionLabelColor || this.textColor;
+      this.stateLabelColor = this.stateLabelColor || this.stateBkg || this.primaryTextColor;
+      this.stateBkg = this.stateBkg || this.mainBkg;
+      this.labelBackgroundColor = this.labelBackgroundColor || this.stateBkg;
+      this.compositeBackground = this.compositeBackground || this.background || this.tertiaryColor;
+      this.altBackground = this.altBackground || '#f0f0f0';
+      this.compositeTitleBackground = this.compositeTitleBackground || this.mainBkg;
+      this.compositeBorder = this.compositeBorder || this.nodeBorder;
+      this.innerEndBackground = this.nodeBorder;
+      this.specialStateColor = this.lineColor;
+      this.errorBkgColor = this.errorBkgColor || this.tertiaryColor;
+      this.errorTextColor = this.errorTextColor || this.tertiaryTextColor;
+      this.transitionColor = this.transitionColor || this.lineColor;
       /* class */
 
       this.classText = this.primaryTextColor;
@@ -26362,6 +26631,55 @@ function () {
       this.fillType7 = Object(khroma__WEBPACK_IMPORTED_MODULE_0__["adjust"])(this.secondaryColor, {
         h: 128
       });
+      /* pie */
+
+      this.pie1 = this.pie1 || this.primaryColor;
+      this.pie2 = this.pie2 || this.secondaryColor;
+      this.pie3 = this.pie3 || Object(khroma__WEBPACK_IMPORTED_MODULE_0__["adjust"])(this.tertiaryColor, {
+        l: -40
+      });
+      this.pie4 = this.pie4 || Object(khroma__WEBPACK_IMPORTED_MODULE_0__["adjust"])(this.primaryColor, {
+        l: -10
+      });
+      this.pie5 = this.pie5 || Object(khroma__WEBPACK_IMPORTED_MODULE_0__["adjust"])(this.secondaryColor, {
+        l: -30
+      });
+      this.pie6 = this.pie6 || Object(khroma__WEBPACK_IMPORTED_MODULE_0__["adjust"])(this.tertiaryColor, {
+        l: -20
+      });
+      this.pie7 = this.pie7 || Object(khroma__WEBPACK_IMPORTED_MODULE_0__["adjust"])(this.primaryColor, {
+        h: +60,
+        l: -20
+      });
+      this.pie8 = this.pie8 || Object(khroma__WEBPACK_IMPORTED_MODULE_0__["adjust"])(this.primaryColor, {
+        h: -60,
+        l: -40
+      });
+      this.pie9 = this.pie9 || Object(khroma__WEBPACK_IMPORTED_MODULE_0__["adjust"])(this.primaryColor, {
+        h: 120,
+        l: -40
+      });
+      this.pie10 = this.pie10 || Object(khroma__WEBPACK_IMPORTED_MODULE_0__["adjust"])(this.primaryColor, {
+        h: +60,
+        l: -40
+      });
+      this.pie11 = this.pie11 || Object(khroma__WEBPACK_IMPORTED_MODULE_0__["adjust"])(this.primaryColor, {
+        h: -90,
+        l: -40
+      });
+      this.pie12 = this.pie12 || Object(khroma__WEBPACK_IMPORTED_MODULE_0__["adjust"])(this.primaryColor, {
+        h: 120,
+        l: -30
+      });
+      this.pieTitleTextSize = this.pieTitleTextSize || '25px';
+      this.pieTitleTextColor = this.pieTitleTextColor || this.taskTextDarkColor;
+      this.pieSectionTextSize = this.pieSectionTextSize || '17px';
+      this.pieSectionTextColor = this.pieSectionTextColor || this.textColor;
+      this.pieLegendTextSize = this.pieLegendTextSize || '17px';
+      this.pieLegendTextColor = this.pieLegendTextColor || this.taskTextDarkColor;
+      this.pieStrokeColor = this.pieStrokeColor || 'black';
+      this.pieStrokeWidth = this.pieStrokeWidth || '2px';
+      this.pieOpacity = this.pieOpacity || '0.7';
       /* requirement-diagram */
 
       this.requirementBackground = this.requirementBackground || this.primaryColor;
@@ -26432,9 +26750,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 
 
-var Theme =
-/*#__PURE__*/
-function () {
+var Theme = /*#__PURE__*/function () {
   function Theme() {
     _classCallCheck(this, Theme);
 
@@ -26541,6 +26857,20 @@ function () {
       this.activeTaskBkgColor = this.mainBkg;
       /* state colors */
 
+      this.transitionColor = this.transitionColor || this.lineColor;
+      this.transitionLabelColor = this.transitionLabelColor || this.textColor;
+      this.stateLabelColor = this.stateLabelColor || this.stateBkg || this.primaryTextColor;
+      this.stateBkg = this.stateBkg || this.mainBkg;
+      this.labelBackgroundColor = this.labelBackgroundColor || this.stateBkg;
+      this.compositeBackground = this.compositeBackground || this.background || this.tertiaryColor;
+      this.altBackground = this.altBackground || '#f0f0f0';
+      this.compositeTitleBackground = this.compositeTitleBackground || this.mainBkg;
+      this.compositeBorder = this.compositeBorder || this.nodeBorder;
+      this.innerEndBackground = this.primaryBorderColor;
+      this.specialStateColor = this.lineColor;
+      this.errorBkgColor = this.errorBkgColor || this.tertiaryColor;
+      this.errorTextColor = this.errorTextColor || this.tertiaryTextColor;
+      this.transitionColor = this.transitionColor || this.lineColor;
       /* class */
 
       this.classText = this.primaryTextColor;
@@ -26566,6 +26896,54 @@ function () {
       this.fillType7 = Object(khroma__WEBPACK_IMPORTED_MODULE_0__["adjust"])(this.secondaryColor, {
         h: 128
       });
+      /* pie */
+
+      this.pie1 = this.pie1 || this.primaryColor;
+      this.pie2 = this.pie2 || this.secondaryColor;
+      this.pie3 = this.pie3 || this.tertiaryColor;
+      this.pie4 = this.pie4 || Object(khroma__WEBPACK_IMPORTED_MODULE_0__["adjust"])(this.primaryColor, {
+        l: -30
+      });
+      this.pie5 = this.pie5 || Object(khroma__WEBPACK_IMPORTED_MODULE_0__["adjust"])(this.secondaryColor, {
+        l: -30
+      });
+      this.pie6 = this.pie6 || Object(khroma__WEBPACK_IMPORTED_MODULE_0__["adjust"])(this.tertiaryColor, {
+        h: +40,
+        l: -40
+      });
+      this.pie7 = this.pie7 || Object(khroma__WEBPACK_IMPORTED_MODULE_0__["adjust"])(this.primaryColor, {
+        h: +60,
+        l: -10
+      });
+      this.pie8 = this.pie8 || Object(khroma__WEBPACK_IMPORTED_MODULE_0__["adjust"])(this.primaryColor, {
+        h: -60,
+        l: -10
+      });
+      this.pie9 = this.pie9 || Object(khroma__WEBPACK_IMPORTED_MODULE_0__["adjust"])(this.primaryColor, {
+        h: 120,
+        l: 0
+      });
+      this.pie10 = this.pie10 || Object(khroma__WEBPACK_IMPORTED_MODULE_0__["adjust"])(this.primaryColor, {
+        h: +60,
+        l: -50
+      });
+      this.pie11 = this.pie11 || Object(khroma__WEBPACK_IMPORTED_MODULE_0__["adjust"])(this.primaryColor, {
+        h: -60,
+        l: -50
+      });
+      this.pie12 = this.pie12 || Object(khroma__WEBPACK_IMPORTED_MODULE_0__["adjust"])(this.primaryColor, {
+        h: 120,
+        l: -50
+      });
+      this.pieTitleTextSize = this.pieTitleTextSize || '25px';
+      this.pieTitleTextColor = this.pieTitleTextColor || this.taskTextDarkColor;
+      this.pieSectionTextSize = this.pieSectionTextSize || '17px';
+      this.pieSectionTextColor = this.pieSectionTextColor || this.textColor;
+      this.pieLegendTextSize = this.pieLegendTextSize || '17px';
+      this.pieLegendTextColor = this.pieLegendTextColor || this.taskTextDarkColor;
+      this.pieStrokeColor = this.pieStrokeColor || 'black';
+      this.pieStrokeWidth = this.pieStrokeWidth || '2px';
+      this.pieOpacity = this.pieOpacity || '0.7';
       /* requirement-diagram */
 
       this.requirementBackground = this.requirementBackground || this.primaryColor;
@@ -26662,9 +27040,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
  // const Color = require ( 'khroma/dist/color' ).default
 // Color.format.hex.stringify(Color.parse('hsl(210, 66.6666666667%, 95%)')); // => "#EAF2FB"
 
-var Theme =
-/*#__PURE__*/
-function () {
+var Theme = /*#__PURE__*/function () {
   function Theme() {
     _classCallCheck(this, Theme);
 
@@ -26684,8 +27060,8 @@ function () {
     this.secondaryTextColor = Object(khroma__WEBPACK_IMPORTED_MODULE_0__["invert"])(this.secondaryColor);
     this.tertiaryTextColor = Object(khroma__WEBPACK_IMPORTED_MODULE_0__["invert"])(this.tertiaryColor);
     this.lineColor = Object(khroma__WEBPACK_IMPORTED_MODULE_0__["invert"])(this.background);
-    this.textColor = Object(khroma__WEBPACK_IMPORTED_MODULE_0__["invert"])(this.background);
-    this.altBackground = Object(khroma__WEBPACK_IMPORTED_MODULE_0__["lighten"])(this.contrast, 55);
+    this.textColor = Object(khroma__WEBPACK_IMPORTED_MODULE_0__["invert"])(this.background); // this.altBackground = lighten(this.contrast, 55);
+
     this.mainBkg = '#eee';
     this.secondBkg = 'calculated';
     this.lineColor = '#666';
@@ -26777,9 +27153,9 @@ function () {
       this.labelBoxBorderColor = this.actorBorder;
       this.labelTextColor = this.text;
       this.loopTextColor = this.text;
-      this.noteBorderColor = Object(khroma__WEBPACK_IMPORTED_MODULE_0__["darken"])(this.note, 60);
-      this.noteBkgColor = this.note;
-      this.noteTextColor = this.actorTextColor;
+      this.noteBorderColor = '#999';
+      this.noteBkgColor = '#666';
+      this.noteTextColor = '#fff';
       /* Gantt chart variables */
 
       this.sectionBkgColor = Object(khroma__WEBPACK_IMPORTED_MODULE_0__["lighten"])(this.contrast, 30);
@@ -26799,6 +27175,19 @@ function () {
       this.todayLineColor = this.critBkgColor;
       /* state colors */
 
+      this.transitionColor = this.transitionColor || '#000';
+      this.transitionLabelColor = this.transitionLabelColor || this.textColor;
+      this.stateLabelColor = this.stateLabelColor || this.stateBkg || this.primaryTextColor;
+      this.stateBkg = this.stateBkg || this.mainBkg;
+      this.labelBackgroundColor = this.labelBackgroundColor || this.stateBkg;
+      this.compositeBackground = this.compositeBackground || this.background || this.tertiaryColor;
+      this.altBackground = this.altBackground || '#f4f4f4';
+      this.compositeTitleBackground = this.compositeTitleBackground || this.mainBkg;
+      this.stateBorder = this.stateBorder || '#000';
+      this.innerEndBackground = this.primaryBorderColor;
+      this.specialStateColor = '#222';
+      this.errorBkgColor = this.errorBkgColor || this.tertiaryColor;
+      this.errorTextColor = this.errorTextColor || this.tertiaryTextColor;
       /* class */
 
       this.classText = this.primaryTextColor;
@@ -26823,7 +27212,41 @@ function () {
       });
       this.fillType7 = Object(khroma__WEBPACK_IMPORTED_MODULE_0__["adjust"])(this.secondaryColor, {
         h: 128
-      });
+      }); // /* pie */
+
+      this.pie1 = this.pie1 || '#F4F4F4';
+      this.pie2 = this.pie2 || '#555';
+      this.pie3 = this.pie3 || '#BBB';
+      this.pie4 = this.pie4 || '#777';
+      this.pie5 = this.pie5 || '#999';
+      this.pie6 = this.pie6 || '#DDD';
+      this.pie7 = this.pie7 || '#FFF';
+      this.pie8 = this.pie8 || '#DDD';
+      this.pie9 = this.pie9 || '#BBB';
+      this.pie10 = this.pie10 || '#999';
+      this.pie11 = this.pie11 || '#777';
+      this.pie12 = this.pie12 || '#555';
+      this.pieTitleTextSize = this.pieTitleTextSize || '25px';
+      this.pieTitleTextColor = this.pieTitleTextColor || this.taskTextDarkColor;
+      this.pieSectionTextSize = this.pieSectionTextSize || '17px';
+      this.pieSectionTextColor = this.pieSectionTextColor || this.textColor;
+      this.pieLegendTextSize = this.pieLegendTextSize || '17px';
+      this.pieLegendTextColor = this.pieLegendTextColor || this.taskTextDarkColor;
+      this.pieStrokeColor = this.pieStrokeColor || 'black';
+      this.pieStrokeWidth = this.pieStrokeWidth || '2px';
+      this.pieOpacity = this.pieOpacity || '0.7'; // this.pie1 = this.pie1 || '#212529';
+      // this.pie2 = this.pie2 || '#343A40';
+      // this.pie3 = this.pie3 || '#495057';
+      // this.pie4 = this.pie4 || '#6C757D';
+      // this.pie5 = this.pie5 || adjust(this.secondaryColor, { l: -10 });
+      // this.pie6 = this.pie6 || adjust(this.tertiaryColor, { l: -10 });
+      // this.pie7 = this.pie7 || adjust(this.primaryColor, { h: +60, l: -10 });
+      // this.pie8 = this.pie8 || adjust(this.primaryColor, { h: -60, l: -10 });
+      // this.pie9 = this.pie9 || adjust(this.primaryColor, { h: 120, l: 0 });
+      // this.pie10 = this.pie10 || adjust(this.primaryColor, { h: +60, l: -20 });
+      // this.pie11 = this.pie11 || adjust(this.primaryColor, { h: -60, l: -20 });
+      // this.pie12 = this.pie12 || adjust(this.primaryColor, { h: 120, l: -10 });
+
       /* requirement-diagram */
 
       this.requirementBackground = this.requirementBackground || this.primaryColor;
@@ -26874,7 +27297,7 @@ var getThemeVariables = function getThemeVariables(userOverrides) {
 /*!**********************!*\
   !*** ./src/utils.js ***!
   \**********************/
-/*! exports provided: detectInit, detectDirective, detectType, isSubstringInArray, interpolateToCurve, formatUrl, runFunc, getStylesFromArray, generateId, random, assignWithDepth, getTextObj, drawSimpleText, wrapLabel, calculateTextHeight, calculateTextWidth, calculateTextDimensions, calculateSvgSizeAttrs, configureSvgSize, initIdGeneratior, default */
+/*! exports provided: detectInit, detectDirective, detectType, isSubstringInArray, interpolateToCurve, formatUrl, runFunc, getStylesFromArray, generateId, random, assignWithDepth, getTextObj, drawSimpleText, wrapLabel, calculateTextHeight, calculateTextWidth, calculateTextDimensions, calculateSvgSizeAttrs, configureSvgSize, initIdGeneratior, entityDecode, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -26899,6 +27322,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "calculateSvgSizeAttrs", function() { return calculateSvgSizeAttrs; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "configureSvgSize", function() { return configureSvgSize; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "initIdGeneratior", function() { return initIdGeneratior; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "entityDecode", function() { return entityDecode; });
 /* harmony import */ var _braintree_sanitize_url__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @braintree/sanitize-url */ "@braintree/sanitize-url");
 /* harmony import */ var _braintree_sanitize_url__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_braintree_sanitize_url__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var d3__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! d3 */ "d3");
@@ -26913,21 +27337,26 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
+function _createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (!it) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = it.call(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it.return != null) it.return(); } finally { if (didErr) throw err; } } }; }
+
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
 
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 
-function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
 
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 
 
 
 
- // import cryptoRandomString from 'crypto-random-string';
-// Effectively an enum of the supported curve types, accessible by name
+ // Effectively an enum of the supported curve types, accessible by name
 
 var d3CurveTypes = {
   curveBasis: d3__WEBPACK_IMPORTED_MODULE_1__["curveBasis"],
@@ -27745,12 +28174,12 @@ var calculateTextDimensions = memoize(function (text, config) {
       height: 0,
       lineHeight: 0
     };
-    var _iteratorNormalCompletion = true;
-    var _didIteratorError = false;
-    var _iteratorError = undefined;
+
+    var _iterator = _createForOfIteratorHelper(lines),
+        _step;
 
     try {
-      for (var _iterator = lines[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+      for (_iterator.s(); !(_step = _iterator.n()).done;) {
         var line = _step.value;
         var textObj = getTextObj();
         textObj.text = line;
@@ -27762,18 +28191,9 @@ var calculateTextDimensions = memoize(function (text, config) {
         dim.lineHeight = Math.round(Math.max(dim.lineHeight, cheight));
       }
     } catch (err) {
-      _didIteratorError = true;
-      _iteratorError = err;
+      _iterator.e(err);
     } finally {
-      try {
-        if (!_iteratorNormalCompletion && _iterator.return != null) {
-          _iterator.return();
-        }
-      } finally {
-        if (_didIteratorError) {
-          throw _iteratorError;
-        }
-      }
+      _iterator.f();
     }
 
     dims.push(dim);
@@ -27787,28 +28207,18 @@ var calculateTextDimensions = memoize(function (text, config) {
 });
 
 var d3Attrs = function d3Attrs(d3Elem, attrs) {
-  var _iteratorNormalCompletion2 = true;
-  var _didIteratorError2 = false;
-  var _iteratorError2 = undefined;
+  var _iterator2 = _createForOfIteratorHelper(attrs),
+      _step2;
 
   try {
-    for (var _iterator2 = attrs[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+    for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
       var attr = _step2.value;
       d3Elem.attr(attr[0], attr[1]);
     }
   } catch (err) {
-    _didIteratorError2 = true;
-    _iteratorError2 = err;
+    _iterator2.e(err);
   } finally {
-    try {
-      if (!_iteratorNormalCompletion2 && _iterator2.return != null) {
-        _iterator2.return();
-      }
-    } finally {
-      if (_didIteratorError2) {
-        throw _iteratorError2;
-      }
-    }
+    _iterator2.f();
   }
 };
 
@@ -27829,9 +28239,7 @@ var configureSvgSize = function configureSvgSize(svgElem, height, width, useMaxW
   var attrs = calculateSvgSizeAttrs(height, width, useMaxWidth);
   d3Attrs(svgElem, attrs);
 };
-var initIdGeneratior =
-/*#__PURE__*/
-function () {
+var initIdGeneratior = /*#__PURE__*/function () {
   function iterator(deterministic, seed) {
     _classCallCheck(this, iterator);
 
@@ -27849,7 +28257,17 @@ function () {
   }]);
 
   return iterator;
-}();
+}(); // Source https://github.com/shrpne/entity-decode/blob/master/browser.js
+
+var decoder;
+var entityDecode = function entityDecode(html) {
+  decoder = decoder || document.createElement('div'); // Escape HTML before decoding for HTML Entities
+
+  html = escape(html).replace(/%26/g, '&').replace(/%23/g, '#').replace(/%3B/g, ';'); // decoding
+
+  decoder.innerHTML = html;
+  return unescape(decoder.textContent);
+};
 /* harmony default export */ __webpack_exports__["default"] = ({
   assignWithDepth: assignWithDepth,
   wrapLabel: wrapLabel,
@@ -27872,6 +28290,7 @@ function () {
   random: random,
   memoize: memoize,
   runFunc: runFunc,
+  entityDecode: entityDecode,
   initIdGeneratior: initIdGeneratior
 });
 
@@ -27932,14 +28351,14 @@ module.exports = require("dagre-d3/lib/label/add-html-label.js");
 
 /***/ }),
 
-/***/ "entity-decode/browser":
-/*!****************************************!*\
-  !*** external "entity-decode/browser" ***!
-  \****************************************/
+/***/ "dompurify":
+/*!****************************!*\
+  !*** external "dompurify" ***!
+  \****************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = require("entity-decode/browser");
+module.exports = require("dompurify");
 
 /***/ }),
 

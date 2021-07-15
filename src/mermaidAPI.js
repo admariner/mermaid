@@ -14,7 +14,7 @@
  * @name mermaidAPI
  */
 import { select } from 'd3';
-import Stylis from 'stylis';
+import { compile, serialize, stringify } from 'stylis';
 import pkg from '../package.json';
 import * as configApi from './config';
 import classDb from './diagrams/class/classDb';
@@ -140,7 +140,6 @@ function parse(text) {
       break;
     case 'requirement':
     case 'requirementDiagram':
-      console.log('RequirementDiagram');
       log.debug('RequirementDiagram');
       parser = requirementParser;
       parser.parser.yy = requirementDb;
@@ -156,19 +155,19 @@ function parse(text) {
   return parser;
 }
 
-export const encodeEntities = function(text) {
+export const encodeEntities = function (text) {
   let txt = text;
 
-  txt = txt.replace(/style.*:\S*#.*;/g, function(s) {
+  txt = txt.replace(/style.*:\S*#.*;/g, function (s) {
     const innerTxt = s.substring(0, s.length - 1);
     return innerTxt;
   });
-  txt = txt.replace(/classDef.*:\S*#.*;/g, function(s) {
+  txt = txt.replace(/classDef.*:\S*#.*;/g, function (s) {
     const innerTxt = s.substring(0, s.length - 1);
     return innerTxt;
   });
 
-  txt = txt.replace(/#\w+;/g, function(s) {
+  txt = txt.replace(/#\w+;/g, function (s) {
     const innerTxt = s.substring(1, s.length - 1);
 
     const isInt = /^\+?\d+$/.test(innerTxt);
@@ -182,16 +181,16 @@ export const encodeEntities = function(text) {
   return txt;
 };
 
-export const decodeEntities = function(text) {
+export const decodeEntities = function (text) {
   let txt = text;
 
-  txt = txt.replace(/ﬂ°°/g, function() {
+  txt = txt.replace(/ﬂ°°/g, function () {
     return '&#';
   });
-  txt = txt.replace(/ﬂ°/g, function() {
+  txt = txt.replace(/ﬂ°/g, function () {
     return '&';
   });
-  txt = txt.replace(/¶ß/g, function() {
+  txt = txt.replace(/¶ß/g, function () {
     return ';';
   });
 
@@ -219,7 +218,7 @@ export const decodeEntities = function(text) {
  * provided a hidden div will be inserted in the body of the page instead. The element will be removed when rendering is
  * completed.
  */
-const render = function(id, _txt, cb, container) {
+const render = function (id, _txt, cb, container) {
   configApi.reset();
   let txt = _txt;
   const graphInit = utils.detectInit(txt);
@@ -298,8 +297,9 @@ const render = function(id, _txt, cb, container) {
   // classDef
   if (graphType === 'flowchart' || graphType === 'flowchart-v2' || graphType === 'graph') {
     const classes = flowRenderer.getClasses(txt);
+    const htmlLabels = cnf.htmlLabels || cnf.flowchart.htmlLabels;
     for (const className in classes) {
-      if (cnf.htmlLabels || cnf.flowchart.htmlLabels) {
+      if (htmlLabels) {
         userStyles += `\n.${className} > * { ${classes[className].styles.join(
           ' !important; '
         )} !important; }`;
@@ -307,7 +307,6 @@ const render = function(id, _txt, cb, container) {
           ' !important; '
         )} !important; }`;
       } else {
-        // console.log('classes[className].styles', classes[className].styles, cnf.htmlLabels);
         userStyles += `\n.${className} path { ${classes[className].styles.join(
           ' !important; '
         )} !important; }`;
@@ -334,11 +333,11 @@ const render = function(id, _txt, cb, container) {
 
   // log.warn(cnf.themeVariables);
 
-  const stylis = new Stylis();
+  const stylis = (selector, styles) => serialize(compile(`${selector}{${styles}}`), stringify);
   const rules = stylis(`#${id}`, getStyles(graphType, userStyles, cnf.themeVariables));
 
   const style1 = document.createElement('style');
-  style1.innerHTML = rules;
+  style1.innerHTML = `#${id} ` + rules;
   svg.insertBefore(style1, firstChild);
 
   // Verify that the generated svgs are ok before removing this
@@ -414,8 +413,8 @@ const render = function(id, _txt, cb, container) {
         infoRenderer.draw(txt, id, pkg.version);
         break;
       case 'pie':
-        cnf.class.arrowMarkerAbsolute = cnf.arrowMarkerAbsolute;
-        pieRenderer.setConf(cnf.pie);
+        //cnf.class.arrowMarkerAbsolute = cnf.arrowMarkerAbsolute;
+        //pieRenderer.setConf(cnf.pie);
         pieRenderer.draw(txt, id, pkg.version);
         break;
       case 'er':
@@ -496,7 +495,7 @@ const render = function(id, _txt, cb, container) {
 
 let currentDirective = {};
 
-const parseDirective = function(p, statement, context, type) {
+const parseDirective = function (p, statement, context, type) {
   try {
     if (statement !== undefined) {
       statement = statement.trim();
@@ -524,12 +523,12 @@ const parseDirective = function(p, statement, context, type) {
   }
 };
 
-const handleDirective = function(p, directive, type) {
+const handleDirective = function (p, directive, type) {
   log.debug(`Directive type=${directive.type} with args:`, directive.args);
   switch (directive.type) {
     case 'init':
     case 'initialize': {
-      ['config'].forEach(prop => {
+      ['config'].forEach((prop) => {
         if (typeof directive.args[prop] !== 'undefined') {
           if (type === 'flowchart-v2') {
             type = 'flowchart';
@@ -574,7 +573,7 @@ function updateRendererConfigs(conf) {
   stateRenderer.setConf(conf.state);
   stateRendererV2.setConf(conf.state);
   infoRenderer.setConf(conf.class);
-  pieRenderer.setConf(conf.class);
+  // pieRenderer.setConf(conf.class);
   erRenderer.setConf(conf.er);
   journeyRenderer.setConf(conf.journey);
   requirementRenderer.setConf(conf.requirement);
@@ -647,7 +646,7 @@ const mermaidAPI = Object.freeze({
     configApi.reset(configApi.defaultConfig);
     updateRendererConfigs(configApi.getConfig());
   },
-  defaultConfig: configApi.defaultConfig
+  defaultConfig: configApi.defaultConfig,
 });
 
 setLogLevel(configApi.getConfig().logLevel);

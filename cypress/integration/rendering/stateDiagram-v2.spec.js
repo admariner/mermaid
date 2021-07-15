@@ -385,6 +385,39 @@ stateDiagram-v2
       }
     );
   });
+  it('v2 should handle multiple notes added to one state', () => {
+    imgSnapshotTest(
+      `
+stateDiagram-v2
+    MyState
+    note left of MyState : I am a leftie
+    note right of MyState : I am a rightie
+    `,
+      {
+        logLevel: 0, fontFamily: 'courier',
+      }
+    );
+  });
+  it('v2 should handle different rendering directions in composite states', () => {
+    imgSnapshotTest(
+      `
+stateDiagram-v2
+  direction LR
+  state A {
+    direction BT
+    a --> b
+  }
+  state C {
+    direction RL
+    c --> d
+  }
+  A --> C
+    `,
+      {
+        logLevel: 0, fontFamily: 'courier',
+      }
+    );
+  });
   it('v2 handle transition from one state in a composite state to a composite state', () => {
     imgSnapshotTest(
       `
